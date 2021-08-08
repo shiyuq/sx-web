@@ -1,5 +1,17 @@
 <template>
   <div class="header">
+    <div class="header-top">
+      <div class="container">
+        <ul>
+          <li class="consult">
+            <a href="">在线咨询</a>
+          </li>
+          <li>
+            <a href="">联系我们</a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <div class="header-logo">
       <div class="header-logo-left">
         <h1>
@@ -16,7 +28,11 @@
           </h3>
         </div>
       </div>
-      <div class="header-logo-right"></div>
+      <div class="header-logo-right">
+        <p>全国统一服务热线：</p>
+        <b>13991985022</b>
+        <b>029-83429399</b>
+      </div>
     </div>
   </div>
 </template>

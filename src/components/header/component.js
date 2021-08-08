@@ -4,5 +4,10 @@ export default {
     return {
       
     }
+  },
+  methods: {
+    clickMe () {
+      this.$router.push({path: '/peixunzhongxin'})
+    }
   }
 };
