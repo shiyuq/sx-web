@@ -7,12 +7,17 @@ const routes = [
   {
     path: '/',
     component: () => import('../views/layout'),
-    redirect: '/',
     children: [
       {
         path: '/',
         name: 'Home',
         component: () => import('../views/home'),
+        meta: {title: '首页', keepAlive: false}
+      },
+      {
+        path: '/peixunzhongxin',
+        name: 'Peixunzhongxin',
+        component: () => import('../views/peixunzhongxin'),
         meta: {title: '首页', keepAlive: false}
       }
     ]

@@ -1,9 +1,5 @@
 <template>
-  <div>
-    <Header />
-    <router-view></router-view>
-    <Footer />
-  </div>
+  <div class="center">这是培训中心</div>
 </template>
 
 <style lang="scss" src="./style.scss" scoped></style>
