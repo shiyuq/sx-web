@@ -1,7 +1,8 @@
 module.exports = {
   root: true,
   env: {
-    node: true
+    node: true,
+    browser: true
   },
   'extends': [
     'plugin:vue/essential',
@@ -17,6 +18,7 @@ module.exports = {
       "error",
       2
     ],
+    "comma-dangle": ["error", "never"],
     "quotes":[
       1,
       "single"
