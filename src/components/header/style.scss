@@ -1,3 +1,7 @@
+h1 {
+  margin: 0;
+}
+
 .header-top {
   overflow: hidden;
   display: flex;
@@ -27,6 +31,7 @@
     }
   }
 }
+
 .header-logo {
   height: 120px;
   display: flex;
@@ -48,6 +53,7 @@
     width: 300px;
   }
 }
+
 .header-logo-right {
   display: flex;
   flex-direction: column;
