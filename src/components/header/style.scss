@@ -76,3 +76,31 @@ h1 {
     color: #fd581f;
   }
 }
+
+.header-bar {
+  background-color: #df131e;
+  height: 62px;
+  line-height: 62px;
+  .nav {
+    width: 1000px;
+    margin: 0 auto;
+    ul {
+      display: flex;
+      li {
+        font-size: 16px;
+        span {
+          padding: 0 20px;
+        }
+      }
+    }
+  }
+}
+
+.bar-active {
+  background-color: pink;
+  pointer-events: painted;
+}
+
+.bar-active-hover:hover {
+  background-color: pink;
+}

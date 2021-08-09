@@ -11,6 +11,10 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+ul li {
+  list-style: none;
+}
+
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
