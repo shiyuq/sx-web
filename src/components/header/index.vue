@@ -37,9 +37,22 @@
     <div class="header-bar">
       <div class="nav">
         <ul>
-          <li v-for="(item, index) in navList" :key="item.router" :class="index === currentActiveTabIndex ? 'bar-active' : 'bar-active-hover'">
-            <span v-if="index === currentActiveTabIndex" style="color: black;">{{ item.name }}</span>
-            <span v-else style="color: #fff" @click="selectTab(item, index)">{{ item.name }}</span>
+          <li
+            v-for="(item, index) in navList"
+            :key="item.router"
+            :class="
+              index === currentActiveTabIndex
+                ? 'bar-active'
+                : 'bar-active-hover'
+            "
+          >
+            <img src="../header/img/header_nav_cur02.png" alt="" />
+            <span v-if="index === currentActiveTabIndex" style="color: black;"
+              >{{ item.name }}
+            </span>
+            <span v-else style="color: #fff;" @click="selectTab(item, index)">{{
+              item.name
+            }}</span>
           </li>
         </ul>
       </div>

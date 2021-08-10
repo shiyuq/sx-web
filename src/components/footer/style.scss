@@ -39,6 +39,13 @@ p {
         line-height: 26px;
       }
     }
+    .menu p a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+    .last {
+      border: none;
+    }
     .ewm {
       overflow: hidden;
       float: right;

@@ -49,7 +49,7 @@ export default {
   methods: {
     selectTab(item, index) {
       this.$store.commit('app/setCurrentActiveTabIndex', index)
-      this.$router.push({ path: item.router })
+      this.$router.push({ path: item.router }).catch(() => {})
     }
   }
 };
