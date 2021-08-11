@@ -1,13 +1,10 @@
 <template>
   <div class="banner">
-    <el-carousel indicator-position="outside">
+    <el-carousel arrow="never" indicator-position="outside" height="500px">
       <el-carousel-item v-for="item in imgList" :key="item.id">
         <img class="carousel" :src="item.imgUrl" />
       </el-carousel-item>
     </el-carousel>
-    <div class="search">
-      
-    </div>
   </div>
 </template>
 
