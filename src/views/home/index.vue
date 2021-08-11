@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <Banner />
-    <div>22222222222222</div>
+    <div>33333333333</div>
     <Search />
   </div>
 </template>
