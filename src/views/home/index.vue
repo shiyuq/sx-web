@@ -2,6 +2,8 @@
   <div class="home">
     <Banner />
     <Search />
+    <Difference />
+    <About />
   </div>
 </template>
 

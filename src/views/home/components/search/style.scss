@@ -9,6 +9,7 @@
     margin-right: auto;
     width: 1000px;
     p {
+      float: left;
       font-size: 14px;
       color: #cc000c;
       line-height: 38px;
@@ -26,6 +27,7 @@
       }
     }
     .sbox {
+      float: right;
       overflow: hidden;
       width: 380px;
       height: 36px;
@@ -42,6 +44,20 @@
         color: #6e6e6e;
         padding: 0 15px;
         float: left;
+      }
+      span {
+        display: block;
+        width: 45px;
+        height: 36px;
+        float: right;
+        cursor: pointer;
+        button {
+          border: 0;
+          color: #fff;
+          width: 47px;
+          background: url("../search/img/search.png") no-repeat center;
+          height: inherit;
+        }
       }
     }
   }

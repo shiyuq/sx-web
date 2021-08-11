@@ -44,8 +44,11 @@
             name="q"
             value="请输入您要搜索的关键词"
             id="searchkeywords"
-            onfocus="this.value''"
+            onfocus="this.value=''"
           />
+          <span>
+            <button></button>
+          </span>
         </form>
       </div>
     </div>
