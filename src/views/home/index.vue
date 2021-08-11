@@ -1,7 +1,6 @@
 <template>
   <div class="home">
     <Banner />
-    <h1>11111111111111</h1>
     <Search />
   </div>
 </template>
