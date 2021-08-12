@@ -33,6 +33,18 @@
         </div>
       </dd>
     </dl>
+    <div class="title">
+      <h3>
+        <router-link to="">继承弘扬革命精神</router-link>
+      </h3>
+    </div>
+    <ul class="tixi">
+      <li v-for="item in imgList" :key="item.id">
+        <img :src="item.imgUrl" :alt="item.alt" width="221" height="155" />
+        <h4>{{ item.title }}</h4>
+        <p>{{ item.content }}</p>
+      </li>
+    </ul>
   </div>
 </template>
 

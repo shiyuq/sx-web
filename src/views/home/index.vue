@@ -4,6 +4,7 @@
     <Search />
     <Difference />
     <About />
+    <Company />
   </div>
 </template>
 
