@@ -1,11 +1,7 @@
 <template>
-  <div class="home">
+  <div class="route">
     <Banner />
-    <Search />
-    <Product />
-    <Difference />
-    <About />
-    <Company />
+    <Main />
   </div>
 </template>
 

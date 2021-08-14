@@ -1,14 +1,7 @@
 <template>
-  <div class="home">
-    <Banner />
-    <Search />
-    <Product />
-    <Difference />
-    <About />
-    <Company />
+  <div class="banner">
+    <div class="show"></div>
   </div>
 </template>
-
 <style lang="scss" src="./style.scss" scoped></style>
-
 <script src="./component.js"></script>

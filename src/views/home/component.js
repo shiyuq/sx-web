@@ -3,6 +3,7 @@ import Search from './components/search'
 import Difference from './components/difference'
 import About from './components/about'
 import Company from './components/company'
+import Product from './components/product'
 export default {
   name: 'Home',
   components: {
@@ -10,6 +11,7 @@ export default {
     Search,
     Difference,
     About,
-    Company
+    Company,
+    Product
   }
 }
