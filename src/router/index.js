@@ -13,16 +13,10 @@ const routes = [
         name: 'Home',
         component: () => import('../views/home'),
         meta: {title: '首页', keepAlive: false}
-      }
-    ]
-  },
-  {
-    path: '/route',
-    component: () => import('../views/layout'),
-    children:[
+      },
       {
-        path: '/route',
-        name: 'Route',
+        path: '/peixunxianlu',
+        name: 'Peixunxianlu',
         component: () => import('../views/route'),
         meta: {title:'培训线路', keepAlive:false}
       }
