@@ -9,7 +9,7 @@
       </h3>
     </div>
     <ul class="menu">
-      <li v-for="item in List" :key="item.id">
+      <li v-for="item in list" :key="item.id">
         <span>
           <router-link :to="item.url">{{ item.title }}</router-link>
           <img :src="item.imgUrl" width="18" height="9" />
@@ -26,8 +26,8 @@
           height="580"
           class="left"
         />
-        <ul v-for="{ item, index } in uList" :key="index">
-          <li v-for="{ ele, cindex } in uList[index].list" :key="cindex">
+        <ul v-for="(item, index) in uList" :key="index">
+          <li v-for="(ele, cindex) in uList[index].list" :key="cindex">
             <img :src="ele.imgUrl" :alt="ele.title" />
             <span>{{ ele.title }}</span>
             <router-link :to="ele.url">点击查看详情</router-link>

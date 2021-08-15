@@ -2,7 +2,7 @@ export default {
   name: 'Product',
   data () {
     return {
-      List: [
+      list: [
         {
           id: '01',
           url: 'http://sxhscc.cn/a/chanpinzhongxin/js/',
