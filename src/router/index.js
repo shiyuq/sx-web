@@ -19,6 +19,18 @@ const routes = [
         name: 'Peixunxianlu',
         component: () => import('../views/route'),
         meta: {title:'培训线路', keepAlive:false}
+      },
+      {
+        path: '/peixunlueying',
+        name: 'Peixunlueying',
+        component: () => import('../views/photo'),
+        meta: {title:'培训线路', keepAlive:false}
+      },
+      {
+        path: '/guanyuwomen',
+        name: 'Guanyuwomen',
+        component: () => import('../views/aboutUs'),
+        meta: {title:'培训线路', keepAlive:false}
       }
     ]
   }

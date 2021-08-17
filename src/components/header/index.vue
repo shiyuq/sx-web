@@ -45,6 +45,7 @@
                 ? 'bar-active'
                 : 'bar-active-hover'
             "
+            @click="selectTab(item, index)"
           >
             <img src="../header/img/header_nav_cur02.png" alt="" />
             <span v-if="index === currentActiveTabIndex" style="color: black;"

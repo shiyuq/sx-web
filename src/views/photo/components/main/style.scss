@@ -14,7 +14,7 @@
         overflow: hidden;
         background: #e81723;
         width: 230px;
-        height: 160px;
+        height: 150px;
         font-size: 30px;
         color: #fff;
         font-weight: normal;
@@ -29,23 +29,87 @@
       }
       ul {
         background: #fff;
-        padding-top: 10px;
-        li {
-          padding-bottom: 15px;
-          a {
-            height: 50px;
-            line-height: 50px;
-            padding-left: 25px;
-            display: block;
-            font-size: 16px;
-            color: #000;
-            margin: 0 10px;
-            text-decoration: none;
-            background: #ececed;
+        padding: 10px 0px;
+      }
+      .consult {
+        padding: 0 10px;
+        color: #fff;
+        font-size: 16px;
+        line-height: 40px;
+        background: #e81723;
+        margin-top: 10px;
+      }
+      .content {
+        border: 1px solid #fff;
+        border-top: 0;
+        padding: 2px 10px;
+        margin-bottom: 10px;
+        zoom: 1;
+        background: #fff;
+        ul {
+          background: #fff;
+          padding: 10px 0;
+          li {
+            background: url("./img/ico.gif") left 8px no-repeat;
+            line-height: 25px;
+            height: 25px;
+            overflow: hidden;
+            background-size: 10px;
+            padding-left: 20px;
+            width: 175px;
+            a {
+              color: #666;
+              text-decoration: none;
+              font-size: 12px;
+            }
+            a:hover {
+              text-decoration: underline;
+            }
           }
-          a:hover {
-            background-color: #e81723;
-            color: #fff;
+        }
+      }
+      .contact {
+        margin-bottom: 10px;
+        .contactUs {
+          padding: 0 10px;
+          color: #fff;
+          font-size: 16px;
+          line-height: 40px;
+          background: #e81723;
+          margin-top: 10px;
+          .subcontact {
+            text-align: left;
+            font-size: 16px;
+            a {
+              text-decoration: none;
+              color: #fff;
+            }
+            a:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+        .subcontent {
+          background: none repeat scroll 0 0 #fff;
+          border: 1px solid #fff;
+          overflow: hidden;
+          padding: 5px 9px;
+          width: 209px;
+          p {
+            line-height: 25px;
+            overflow: hidden;
+            font-size: 16px;
+            word-spacing: -1.5px;
+            .subspan {
+              color: #333;
+            }
+          }
+          .subtel {
+            color: #e81723;
+            line-height: 25px;
+            overflow: hidden;
+            font-size: 16px;
+            word-spacing: -1.5px;
           }
         }
       }
