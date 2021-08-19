@@ -24,7 +24,7 @@
         <div class="contact">
           <div class="contactUs">
             <h5 class="subcontact">
-              <router-link to="http://sxhscc.cn/a/lianxiwomen/" target="_blank">
+              <router-link to="/lianxiwomen" target="_blank">
                 联系我们
               </router-link>
             </h5>

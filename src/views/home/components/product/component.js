@@ -2,33 +2,29 @@ export default {
   name: 'Product',
   data () {
     return {
+      iscur:0,
       list: [
         {
-          id: '01',
           url: 'http://sxhscc.cn/a/chanpinzhongxin/js/',
           title: '延安',
           imgUrl:require('./img/pro_s.png')
         },
         {
-          id: '02',
           url: 'http://sxhscc.cn/a/chanpinzhongxin/jb/',
           title: '井冈山',
           imgUrl:require('./img/pro_s.png')
         },
         {
-          id: '03',
           url: 'http://sxhscc.cn/a/chanpinzhongxin/ym/',
           title: '遵义',
           imgUrl:require('./img/pro_s.png')
         },
         {
-          id: '04',
           url: 'http://sxhscc.cn/a/chanpinzhongxin/fq/',
           title: '西柏坡',
           imgUrl:require('./img/pro_s.png')
         },
         {
-          id: '05',
           url: 'http://sxhscc.cn/a/chanpinzhongxin/bw/',
           title: '兰考',
           imgUrl:require('./img/pro_s.png')
@@ -36,31 +32,26 @@ export default {
       ],
       pList: [
         {
-          id: '01',
           url: 'http://sxhscc.cn/a/chanpinzhongxin/js/',
           title: '延安',
           imgUrl:require('./img/yanan.jpg')
         },
         {
-          id: '02',
           url: 'http://sxhscc.cn/a/chanpinzhongxin/jb/',
           title: '井冈山',
           imgUrl:require('./img/jinggangshan.jpg')
         },
         {
-          id: '03',
           url: 'http://sxhscc.cn/a/chanpinzhongxin/ym/',
           title: '遵义',
           imgUrl:require('./img/zunyi.jpg')
         },
         {
-          id: '04',
           url: 'http://sxhscc.cn/a/chanpinzhongxin/fq/',
           title: '西柏坡',
           imgUrl:require('./img/xibaipo.jpg')
         },
         {
-          id: '05',
           url: 'http://sxhscc.cn/a/chanpinzhongxin/js/',
           title: '延安',
           imgUrl:require('./img/yanan.jpg')

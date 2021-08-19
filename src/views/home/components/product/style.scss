@@ -61,6 +61,17 @@
         left: 67px;
       }
     }
+    .cur,
+    li:hover {
+      background-color: #df131e;
+      border-color: #df131e;
+      a {
+        color: #fff;
+      }
+      img {
+        display: block;
+      }
+    }
   }
   .picBox {
     overflow: hidden;
@@ -75,6 +86,62 @@
       position: absolute;
       left: 0;
       top: 0;
+      img {
+        display: block;
+        float: left;
+      }
+      ul {
+        overflow: hidden;
+        float: right;
+        width: 494px;
+        height: 578px;
+        border: 1px solid #ddd;
+        li {
+          border-bottom: 1px solid #ddd;
+          border-right: 1px solid #ddd;
+          width: 246px;
+          float: left;
+          height: 289px;
+          position: relative;
+          img {
+            width: 247px;
+            height: 246px;
+            display: block;
+            margin-bottom: 20px;
+          }
+          span {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 11px;
+            display: block;
+            text-align: center;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 14px;
+            color: #000;
+          }
+          a {
+            display: none;
+            width: 247px;
+            position: absolute;
+            left: 0;
+            top: 0;
+            background: url("./img/pro_more.png") no-repeat 105px center;
+            background-color: #fd581f;
+            opacity: 0.85;
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+            padding-top: 190px;
+            height: 100px;
+          }
+        }
+        li:hover a {
+          display: block;
+        }
+      }
     }
   }
 }

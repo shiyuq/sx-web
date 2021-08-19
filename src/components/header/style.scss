@@ -3,14 +3,18 @@ h1 {
 }
 
 .header-top {
+  position: relative;
   overflow: hidden;
   display: flex;
   justify-content: flex-end;
-  width: 100%;
+  margin: 0 auto;
+  width: 1000px;
   height: 34px;
   background: url("../header/img/header_top.png") no-repeat center top;
   .container {
-    margin-right: 12.5%;
+    position: absolute;
+    top: 3px;
+    right: 30px;
     ul {
       list-style: none;
       display: flex;
@@ -39,11 +43,13 @@ h1 {
 }
 
 .header-logo {
+  width: 1000px;
   height: 120px;
   display: flex;
   flex-wrap: nowrap;
-  align-items: center;
-  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 15px;
+  justify-content: space-between;
 }
 
 .header-logo-left {
@@ -107,6 +113,9 @@ h1 {
           padding: 0 20px;
           cursor: pointer;
         }
+      }
+      li:hover {
+        cursor: pointer;
       }
     }
   }

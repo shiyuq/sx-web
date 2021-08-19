@@ -9,7 +9,12 @@
       </h3>
     </div>
     <ul class="menu">
-      <li v-for="item in list" :key="item.id">
+      <li
+        v-for="(item, index) in list"
+        :key="index"
+        :class="{ cur: iscur == index }"
+        @mouseover="iscur = index"
+      >
         <span>
           <router-link :to="item.url">{{ item.title }}</router-link>
           <img :src="item.imgUrl" width="18" height="9" />
@@ -17,7 +22,12 @@
       </li>
     </ul>
     <div class="picBox">
-      <div class="plist" v-for="item in pList" :key="item.id">
+      <div
+        class="plist"
+        v-for="(item, index) in pList"
+        :key="index"
+        v-show="index === iscur"
+      >
         <router-link :to="item.url" :title="item.title"></router-link>
         <img
           :src="item.imgUrl"
@@ -26,7 +36,7 @@
           height="580"
           class="left"
         />
-        <ul v-for="(item, index) in uList" :key="index">
+        <ul>
           <li v-for="(ele, cindex) in uList[index].list" :key="cindex">
             <img :src="ele.imgUrl" :alt="ele.title" />
             <span>{{ ele.title }}</span>
