@@ -12,8 +12,8 @@
       <li
         v-for="(item, index) in list"
         :key="index"
-        :class="{ cur: iscur == index }"
-        @mouseover="iscur = index"
+        :class="{ cur: iscur === index }"
+        @mouseover="setCurrentIndex(index)"
       >
         <span>
           <router-link :to="item.url">{{ item.title }}</router-link>

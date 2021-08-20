@@ -180,5 +180,10 @@ export default {
         }
       ]
     }
+  },
+  methods: {
+    setCurrentIndex (index) {
+      this.iscur = index
+    }
   }
 };
