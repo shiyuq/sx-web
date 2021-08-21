@@ -4,8 +4,10 @@
     <Search />
     <Product />
     <Difference />
+    <Innovation />
     <About />
     <Company />
+    <Information />
   </div>
 </template>
 
