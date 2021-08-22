@@ -24,20 +24,6 @@ export default {
           title:' 习近平在中阿合作论坛第八届部长级会议开幕式'
         }
       ],
-      aList: [
-        {
-          id: '01',
-          url: 'http://sxhscc.cn//',
-          title: '主页',
-          icon:'>'
-        },
-        {
-          id: '02',
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/',
-          title: '培训线路',
-          icon:'>'
-        }
-      ],
       cList: [
         {
           id: '01',

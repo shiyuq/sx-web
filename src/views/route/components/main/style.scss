@@ -77,21 +77,10 @@
             cursor: pointer;
           }
         }
-        span {
+        .el-breadcrumb {
           float: right;
-          font-size: 12px;
-          em {
-            color: #999;
-            font-style: normal;
-            font-weight: normal;
-          }
-          a {
-            color: #999;
-            text-decoration: none;
-          }
-          a:hover {
-            color: #e81723;
-            text-decoration: underline;
+          .el-breadcrumb__item {
+            font-size: 12px;
           }
         }
       }

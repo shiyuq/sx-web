@@ -19,13 +19,11 @@
           <h5>
             <span>培训线路</span>
           </h5>
-          <span>
-            <em>您的位置：</em>
-            <router-link v-for="item in aList" :key="item.id" :to="item.url">
-              {{ item.title }}
-              <em>{{ item.icon }}</em>
-            </router-link>
-          </span>
+          <el-breadcrumb separator-class="el-icon-arrow-right">
+            <el-breadcrumb-item>您的位置</el-breadcrumb-item>
+            <el-breadcrumb-item :to="{ path: '/' }">主页</el-breadcrumb-item>
+            <el-breadcrumb-item>培训线路</el-breadcrumb-item>
+          </el-breadcrumb>
         </div>
         <ul class="content">
           <li v-for="item in cList" :key="item.id">

@@ -88,20 +88,6 @@ export default {
           title:'成都'
         }
       ],
-      aList: [
-        {
-          id: '01',
-          url: 'http://sxhscc.cn//',
-          title: '主页',
-          icon:'>'
-        },
-        {
-          id: '02',
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/',
-          title: '培训线路',
-          icon:'>'
-        }
-      ],
       cList: [
         {
           id: '01',

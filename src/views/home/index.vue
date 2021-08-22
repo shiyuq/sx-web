@@ -8,6 +8,8 @@
     <About />
     <Company />
     <Information />
+    <News />
+    <Link />
   </div>
 </template>
 

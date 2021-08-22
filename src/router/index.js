@@ -31,6 +31,24 @@ const routes = [
         name: 'Guanyuwomen',
         component: () => import('../views/aboutUs'),
         meta: {title:'培训线路', keepAlive:false}
+      },
+      {
+        path: '/lianxiwomen',
+        name: 'Lianxiwomen',
+        component: () => import('../views/contactUs'),
+        meta: {title:'培训线路', keepAlive:false}
+      },
+      {
+        path: '/rongyuzizhi',
+        name: 'Rongyuzizhi',
+        component: () => import('../views/honor'),
+        meta: {title:'培训线路', keepAlive:false}
+      },
+      {
+        path: '/mingshifengcai',
+        name: 'Mingshifengcai',
+        component: () => import('../views/teacher'),
+        meta: {title:'培训线路', keepAlive:false}
       }
     ]
   }
