@@ -49,6 +49,12 @@ const routes = [
         name: 'Mingshifengcai',
         component: () => import('../views/teacher'),
         meta: {title:'培训线路', keepAlive:false}
+      },
+      {
+        path: '/yanan',
+        name: 'Yanan',
+        component: () => import('../views/route/yanan'),
+        meta: {title:'培训线路', keepAlive:false}
       }
     ]
   }

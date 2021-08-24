@@ -9,8 +9,10 @@
           PRODUCT
         </h4>
         <ul>
-          <li v-for="item in List" :key="item.id">
-            <router-link :to="item.url">{{ item.title }}</router-link>
+          <li v-for="(item, index) in List" :key="index">
+            <router-link :to="item.url" :class="{ cur: iscur === index }">{{
+              item.title
+            }}</router-link>
           </li>
         </ul>
         <div class="subcontent">
@@ -28,6 +30,7 @@
                 </router-link>
               </dd>
             </dl>
+            <div class="clear"></div>
           </div>
           <div class="contact">
             <div class="contactUs">
@@ -50,12 +53,17 @@
       <div class="right">
         <div class="header">
           <h5>
-            <span>培训线路</span>
+            <span>延安</span>
           </h5>
           <el-breadcrumb separator-class="el-icon-arrow-right">
             <el-breadcrumb-item>您的位置</el-breadcrumb-item>
-            <el-breadcrumb-item :to="{ path: '/' }">主页</el-breadcrumb-item>
-            <el-breadcrumb-item>培训线路</el-breadcrumb-item>
+            <el-breadcrumb-item :to="{ path: '/' }">
+              主页
+            </el-breadcrumb-item>
+            <el-breadcrumb-item :to="{ path: '/peixunxianlu' }">
+              培训线路
+            </el-breadcrumb-item>
+            <el-breadcrumb-item>延安</el-breadcrumb-item>
           </el-breadcrumb>
         </div>
         <ul class="content">
