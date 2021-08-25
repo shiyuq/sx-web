@@ -183,44 +183,111 @@
           }
         }
       }
-      .content {
-        overflow: hidden;
-        padding-top: 20px;
-        li {
-          float: left;
-          width: 220px;
-          margin-right: 19px;
-          a {
-            text-decoration: none;
-            color: #666;
-            img {
-              display: block;
-              border: 1px solid #d3d3d3;
-              width: 220px;
-              height: 175px;
+      .introduction {
+        .main {
+          background: #fff;
+          width: 700px;
+          .mainContent {
+            padding: 15px 0;
+            clear: both;
+            transform: scale(1);
+            .proviewBox {
+              float: left;
+              width: 305px;
+              position: relative;
+              .top {
+                position: relative;
+                width: 300px;
+                padding: 1px;
+                border: 1px solid #ddd;
+                overflow: hidden;
+                img {
+                  outline-style: none;
+                  display: block;
+                  position: relative;
+                  width: 300px;
+                  height: 277px;
+                }
+              }
+              .bottom {
+                position: relative;
+                padding: 15px 15px 0;
+                height: 110px;
+                img {
+                  height: 100px;
+                  width: 100%;
+                }
+              }
             }
-            img:hover {
-              border-color: #e81723;
+            .show {
+              float: left;
+              width: 370px;
+              margin-left: 16px;
+              h2 {
+                font-size: 16px;
+                color: #414141;
+                border-bottom: 1px dashed #bbb;
+                padding: 2px 0 10px;
+                line-height: 1.6em;
+              }
+              span {
+                display: block;
+                width: 372px;
+                line-height: 24px;
+                padding: 12px 0;
+                color: #666;
+                font-size: 12px;
+              }
+              ul {
+                padding: 18px 15px;
+                overflow: hidden;
+                background: #f3f3f3;
+                font-size: 14px;
+                color: #666;
+                font-weight: bold;
+                li {
+                  padding: 5px 0 10px;
+                  span {
+                    display: inline;
+                    font-size: 24px;
+                    color: red;
+                    font-weight: normal;
+                  }
+                  a {
+                    display: block;
+                    width: 128px;
+                    height: 50px;
+                    line-height: 50px;
+                    text-align: center;
+                    color: #fff;
+                    background: #db0b19;
+                    font-size: 18px;
+                    text-decoration: none;
+                  }
+                }
+              }
             }
           }
-          h4 {
+          .clear {
+            clear: both;
+            height: 0;
             overflow: hidden;
+          }
+          .recommend {
+            border: 1px solid #d7d7d7;
+            background: #fff;
+            padding-bottom: 12px;
             margin-top: 20px;
-            font-weight: normal;
-            height: 37px;
-            text-align: center;
-            font-size: 14px;
-            a {
+            margin-bottom: 10px;
+            p {
+              line-height: 25px;
               font-size: 14px;
-              color: #666;
-            }
-            a:hover {
               color: #e81723;
+              padding: 0 8px;
+              background: #f7f7f7;
+              border-bottom: 1px solid #d7d7d7;
             }
           }
-        }
-        li:nth-child(3n) {
-          margin-right: 0;
         }
       }
       .clear {
@@ -228,19 +295,6 @@
         height: 0;
         line-height: 0;
         font-size: 0;
-      }
-      .block {
-        padding: 15px 10px;
-        border: 1px solid #ccc;
-        .el-pagination {
-          display: flex;
-          justify-content: flex-end;
-          .el-pager {
-            .active {
-              color: #e81723 !important;
-            }
-          }
-        }
       }
     }
   }

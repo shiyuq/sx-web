@@ -66,30 +66,64 @@
             <el-breadcrumb-item>延安</el-breadcrumb-item>
           </el-breadcrumb>
         </div>
-        <ul class="content">
-          <li v-for="item in cList" :key="item.id">
-            <router-link :to="item.src" :title="item.title" target="_blank">
-              <img :src="item.imgUrl" />
-            </router-link>
-            <h4>
-              <router-link :to="item.src" :title="item.title" target="_blank">
-                <b>{{ item.title }}</b>
-              </router-link>
-            </h4>
-          </li>
-        </ul>
-        <div class="clear"></div>
-        <div class="block">
-          <el-pagination
-            @size-change="handleSizeChange"
-            @current-change="handleCurrentChange"
-            :current-page.sync="currentPage3"
-            :page-size="100"
-            layout="prev, pager, next, jumper"
-            :total="1000"
-          >
-          </el-pagination>
+        <div class="introduction">
+          <div class="main">
+            <div class="mainContent">
+              <div class="proviewBox">
+                <div class="top">
+                  <img src="./img/01.jpg" />
+                </div>
+                <div class="bottom">
+                  <template>
+                    <el-carousel
+                      :interval="4000"
+                      type="card"
+                      arrow="never"
+                      indicator-position="none"
+                      :height="bannerHeight + 'px'"
+                    >
+                      <el-carousel-item
+                        v-for="(item, index) in eList"
+                        :key="index"
+                      >
+                        <el-row>
+                          <el-col class="banner_img">
+                            <img
+                              ref="bannerHeight"
+                              :src="item.src"
+                              class="bannerImg"
+                              @load="imgLoad"
+                            />
+                          </el-col>
+                        </el-row>
+                      </el-carousel-item>
+                    </el-carousel>
+                  </template>
+                </div>
+              </div>
+              <div class="show">
+                <h2>延安、西安五晚六天培训方案</h2>
+                <span>不忘初心，牢记使命！</span>
+                <ul>
+                  <li>
+                    咨询热线：
+                    <span>13991985022</span>
+                  </li>
+                  <li>
+                    <a href="" target="_blank">
+                      立即咨询
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="clear"></div>
+            <div class="recommend">
+              <p>推荐线路</p>
+            </div>
+          </div>
         </div>
+        <div class="clear"></div>
       </div>
     </div>
   </div>
