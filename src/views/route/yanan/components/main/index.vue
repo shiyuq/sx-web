@@ -87,7 +87,7 @@
                         :key="index"
                       >
                         <el-row>
-                          <el-col class="banner_img">
+                          <el-col :span="24" class="banner_img">
                             <img
                               ref="bannerHeight"
                               :src="item.src"
@@ -120,6 +120,19 @@
             <div class="clear"></div>
             <div class="recommend">
               <p>推荐线路</p>
+              <div class="relevant">
+                <dl v-for="(item, index) in rList" :key="index">
+                  <dt>
+                    <router-link :to="item.url">
+                      <img :src="item.src" :alt="item.title" />
+                    </router-link>
+                  </dt>
+                  <dd>
+                    <router-link :to="item.url">{{ item.title }}</router-link>
+                  </dd>
+                </dl>
+              </div>
+              <div class="clear"></div>
             </div>
           </div>
         </div>

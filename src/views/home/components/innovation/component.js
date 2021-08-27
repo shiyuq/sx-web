@@ -78,6 +78,9 @@ export default {
   methods: {
     setIscur (index) {
       this.iscur = index
+    },
+    change (index) {
+      this.iscur = index
     }
   }
 }

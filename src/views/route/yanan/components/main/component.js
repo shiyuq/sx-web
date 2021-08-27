@@ -105,20 +105,42 @@ export default {
         {
           src:require('./img/06.jpg')
         }
+      ],
+      rList: [
+        {
+          url: '',
+          src: require('./img/01.jpg'),
+          title:'延安、西安五晚六天培训方案'
+        },
+        {
+          url: '',
+          src: require('./img/02.jpg'),
+          title:'延安、照金、西安六晚七天培训方案'
+        },
+        {
+          url: '',
+          src: require('./img/03.jpg'),
+          title:'延安、照金五晚六天培训方案'
+        },
+        {
+          url: '',
+          src: require('./img/04.jpg'),
+          title:'延安四晚五天培训方案'
+        }
       ]
     }
   },
   methods: {
     imgLoad () {
       this.$nextTick(() => {
-        this.bannerHeight = this.$refs.bannerHeight[0].bannerHeight
+        this.bannerHeight = this.$refs.bannerHeight[0].height
       })
     }
   },
   mounted () {
     this.imgLoad();
     window.addEventListener('resize', () => {
-      this.bannerHeight = this.$refs.bannerHeight[0].bannerHeight
+      this.bannerHeight = this.$refs.bannerHeight[0].height
       this.imgLoad();
     },false)
   }

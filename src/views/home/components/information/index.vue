@@ -15,8 +15,7 @@
           :value="item.value"
           :id="item.id"
           :class="item.class"
-          onfocus="if (this.value === 'item.value') this.value = ''"
-          onblur="if (this.value === '') this.value = 'item.value'"
+          :placeholder="item.value"
         />
       </li>
       <li>

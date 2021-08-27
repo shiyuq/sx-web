@@ -176,10 +176,24 @@
             cursor: pointer;
           }
         }
-        .el-breadcrumb {
-          float: right;
-          .el-breadcrumb__item {
-            font-size: 12px;
+        ::v-deep {
+          .el-breadcrumb {
+            float: right;
+            .el-breadcrumb__item {
+              font-size: 12px;
+              .el-breadcrumb__inner {
+                color: #999;
+              }
+              .el-breadcrumb__inner a,
+              .el-breadcrumb__inner.is-link {
+                font-weight: normal;
+              }
+              .el-breadcrumb__inner a,
+              .el-breadcrumb__inner.is-link:hover {
+                color: #e81723;
+                text-decoration: underline;
+              }
+            }
           }
         }
       }
@@ -214,7 +228,6 @@
                 padding: 15px 15px 0;
                 height: 110px;
                 img {
-                  height: 100px;
                   width: 100%;
                 }
               }
@@ -277,7 +290,7 @@
             border: 1px solid #d7d7d7;
             background: #fff;
             padding-bottom: 12px;
-            margin-top: 20px;
+            margin-top: 40px;
             margin-bottom: 10px;
             p {
               line-height: 25px;
@@ -286,6 +299,46 @@
               padding: 0 8px;
               background: #f7f7f7;
               border-bottom: 1px solid #d7d7d7;
+            }
+            dl {
+              width: 164px;
+              overflow: hidden;
+              float: left;
+              display: inline;
+              padding: 12px 2px 0 7px;
+              dt {
+                width: 164px;
+                overflow: hidden;
+                a {
+                  width: 160px;
+                  display: block;
+                  border: 1px solid #d5d5d5;
+                  padding: 1px;
+                  img {
+                    width: 160px;
+                    display: block;
+                  }
+                }
+                a:hover {
+                  border: 1px solid #b61212;
+                }
+              }
+            }
+            dd {
+              line-height: 24px;
+              padding-top: 8px;
+              overflow: hidden;
+              display: block;
+              width: 164px;
+              text-align: center;
+              a {
+                color: #666;
+                text-decoration: none;
+                font-size: 12px;
+              }
+              a:hover {
+                text-decoration: underline;
+              }
             }
           }
         }

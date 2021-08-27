@@ -16,7 +16,7 @@
       </li>
     </ul>
     <div class="content">
-      <el-carousel indicator-position="outside" height="396px">
+      <el-carousel indicator-position="outside" height="396px" @change="change">
         <el-carousel-item v-for="(item, index) in eList" :key="index">
           <div class="wen">
             <b>{{ item.number }}</b>
