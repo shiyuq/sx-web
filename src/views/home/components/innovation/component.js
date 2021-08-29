@@ -2,7 +2,8 @@ export default {
   name: 'Innovation',
   data () {
     return {
-      iscur:0,
+      iscur: 0,
+      autoplay:true,
       mList: [
         {
           title:' 形式创新 内容丰富 '
@@ -77,10 +78,17 @@ export default {
   },
   methods: {
     setIscur (index) {
+      this.$refs.remarkCarusel.setActiveItem(index)
       this.iscur = index
     },
     change (index) {
       this.iscur = index
+    },
+    setAutoplay () {
+      this.autoplay = false
+    },
+    changeAutoplay () {
+      this.autoplay = true
     }
   }
 }

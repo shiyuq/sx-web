@@ -223,12 +223,24 @@
                   height: 277px;
                 }
               }
+
               .bottom {
                 position: relative;
                 padding: 15px 15px 0;
-                height: 110px;
-                img {
-                  width: 100%;
+                ul {
+                  position: relative;
+                  overflow: hidden;
+                  li {
+                    width: 70px;
+                    height: 70px;
+                    text-align: left;
+                    img {
+                      border: 1px solid #c00;
+                      padding: 1px;
+                      width: 60px;
+                      height: 60px;
+                    }
+                  }
                 }
               }
             }
@@ -290,7 +302,7 @@
             border: 1px solid #d7d7d7;
             background: #fff;
             padding-bottom: 12px;
-            margin-top: 40px;
+            margin-top: 20px;
             margin-bottom: 10px;
             p {
               line-height: 25px;
@@ -339,6 +351,137 @@
               a:hover {
                 text-decoration: underline;
               }
+            }
+          }
+        }
+      }
+      .routeIntrocuction {
+        clear: both;
+        margin-bottom: 10px;
+        position: relative;
+        ul {
+          border-bottom: 1px solid #e81723;
+          height: 33px;
+          li {
+            h3 {
+              display: block;
+              color: #e81723;
+              width: 128px;
+              height: 32px;
+              line-height: 32px;
+              text-align: center;
+              font-size: 14px;
+              border: 1px solid #e81723;
+              border-bottom: 1px solid #fff;
+            }
+          }
+        }
+      }
+      .routeContent {
+        font-size: 14px;
+        line-height: 25px;
+        .text {
+          p {
+            font-size: 16px;
+            color: #666;
+          }
+          .active {
+            color: #ff0000;
+          }
+        }
+      }
+      .information {
+        font-size: 14px;
+        line-height: 25px;
+        p {
+          color: #414141;
+          font-size: 16px;
+          padding: 25px 0;
+          word-spacing: -1.5px;
+          font {
+            color: #f01414;
+            display: block;
+            margin-top: 5px;
+            font-size: 12px;
+          }
+        }
+        ul {
+          li {
+            width: 310px;
+            height: 38px;
+            margin-bottom: 13px;
+            color: #777;
+            label {
+              border: 1px solid #dedede;
+              width: 77px;
+              height: 36px;
+              line-height: 36px;
+              display: inline-block;
+              text-align: center;
+              background: #fff;
+              font {
+                font-size: 13px;
+                display: block;
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                margin-left: 5px;
+                margin-top: 2px;
+                color: #f01414;
+              }
+            }
+            input {
+              width: 230px;
+              height: 16px;
+              line-height: 16px;
+              padding: 10px 0;
+              outline: none;
+              border: 1px solid #dedede;
+              border-left-width: 0;
+              text-indent: 1em;
+              background: #fff;
+              color: #333;
+            }
+          }
+          .submit {
+            width: 310px;
+            margin-bottom: 13px;
+            input {
+              width: 310px;
+              height: 38px;
+              background: #e81723;
+              border: none;
+              color: #fff;
+            }
+          }
+          .area {
+            float: right;
+            width: 310px;
+            height: 205px;
+            margin-right: 50px;
+            margin-bottom: 13px;
+            color: #777;
+            font {
+              font-size: 13px;
+              display: block;
+              position: absolute;
+              width: 10px;
+              height: 10px;
+              margin-left: 18px;
+              margin-top: 17px;
+              color: #f01414;
+            }
+            textarea {
+              float: left;
+              margin-left: 12px;
+              width: 296px;
+              height: 161px;
+              border: 1px solid #dedede;
+              outline: none;
+              resize: none;
+              padding: 14px;
+              color: #333;
+              line-height: 18px;
             }
           }
         }

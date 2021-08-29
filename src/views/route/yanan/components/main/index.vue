@@ -74,31 +74,19 @@
                   <img src="./img/01.jpg" />
                 </div>
                 <div class="bottom">
-                  <template>
-                    <el-carousel
-                      :interval="4000"
-                      type="card"
-                      arrow="never"
-                      indicator-position="none"
-                      :height="bannerHeight + 'px'"
-                    >
-                      <el-carousel-item
-                        v-for="(item, index) in eList"
-                        :key="index"
-                      >
-                        <el-row>
-                          <el-col :span="24" class="banner_img">
-                            <img
-                              ref="bannerHeight"
-                              :src="item.src"
-                              class="bannerImg"
-                              @load="imgLoad"
-                            />
-                          </el-col>
-                        </el-row>
-                      </el-carousel-item>
-                    </el-carousel>
-                  </template>
+                  <ul>
+                    <li>
+                      <img src="./img/01.jpg" alt="" />
+                    </li>
+                  </ul>
+                  <i
+                    class="el-icon-arrow-left"
+                    style="position:absolute;left:0;top:40px;color:#999"
+                  ></i>
+                  <i
+                    class="el-icon-arrow-right"
+                    style="position:absolute;right:0;top:40px;color:#999"
+                  ></i>
                 </div>
               </div>
               <div class="show">
@@ -135,6 +123,56 @@
               <div class="clear"></div>
             </div>
           </div>
+        </div>
+        <div class="routeIntrocuction">
+          <ul>
+            <li>
+              <h3>线路详情</h3>
+            </li>
+          </ul>
+        </div>
+        <div class="routeContent">
+          <div class="text">
+            <div v-for="(item, index) in tList" :key="index">
+              <div v-for="(cItem, cIndex) in tList[index].list" :key="cIndex">
+                <p
+                  v-for="(pItem, pIndex) in tList[index].list[cIndex]
+                    .contentList"
+                  :key="pIndex"
+                  :class="{ active: isActive === pIndex }"
+                >
+                  {{ pItem.content }}
+                </p>
+                &nbsp;
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="information">
+          <p>
+            咨询：延安、西安五晚六天培训方案
+            <br />
+            <font>*&nbsp;为必填项</font>
+          </p>
+          <ul>
+            <li class="area">
+              <font>*</font>
+              <textarea
+                name="content"
+                placeholder="请填写您要咨询的信息"
+              ></textarea>
+            </li>
+            <li v-for="(item, index) in putList" :key="index">
+              <label>
+                <font>{{ item.required }}</font>
+                {{ item.title }}
+              </label>
+              <input type="text" :placeholder="item.value" />
+            </li>
+            <li class="submit">
+              <input type="submit" value="提交您的咨询信息" />
+            </li>
+          </ul>
         </div>
         <div class="clear"></div>
       </div>

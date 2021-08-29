@@ -22,14 +22,7 @@
         <span>
           <img src="./img/liuyan03.png" alt="" width="40" height="34" />
         </span>
-        <textarea
-          name="content"
-          id="txtMessage"
-          onfocus="if(this.value =='留言')this.value=''"
-          onblur="if(this.value=='')this.value='留言'"
-        >
-留言</textarea
-        >
+        <textarea name="content" id="txtMessage" placeholder="留言"> </textarea>
       </li>
       <li class="last">
         <em>
