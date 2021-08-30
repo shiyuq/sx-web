@@ -8,6 +8,6 @@ const getAddressList = async () => {
   return data
 }
 
-module.exports = {
+export default {
   getAddressList
 }
