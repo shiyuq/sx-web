@@ -2,7 +2,7 @@ export default {
   name: 'Main',
   data () {
     return {
-      List: [
+      list: [
         {
           url: 'http://sxhscc.cn/a/gongsixinwen/changjianwentijieda/20181124/134.html',
           title: ' 会提供哪些教学服务？ '

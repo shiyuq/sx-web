@@ -2,7 +2,7 @@ export default {
   name: 'Information',
   data () {
     return {
-      List: [
+      list: [
         {
           imgUrl: require('./img/liuyan01.png'),
           name: 'name',

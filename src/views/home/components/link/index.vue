@@ -6,7 +6,7 @@
       </a>
     </h3>
     <ul>
-      <li v-for="(item, index) in List" :key="index">
+      <li v-for="(item, index) in list" :key="index">
         <a :href="item.src" target="_blank">{{ item.title }}</a>
       </li>
     </ul>

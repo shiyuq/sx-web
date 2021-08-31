@@ -5,14 +5,13 @@
       <b>13991985022</b>
     </p>
     <ul>
-      <li v-for="(item, index) in List" :key="index">
+      <li v-for="(item, index) in list" :key="index">
         <span>
           <img :src="item.imgUrl" alt="" width="40" height="34" />
         </span>
         <input
           type="text"
           :name="item.name"
-          :value="item.value"
           :id="item.id"
           :class="item.class"
           :placeholder="item.value"

@@ -9,7 +9,7 @@
           PRODUCT
         </h4>
         <ul>
-          <li v-for="item in List" :key="item.id">
+          <li v-for="item in list" :key="item.id">
             <router-link :to="item.url">{{ item.title }}</router-link>
           </li>
         </ul>

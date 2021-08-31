@@ -9,7 +9,7 @@
           PRODUCT
         </h4>
         <ul>
-          <li v-for="(item, index) in List" :key="index">
+          <li v-for="(item, index) in list" :key="index">
             <router-link :to="item.url" :class="{ cur: iscur === index }">{{
               item.title
             }}</router-link>

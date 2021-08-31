@@ -22,7 +22,7 @@
         </h4>
         <div class="content">
           <ul>
-            <li v-for="(item, index) in List" :key="index">
+            <li v-for="(item, index) in list" :key="index">
               <router-link :to="item.url" target="_blank" :title="item.title">{{
                 item.title
               }}</router-link>

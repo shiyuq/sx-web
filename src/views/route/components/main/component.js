@@ -6,7 +6,7 @@ export default {
       currentPage2: 5,
       currentPage3: 5,
       currentPage4: 4,
-      List: [
+      list: [
         {
           id:'01',
           url: '/chanpinzhongxin/js/',

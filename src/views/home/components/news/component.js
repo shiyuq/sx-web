@@ -24,7 +24,7 @@ export default {
           subTitle:'习近平在中阿合作论坛第八届部长级会议开幕式'
         }
       ],
-      List: [
+      list: [
         {
           src: '/gongsixinwen/changjianwentijieda/20181124/134.html',
           title: '会提供哪些教学服务？',

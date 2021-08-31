@@ -59,7 +59,7 @@
       </h3>
       <div class="box">
         <ul>
-          <li v-for="(item, index) in List" :key="index">
+          <li v-for="(item, index) in list" :key="index">
             <h5>
               <router-link :to="item.src" :title="item.title">{{
                 item.title

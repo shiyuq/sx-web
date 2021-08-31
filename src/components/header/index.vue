@@ -21,7 +21,7 @@
         </h1>
         <div>
           <h3 style="color: #C51821; font-weight: bold; font-size: 20px;">
-            陕西红色传承文化培训有限公司
+            三五九旅文化培训有限公司
           </h3>
           <h3 style="color: #0C0C0C; font-weight: bold; font-size: 20px;">
             专注党性教育培训 红色文化传承

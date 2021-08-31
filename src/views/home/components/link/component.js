@@ -2,7 +2,7 @@ export default {
   name: 'Link',
   data () {
     return {
-      List: [
+      list: [
         {
           src: 'http://wxxcx1688.cn/',
           title:'小程序建设'
