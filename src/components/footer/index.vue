@@ -6,19 +6,19 @@
           <a href="">培训线路</a>
         </h4>
         <p>
-          <a href="">延安</a>
+          <a href="">塔里木河</a>
         </p>
         <p>
-          <a href="">井冈山</a>
+          <a href="">塔克拉玛干</a>
         </p>
         <p>
-          <a href="">遵义</a>
+          <a href="">胡杨林</a>
         </p>
         <p>
-          <a href="">西柏坡</a>
+          <a href="">托木尔峰</a>
         </p>
         <p>
-          <a href="">兰考</a>
+          <a href="">屯垦纪念馆</a>
         </p>
       </div>
       <div class="menu">
@@ -56,7 +56,7 @@
         </p>
       </div>
       <div class="menu last">
-        <p>地址：陕西省铜川市印台区</p>
+        <p>地址：阿拉尔市</p>
         <p>咨询热线：13991985022 &nbsp; &nbsp; &nbsp; &nbsp;029-83429399</p>
         <p>邮箱：wlf920@163.com</p>
         <p>

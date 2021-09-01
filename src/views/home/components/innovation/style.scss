@@ -2,14 +2,14 @@
   overflow: hidden;
   width: 100%;
   height: 703px;
-  background: url("./img/bg.jpg") no-repeat center top;
+  background: url("./img/bg2.jpg") no-repeat center top;
   padding-top: 70px;
   .title {
     overflow: hidden;
     width: 100%;
     margin-bottom: 35px;
     p {
-      color: #43454c;
+      color: #fff;
       font-size: 47px;
       text-align: center;
       font-family: Arial, Helvetica, sans-serif;
@@ -36,12 +36,14 @@
       margin: 0 6px;
       width: 152px;
       height: 45px;
-      border: 1px solid #64666b;
+      // border: 1px solid #df131e;
+      background-color: rgba(247, 240, 240, 0.5);
       text-align: center;
       line-height: 45px;
       font-size: 16px;
       position: relative;
-      color: #b8bac3;
+      color: #df131e;
+      font-weight: 700;
       cursor: pointer;
       img {
         display: none;

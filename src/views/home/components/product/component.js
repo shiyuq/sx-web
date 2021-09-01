@@ -6,27 +6,27 @@ export default {
       list: [
         {
           url: 'http://sxhscc.cn/a/chanpinzhongxin/js/',
-          title: '延安',
+          title: '塔里木河',
           imgUrl:require('./img/pro_s.png')
         },
         {
           url: 'http://sxhscc.cn/a/chanpinzhongxin/jb/',
-          title: '井冈山',
+          title: '塔克拉玛干',
           imgUrl:require('./img/pro_s.png')
         },
         {
           url: 'http://sxhscc.cn/a/chanpinzhongxin/ym/',
-          title: '遵义',
+          title: '胡杨林',
           imgUrl:require('./img/pro_s.png')
         },
         {
           url: 'http://sxhscc.cn/a/chanpinzhongxin/fq/',
-          title: '西柏坡',
+          title: '托木尔峰',
           imgUrl:require('./img/pro_s.png')
         },
         {
           url: 'http://sxhscc.cn/a/chanpinzhongxin/bw/',
-          title: '兰考',
+          title: '屯垦纪念馆',
           imgUrl:require('./img/pro_s.png')
         }
       ],

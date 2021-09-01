@@ -20,13 +20,13 @@
             to="http://sxhscc.cn/plus/search.php?keyword=%E5%BB%B6%E5%AE%89"
             class="words"
           >
-            延安
+            塔里木河
           </router-link>
           <router-link
             to="http://sxhscc.cn/plus/search.php?keyword=%E6%AD%A6%E6%B1%89"
             class="words"
           >
-            武汉
+            胡杨林
           </router-link>
           <router-link
             to="http://sxhscc.cn/plus/search.php?keyword=%E8%AF%BE%E7%A8%8B"
