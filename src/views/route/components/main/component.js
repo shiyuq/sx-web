@@ -97,7 +97,7 @@ export default {
         },
         {
           id: '02',
-          src: '/chanpinzhongxin/js/20181124/86.html',
+          src: '/yanan',
           title: '延安、照金、西安六晚七天培训方案',
           imgUrl:require('./img/02.jpg')
         },

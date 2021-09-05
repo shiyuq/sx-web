@@ -5,15 +5,15 @@ export default {
       imgList: [
         {
           id: '001',
-          imgUrl:require('./img/01.jpg')
+          imgUrl:require('./img/bg1.jpg')
         },
         {
           id: '002',
-          imgUrl:require('./img/02.jpg')
+          imgUrl:require('./img/03.jpg')
         },
         {
           id: '003',
-          imgUrl:require('./img/03.jpg')
+          imgUrl:require('./img/bg_04.png')
         }
       ]
     }

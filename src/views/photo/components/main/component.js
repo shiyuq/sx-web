@@ -27,7 +27,7 @@ export default {
       cList: [
         {
           id: '01',
-          src: 'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/85.html',
+          src: '/peixunlueying1',
           title: '延安、西安五晚六天培训方案',
           imgUrl:require('./img/01.jpg')
         },

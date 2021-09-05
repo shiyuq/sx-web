@@ -55,6 +55,12 @@ const routes = [
         name: 'Yanan',
         component: () => import('../views/route/yanan'),
         meta: {title:'培训线路', keepAlive:false}
+      },
+      {
+        path: '/peixunlueying1',
+        name: 'Peixunlueying1',
+        component: () => import('../views/photo/subPhoto1'),
+        meta: {title:'培训线路', keepAlive:false}
       }
     ]
   }

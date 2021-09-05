@@ -2,7 +2,7 @@
   <div class="information">
     <p>
       热线服务：
-      <b>13991985022</b>
+      <b>15083931223</b>
     </p>
     <ul>
       <li v-for="(item, index) in list" :key="index">
