@@ -61,6 +61,30 @@ const routes = [
         name: 'Peixunlueying1',
         component: () => import('../views/photo/subPhoto1'),
         meta: {title:'培训线路', keepAlive:false}
+      },
+      {
+        path: '/guanyuwomen/qiyejianjie',
+        name: 'Qiyejieshao',
+        component: () => import('../views/aboutUs/companyProfile'),
+        meta: {title:'培训线路', keepAlive:false}
+      },
+      {
+        path: '/guanyuwomen/qiyewenhua',
+        name: 'Qiyewenhua',
+        component: () => import('../views/aboutUs/companyCulture'),
+        meta: {title:'培训线路', keepAlive:false}
+      },
+      {
+        path: '/guanyuwomen/shengchanjidi',
+        name: 'Shengchanjidi',
+        component: () => import('../views/aboutUs/productionBase'),
+        meta: {title:'培训线路', keepAlive:false}
+      },
+      {
+        path: '/lianxiwomen/rencaizhaopin',
+        name: 'Rencaizhaopin',
+        component: () => import('../views/contactUs/talents'),
+        meta: {title:'培训线路', keepAlive:false}
       }
     ]
   }
