@@ -26,13 +26,13 @@ export default {
       ],
       cList: [
         {
-          src: 'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/85.html',
+          src: 'peixunlueying1',
           title: '徐长玉教授',
           imgUrl: require('./img/01.jpg'),
           content:'延安大学图书馆馆长，延安大学陕北区域经济研究院常务副院长，延安市政协委员，中国民主促进会延安市委副主委，民进延安大学总支主委，中国《资本论》研究会理事，陕西经济学学会理...'
         },
         {
-          src: 'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/85.html',
+          src: 'peixunlueying1',
           title: '何磊副教授',
           imgUrl: require('./img/02.jpg'),
           content:'中国延安干部学院教学科研部副教授，经济学博士，清华大学在站博士后，清华大学中国农村研究院专职研究人员，西北大学西部经济发展研究中心兼职研究人员，陕西中城经济发展研...'

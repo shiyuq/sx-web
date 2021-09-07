@@ -3,7 +3,7 @@
     <div class="container">
       <div class="left">
         <h4 class="title">
-          <router-link to="http://sxhscc.cn/a/chanpinzhongxin/">
+          <router-link to="peixunxianlu">
             培训线路
           </router-link>
           PRODUCT

@@ -22,23 +22,23 @@ export default {
       ],
       des: [
         {
-          url: 'http://sxhscc.cn/a/guanyuwomen/qiyejianjie/',
+          url: '/qiyejianjie/',
           title:'企业简介'
         },
         {
-          url: 'http://sxhscc.cn/a/guanyuwomen/qiyewenhua/',
+          url: '/qiyewenhua/',
           title:'企业文化'
         },
         {
-          url: 'http://sxhscc.cn/a/guanyuwomen/qiyeshipin/',
+          url: '/qiyeshipin/',
           title:'企业视频'
         },
         {
-          url: 'http://sxhscc.cn/a/guanyuwomen/fengcai/',
+          url: '/fengcai/',
           title:'企业风采'
         },
         {
-          url: 'http://sxhscc.cn/a/guanyuwomen/shengchanjidi/',
+          url: '/shengchanjidi/',
           title:'生产基地'
         }
       ]

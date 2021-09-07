@@ -22,7 +22,7 @@ export default {
       ],
       des: [
         {
-          url: '/lianxiwomen/rencaizhaopin/',
+          url: '/rencaizhaopin/',
           title:'人才招聘'
         }
       ],

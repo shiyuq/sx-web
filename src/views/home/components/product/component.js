@@ -5,54 +5,54 @@ export default {
       iscur:0,
       list: [
         {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/js/',
+          url: 'peixunxianlu',
           title: '塔里木河',
           imgUrl:require('./img/pro_s.png')
         },
         {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/jb/',
+          url: 'peixunxianlu',
           title: '塔克拉玛干',
           imgUrl:require('./img/pro_s.png')
         },
         {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/ym/',
+          url: 'peixunxianlu',
           title: '胡杨林',
           imgUrl:require('./img/pro_s.png')
         },
         {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/fq/',
+          url: 'peixunxianlu',
           title: '托木尔峰',
           imgUrl:require('./img/pro_s.png')
         },
         {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/bw/',
+          url: 'peixunxianlu',
           title: '屯垦纪念馆',
           imgUrl:require('./img/pro_s.png')
         }
       ],
       pList: [
         {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/js/',
+          url: 'peixunxianlu',
           title: '塔里木河',
           imgUrl:require('./img/bg.png')
         },
         {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/jb/',
+          url: 'peixunxianlu',
           title: '井冈山',
           imgUrl:require('./img/jinggangshan.jpg')
         },
         {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/ym/',
+          url: 'peixunxianlu',
           title: '遵义',
           imgUrl:require('./img/zunyi.jpg')
         },
         {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/fq/',
+          url: 'peixunxianlu',
           title: '西柏坡',
           imgUrl:require('./img/xibaipo.jpg')
         },
         {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/js/',
+          url: 'peixunxianlu',
           title: '延安',
           imgUrl:require('./img/yanan.jpg')
         }
@@ -68,17 +68,17 @@ export default {
             {
               imgUrl: require('./img/bg2.png'),
               title: '塔里木河五晚六天培训方案',
-              url:'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/86.html'
+              url:'/yanan'
             },
             {
               imgUrl: require('./img/bg3.png'),
               title: '塔里木河五晚六天培训方案',
-              url:'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/87.html'
+              url:'/yanan'
             },
             {
               imgUrl: require('./img/bg4.png'),
               title: '塔里木河五晚六天培训方案',
-              url:'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/88.html'
+              url:'/yanan'
             }
           ]
         },
@@ -87,22 +87,22 @@ export default {
             {
               imgUrl: require('./img/jinggangshan-01.jpg'),
               title: '塔克拉玛干六天培训专题',
-              url:'http://sxhscc.cn/a/chanpinzhongxin/jb/20181124/89.html'
+              url:'/yanan'
             },
             {
               imgUrl: require('./img/jinggangshan-02.jpg'),
               title: '塔克拉玛干六天培训专题',
-              url:'http://sxhscc.cn/a/chanpinzhongxin/jb/20181124/90.html'
+              url:'/yanan'
             },
             {
               imgUrl: require('./img/jinggangshan-03.jpg'),
               title: '塔克拉玛干六天培训专题',
-              url:'http://sxhscc.cn/a/chanpinzhongxin/jb/20181124/91.html'
+              url:'/yanan'
             },
             {
               imgUrl: require('./img/jinggangshan-04.jpg'),
               title: '塔克拉玛干六天培训专题',
-              url:'http://sxhscc.cn/a/chanpinzhongxin/jb/20181124/92.html'
+              url:'/yanan'
             }
           ]
         },
@@ -111,22 +111,22 @@ export default {
             {
               imgUrl: require('./img/zunyi-01.jpg'),
               title: '胡杨林四天培训专题',
-              url:'http://sxhscc.cn/a/chanpinzhongxin/ym/20181124/95.html'
+              url:'/yanan'
             },
             {
               imgUrl: require('./img/zunyi-02.jpg'),
               title: '胡杨林四天培训专题',
-              url:'http://sxhscc.cn/a/chanpinzhongxin/ym/20181124/96.html'
+              url:'/yanan'
             },
             {
               imgUrl: require('./img/zunyi-03.jpg'),
               title: '胡杨林四天培训专题',
-              url:'http://sxhscc.cn/a/chanpinzhongxin/ym/20181124/97.html'
+              url:'/yanan'
             },
             {
               imgUrl: require('./img/zunyi-04.jpg'),
               title: '胡杨林四天培训专题',
-              url:'http://sxhscc.cn/a/chanpinzhongxin/ym/20181124/98.html'
+              url:'/yanan'
             }
           ]
         },
@@ -135,22 +135,22 @@ export default {
             {
               imgUrl: require('./img/xibaipo-01.jpg'),
               title: '托木尔峰四天培训专题',
-              url:'http://sxhscc.cn/a/chanpinzhongxin/fq/20181124/99.html'
+              url:'/yanan'
             },
             {
               imgUrl: require('./img/xibaipo-02.jpg'),
               title: '托木尔峰四天培训专题',
-              url:'http://sxhscc.cn/a/chanpinzhongxin/fq/20181124/100.html'
+              url:'/yanan'
             },
             {
               imgUrl: require('./img/xibaipo-03.jpg'),
               title: '托木尔峰四天培训专题',
-              url:'http://sxhscc.cn/a/chanpinzhongxin/fq/20181124/101.html'
+              url:'/yanan'
             },
             {
               imgUrl: require('./img/xibaipo-04.jpg'),
               title: '托木尔峰四天培训专题',
-              url:'http://sxhscc.cn/a/chanpinzhongxin/fq/20181124/102.html'
+              url:'/yanan'
             }
           ]
         },
@@ -159,22 +159,22 @@ export default {
             {
               imgUrl: require('./img/yanan-01.jpg'),
               title: '屯垦纪念馆五晚六天培训方案',
-              url:'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/85.html'
+              url:'/yanan'
             },
             {
               imgUrl: require('./img/yanan-02.jpg'),
               title: '屯垦纪念馆五晚六天培训方案',
-              url:'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/86.html'
+              url:'/yanan'
             },
             {
               imgUrl: require('./img/yanan-03.jpg'),
               title: '屯垦纪念馆五晚六天培训方案',
-              url:'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/87.html'
+              url:'/yanan'
             },
             {
               imgUrl: require('./img/yanan-04.jpg'),
               title: '屯垦纪念馆五晚六天培训方案',
-              url:'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/88.html'
+              url:'/yanan'
             }
           ]
         }

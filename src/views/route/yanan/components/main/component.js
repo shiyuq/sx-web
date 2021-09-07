@@ -76,12 +76,12 @@ export default {
       ],
       dList: [
         {
-          url: '/chanpinzhongxin/js/20181124/85.html',
+          url: '/yanan',
           title: '延安、西安五晚六天培训方案',
           src:require('./img/01.jpg')
         },
         {
-          url: '/chanpinzhongxin/js/20181124/86.html',
+          url: '/yanan',
           title: '延安、照金、西安六晚七天培训方案',
           src:require('./img/02.jpg')
         }

@@ -3,7 +3,7 @@
     <div class="title">
       <p>ABOUT US</p>
       <h3>
-        <router-link to="http://sxhscc.cn/a/guanyuwomen/">关于我们</router-link>
+        <router-link to="guanyuwomen/">关于我们</router-link>
       </h3>
     </div>
     <dl>
@@ -21,13 +21,13 @@
           我公司立足革命老区延安和铜 ...
         </p>
         <div class="btn">
-          <router-link to="http://sxhscc.cn/a/guanyuwomen/">
+          <router-link to="guanyuwomen/">
             查看详情+
           </router-link>
-          <router-link to="http://sxhscc.cn/a/rongyuzizhi/rongyuzizhi/">
+          <router-link to="rongyuzizhi/">
             荣誉资质
           </router-link>
-          <router-link to="http://sxhscc.cn/a/rongyuzizhi/tuandui/">
+          <router-link to="rongyuzizhi/tuandui/">
             专业团队
           </router-link>
         </div>

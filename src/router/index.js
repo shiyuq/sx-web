@@ -63,25 +63,25 @@ const routes = [
         meta: {title:'培训线路', keepAlive:false}
       },
       {
-        path: '/guanyuwomen/qiyejianjie',
+        path: '/qiyejianjie',
         name: 'Qiyejieshao',
         component: () => import('../views/aboutUs/companyProfile'),
         meta: {title:'培训线路', keepAlive:false}
       },
       {
-        path: '/guanyuwomen/qiyewenhua',
+        path: '/qiyewenhua',
         name: 'Qiyewenhua',
         component: () => import('../views/aboutUs/companyCulture'),
         meta: {title:'培训线路', keepAlive:false}
       },
       {
-        path: '/guanyuwomen/shengchanjidi',
+        path: '/shengchanjidi',
         name: 'Shengchanjidi',
         component: () => import('../views/aboutUs/productionBase'),
         meta: {title:'培训线路', keepAlive:false}
       },
       {
-        path: '/lianxiwomen/rencaizhaopin',
+        path: '/rencaizhaopin',
         name: 'Rencaizhaopin',
         component: () => import('../views/contactUs/talents'),
         meta: {title:'培训线路', keepAlive:false}

@@ -5,7 +5,7 @@ export default {
       imgList: [
         {
           id: '01',
-          url:'http://sxhscc.cn/a/guanyuwomen/shengchanjidi/2017/0803/79.html',
+          url:'peixunlueying1',
           imgUrl: require('./img/01.jpg'),
           alt: '公司旅游',
           title: '公司旅游',
@@ -13,7 +13,7 @@ export default {
         },
         {
           id: '02',
-          url:'http://sxhscc.cn/a/guanyuwomen/shengchanjidi/2017/0803/80.html',
+          url:'peixunlueying1',
           imgUrl: require('./img/02.jpg'),
           alt:'团建活动',
           title: '团建活动',
@@ -21,7 +21,7 @@ export default {
         },
         {
           id: '03',
-          url:'http://sxhscc.cn/a/guanyuwomen/shengchanjidi/2017/0803/81.html',
+          url:'peixunlueying1',
           imgUrl: require('./img/03.jpg'),
           alt:'办公环境',
           title: '办公环境',
@@ -29,7 +29,7 @@ export default {
         },
         {
           id: '04',
-          url:'http://sxhscc.cn/a/guanyuwomen/shengchanjidi/2017/0803/82.html',
+          url:'peixunlueying1',
           imgUrl: require('./img/04.jpg'),
           alt:'员工生日会',
           title: '员工生日会',
