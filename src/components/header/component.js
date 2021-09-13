@@ -4,7 +4,7 @@ export default {
     return {
       navList: [
         {
-          router: '',
+          router: 'home',
           name: '网站首页'
         },
         {
@@ -39,17 +39,17 @@ export default {
     }
   },
   computed: {
-    currentActiveTabIndex() {
+    currentActiveTabIndex () {
       return this.$store.state.app.currentActiveTabIndex
     },
-    popup() {
+    popup () {
       return this.$store.state.app.popup
     }
   },
   methods: {
-    selectTab(item, index) {
+    selectTab (item, index) {
       this.$store.commit('app/setCurrentActiveTabIndex', index)
-      this.$router.push({ path: item.router }).catch(() => {})
+      this.$router.push({ path: item.router }).catch(() => { })
     }
   }
 };
