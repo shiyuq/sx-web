@@ -1,9 +1,9 @@
 <template>
-  <div>
-    <Header />
-    <Affix />
-    <router-view></router-view>
-    <Footer />
+  <div class="right-panel">
+    <div class="affix">
+      <div class="item"></div>
+      <div class="item"></div>
+    </div>
   </div>
 </template>
 

@@ -1,0 +1,21 @@
+.right-panel {
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+}
+
+.affix {
+  width: 48px;
+  height: 48px;
+  position: absolute;
+  top: 50%;
+  left: -48px;
+  text-align: center;
+  z-index: 0;
+  pointer-events: auto;
+  cursor: pointer;
+  color: black;
+  line-height: 48px;
+}
