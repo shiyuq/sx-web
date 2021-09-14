@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <Banner />
-    <Search />
+    <Search :address="addresses" />
     <Product />
     <Difference />
     <Innovation />

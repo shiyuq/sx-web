@@ -3,5 +3,10 @@ export default {
   data () {
     return {
     }
+  },
+  props: {
+    address: {
+      type: Object
+    }
   }
 };
