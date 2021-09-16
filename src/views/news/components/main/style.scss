@@ -1,0 +1,164 @@
+.main {
+  background: #ececec;
+  overflow: hidden;
+  .container {
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-bottom: 30px;
+    .box {
+      padding: 0 20px;
+      background-color: #fff;
+      padding-bottom: 20px;
+      .header {
+        overflow: hidden;
+        padding-top: 28px;
+        padding-bottom: 9px;
+        border-bottom: 1px solid #dbdbdb;
+        h5 {
+          float: left;
+          padding-left: 10px;
+          font-weight: normal;
+          line-height: 16px;
+          span {
+            font-size: 20px;
+            color: #e81723;
+          }
+          span:hover {
+            text-decoration: underline;
+            cursor: pointer;
+          }
+        }
+        ::v-deep {
+          .el-breadcrumb {
+            float: right;
+            .el-breadcrumb__item {
+              font-size: 12px;
+              .el-breadcrumb__inner {
+                color: #999;
+              }
+              .el-breadcrumb__inner a,
+              .el-breadcrumb__inner.is-link {
+                font-weight: normal;
+              }
+              .el-breadcrumb__inner a,
+              .el-breadcrumb__inner.is-link:hover {
+                color: #e81723;
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+      .title {
+        width: 100%;
+        background: #a2aebc;
+        height: 38px;
+        margin-top: 20px;
+        ul {
+          overflow: hidden;
+          li {
+            float: left;
+            height: 38px;
+            line-height: 38px;
+            a {
+              display: block;
+              padding: 0 18px;
+              font-size: 16px;
+              color: #fff;
+              text-decoration: none;
+            }
+          }
+          li:hover {
+            background: #e81723;
+          }
+        }
+      }
+      .content {
+        margin-top: 20px;
+        .des {
+          margin-top: 40px;
+          margin-bottom: 15px;
+          padding-bottom: 15px;
+          dl {
+            overflow: hidden;
+            padding: 17px 0;
+            background: #fff;
+            margin-bottom: 1px;
+            dt {
+              float: left;
+              width: 142px;
+              font-size: 60px;
+              color: #999;
+              font-family: Arial;
+              text-align: center;
+              padding: 10px 0;
+              border-right: 1px dotted #b2b2b2;
+              span {
+                display: block;
+                width: 72px;
+                height: 23px;
+                line-height: 23px;
+                text-align: center;
+                font-size: 16px;
+                color: #fff;
+                text-transform: uppercase;
+                margin: 0 auto;
+                background: #999;
+              }
+            }
+            dd {
+              margin-left: 180px;
+              width: 780px;
+              font-size: 16px;
+              h5 {
+                line-height: 16px;
+                margin-top: 8px;
+                margin-bottom: 15px;
+                font-weight: normal;
+                font-size: 12px;
+                a {
+                  font-size: 16px;
+                  color: #666;
+                  text-decoration: none;
+                }
+              }
+              p {
+                font-size: 14px;
+                color: #666;
+                line-height: 24px;
+                height: 72px;
+                overflow: hidden;
+                word-spacing: -1.5px;
+                a {
+                  text-decoration: none;
+                  color: #666;
+                }
+              }
+            }
+          }
+        }
+      }
+      .clear {
+        clear: both;
+        height: 0;
+        line-height: 0;
+        font-size: 0;
+      }
+      .block {
+        padding: 15px 10px;
+        border: 1px solid #ccc;
+        .el-pagination {
+          display: flex;
+          justify-content: flex-end;
+          .el-pager {
+            .active {
+              color: #e81723 !important;
+            }
+          }
+        }
+      }
+    }
+  }
+}

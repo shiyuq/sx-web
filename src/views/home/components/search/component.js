@@ -3,10 +3,10 @@ export default {
   data () {
     return {
     }
-  },
-  props: {
-    address: {
-      type: Object
-    }
   }
+  // props: {
+  //   address: {
+  //     type: Object
+  //   }
+  // }
 };

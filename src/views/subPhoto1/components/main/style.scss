@@ -1,0 +1,187 @@
+.main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+  .header {
+    background: #ccc;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    ::v-deep {
+      .el-breadcrumb {
+        text-indent: 10px;
+        line-height: 43px;
+        .el-breadcrumb__item {
+          font-size: 12px;
+          .el-breadcrumb__separator[class*="icon"] {
+            margin: 0;
+            color: #000;
+          }
+          .el-breadcrumb__inner {
+            color: #000;
+          }
+          .el-breadcrumb__inner a,
+          .el-breadcrumb__inner.is-link {
+            font-weight: normal;
+          }
+          .el-breadcrumb__inner a,
+          .el-breadcrumb__inner.is-link:hover {
+            cursor: pointer;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+  .contentLeft {
+    width: 698px;
+    float: left;
+    padding-bottom: 15px;
+    overflow: hidden;
+    background: #fff;
+    .box {
+      width: 674px;
+      border: 1px solid #d5d5d5;
+      padding: 30px 11px 0 11px;
+      margin-bottom: 10px;
+      overflow: hidden;
+      font-size: 12px;
+      h1 {
+        text-align: center;
+        font-size: 26px;
+        margin-bottom: 6px;
+      }
+      .title {
+        font-family: "宋体";
+        line-height: 24px;
+        margin-bottom: 15px;
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 20px;
+        .titleContent {
+          text-align: center;
+          color: #7e7e7e;
+          span {
+            margin-right: 20px;
+          }
+        }
+      }
+      .pic {
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .turnPage {
+        line-height: 30px;
+        display: flex;
+        justify-content: space-between;
+        background: #f7f7f7;
+        margin: 15px 0;
+        padding: 0 10px;
+        overflow: hidden;
+        span {
+          width: 320px;
+          height: 30px;
+          overflow: hidden;
+          a {
+            text-decoration: none;
+            color: #666;
+            font-weight: bold;
+          }
+          a:hover {
+            text-decoration: underline;
+            color: #e81723;
+          }
+        }
+      }
+    }
+    .introduction {
+      width: 698px;
+      margin: 0 auto;
+      h4 {
+        background: #e81723;
+        line-height: 30px;
+        text-indent: 15px;
+        color: #fff;
+        font-size: 14px;
+      }
+      .introContent {
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #d7d7d7;
+        width: 696px;
+        padding: 5px 0;
+        overflow: hidden;
+        margin-bottom: 10px;
+        background: #fff;
+        dl {
+          margin: 20px auto;
+          width: 154px;
+          dt {
+            a {
+              border: 1px solid #d7d7d7;
+              padding: 1px;
+              display: block;
+              img {
+                display: block;
+                width: 150px;
+              }
+            }
+          }
+          dd {
+            height: 22px;
+            line-height: 22px;
+            text-align: center;
+            a {
+              font-size: 12px;
+              color: #666;
+              text-decoration: none;
+            }
+            a:hover {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+  }
+  .contentRight {
+    width: 273px;
+    float: right;
+    border: 1px solid #d5d5d5;
+    padding-bottom: 15px;
+    background: #fff;
+    overflow: hidden;
+    h4 {
+      background: #e2e2e2;
+      line-height: 28px;
+      text-indent: 15px;
+      a {
+        font-size: 14px;
+        text-decoration: none;
+        color: #000;
+      }
+    }
+    ul {
+      background: url("./img/news_list_bg.gif") no-repeat 0 5px;
+      width: 220px;
+      margin: 8px auto;
+      overflow: hidden;
+      padding-left: 5px;
+      li {
+        height: 24px;
+        line-height: 24px;
+        text-overflow: ellipsis;
+        padding-left: 24px;
+        overflow: hidden;
+        a {
+          color: #666;
+          text-decoration: none;
+          font-size: 12px;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
