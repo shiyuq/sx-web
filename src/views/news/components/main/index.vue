@@ -19,22 +19,24 @@
             </li>
           </ul>
         </div>
-        <div class="content" v-if="news">
-          <div class="des">
-            <dl v-for="(item, index) in news.rows" :key="index">
-              <dt>
-                {{ new Date(item.lastUpdateTime).getMonth() + 1
-                }}<span>{{ new Date(item.lastUpdateTime).getDate() }}</span>
-              </dt>
-              <dd>
-                <router-link :to="'/xinwendongtai/' + item.id">
-                  <h5>
-                    {{ item.title }}
-                  </h5>
-                  <div class="editor-content" v-html="item.content"></div>
-                </router-link>
-              </dd>
-            </dl>
+        <div class="content">
+          <div class="des" v-if="news && news.rows">
+            <div v-for="(item, index) in news.rows" :key="index">
+              <dl>
+                <dt>
+                  {{ new Date(item.lastUpdateTime).getMonth() + 1
+                  }}<span>{{ new Date(item.lastUpdateTime).getDate() }}</span>
+                </dt>
+                <dd>
+                  <router-link :to="'/xinwendongtai/' + item.id">
+                    <h5>
+                      {{ item.title }}
+                    </h5>
+                    <div class="editor-content" v-html="item.content"></div>
+                  </router-link>
+                </dd>
+              </dl>
+            </div>
           </div>
         </div>
         <div class="clear"></div>

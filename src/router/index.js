@@ -52,12 +52,13 @@ const routes = [
       },
       {
         path: '/xinwendongtai',
-        redirect: '/xinwendongtai',
+        name: 'Xinwendongtai',
+        redirect: '/xinwendongtai/list',
         component: () => import('../views/Test.vue'),
         children: [
           {
-            path: '/',
-            name: 'Xinwendongtai',
+            path: 'list',
+            name: 'NewsList',
             component: () => import('../views/news'),
             meta: { title: '新闻动态', keepAlive: false }
           },
