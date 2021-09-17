@@ -54,7 +54,7 @@ const routes = [
         path: '/xinwendongtai',
         name: 'Xinwendongtai',
         redirect: '/xinwendongtai/list',
-        component: () => import('../views/Test.vue'),
+        component: () => import('../views/NewsEnter.vue'),
         children: [
           {
             path: 'list',
@@ -65,7 +65,7 @@ const routes = [
           {
             path: '/xinwendongtai/:id',
             name: 'NewsDetail',
-            component: () => import('../views/subPhoto1'),
+            component: () => import('../views/newsDetail'),
             meta: { title: '新闻动态详情', keepAlive: false }
           }
         ]

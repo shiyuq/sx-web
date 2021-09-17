@@ -1,5 +1,5 @@
 <template>
-  <div class="subPhoto1">
+  <div class="newsDetail">
     <Banner />
     <Main />
   </div>

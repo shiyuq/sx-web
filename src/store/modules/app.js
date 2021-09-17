@@ -1,3 +1,5 @@
+import newsService from '../../api/news-service'
+
 const appModule = {
   namespaced: true,
   state: {
@@ -15,7 +17,9 @@ const appModule = {
   },
 
   actions: {
-    setNews ({ commit }, data) {
+    async setNews ({ commit }, params) {
+      const {limit = 10, offset = 0, type = ''} = params
+      const { data } = await newsService.getNewsList({limit, offset, type})
       commit('setNews', data)
     }
   }

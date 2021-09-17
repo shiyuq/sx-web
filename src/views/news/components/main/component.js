@@ -2,22 +2,23 @@ export default {
   name: 'Main',
   data () {
     return {
+      isCur:null,
       currentPage1: 5,
       currentPage2: 5,
       currentPage3: 5,
       currentPage4: 4,
       titleList: [
         {
-          url: '/guanyuwomen',
+          type: '1',
           title: '公司新闻'
         },
         {
-          url: '/guanyuwomen',
+          type: '2',
           title: '行业动态'
         },
         {
-          url: '/guanyuwomen',
-          title: '常见问题解答'
+          type: '3',
+          title: '常见问题'
         }
       ]
     }
@@ -35,6 +36,10 @@ export default {
     },
     handleCurrentChange () {
       // console.log(`当前页: ${val}`);
+    },
+    click (index) {
+      this.isCur = index
+      this.$store.dispatch('app/setNews', {type: this.titleList[index].type})
     }
   }
 }

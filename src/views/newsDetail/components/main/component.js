@@ -2,18 +2,7 @@ export default {
   name: 'Main',
   data () {
     return {
-      pList: [
-        {
-          title: '上一篇',
-          src: '',
-          content:'培训掠影'
-        },
-        {
-          title: '下一篇',
-          src: '',
-          content:'培训掠影'
-        }
-      ],
+      idIndex:null,
       introContentList: [
         {
           url: '',
@@ -82,6 +71,21 @@ export default {
           ]
         }
       ]
+    }
+  },
+  created () {
+    this.getIdIndex()
+  },
+  methods: {
+    getIdIndex () {
+      this.idIndex = this.news.rows.findIndex((val) => {
+        return val.id === this.$route.params.id;
+      })
+    }
+  },
+  computed: {
+    news () {
+      return this.$store.state.app.news
     }
   }
 }

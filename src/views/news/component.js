@@ -1,4 +1,3 @@
-import newsService from '../../api/news-service'
 import Banner from './components/banner'
 import Main from './components/main'
 export default {
@@ -12,8 +11,7 @@ export default {
   },
   methods: {
     async getNewsList () {
-      const { data } = await newsService.getNewsList()
-      this.$store.dispatch('app/setNews', data)
+      this.$store.dispatch('app/setNews', {})
     }
   }
 }
