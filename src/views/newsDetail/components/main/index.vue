@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div class="main" v-if="news && news.rows">
     <div class="header">
       <el-breadcrumb separator-class="el-icon-arrow-right">
         <el-breadcrumb-item>当前位置</el-breadcrumb-item>
@@ -17,7 +17,6 @@
         <div class="title">
           <div class="titleContent">
             <span>文章出处：未知</span>
-            <span>{{ news.rows[idIndex].id }}</span>
             <span>
               发表时间：{{ news.rows[idIndex].lastUpdateTime.split(" ")[0] }}
             </span>

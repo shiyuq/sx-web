@@ -5,8 +5,5 @@ export default {
   components: {
     Banner,
     Main
-  },
-  created () {
-    // console.log('this :>> ', this.$route.params);
   }
 }

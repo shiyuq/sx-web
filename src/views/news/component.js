@@ -5,13 +5,5 @@ export default {
   components: {
     Banner,
     Main
-  },
-  created () {
-    this.getNewsList()
-  },
-  methods: {
-    async getNewsList () {
-      this.$store.dispatch('app/setNews', {})
-    }
   }
 }
