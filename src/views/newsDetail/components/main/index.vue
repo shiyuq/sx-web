@@ -17,6 +17,7 @@
         <div class="title">
           <div class="titleContent">
             <span>文章出处：未知</span>
+            <span>{{ news.rows[idIndex].id }}</span>
             <span>
               发表时间：{{ news.rows[idIndex].lastUpdateTime.split(" ")[0] }}
             </span>

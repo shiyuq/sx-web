@@ -9,8 +9,13 @@
           PRODUCT
         </h4>
         <ul>
-          <li v-for="item in list" :key="item.id">
-            <router-link :to="item.url">{{ item.title }}</router-link>
+          <li
+            v-for="(item, index) in addresses"
+            :key="index"
+            @click="click(item.id, index)"
+            :class="{ cur: isCur === item.id }"
+          >
+            <span>{{ item.address }}</span>
           </li>
         </ul>
         <div class="subcontent">
@@ -58,30 +63,29 @@
             <el-breadcrumb-item>培训线路</el-breadcrumb-item>
           </el-breadcrumb>
         </div>
-        <ul class="content">
-          <li v-for="item in cList" :key="item.id">
-            <router-link :to="item.src" :title="item.title" target="_blank">
-              <img :src="item.imgUrl" />
-            </router-link>
-            <h4>
-              <router-link :to="item.src" :title="item.title" target="_blank">
-                <b>{{ item.title }}</b>
+        <ul class="content" v-if="trains">
+          <li v-for="(item, index) in trains" :key="index">
+            <span v-for="(subItem, subIndex) in item" :key="subIndex">
+              <router-link
+                :to="'/peixunxianlu/' + subItem.id"
+                :title="subItem.title"
+                target="_blank"
+              >
+                <img :src="subItem.trainPhotoUrl" />
               </router-link>
-            </h4>
+              <h4>
+                <router-link
+                  :to="'/peixunxianlu/' + subItem.id"
+                  :title="subItem.title"
+                  target="_blank"
+                >
+                  <b>{{ subItem.title }}</b>
+                </router-link>
+              </h4>
+            </span>
           </li>
         </ul>
         <div class="clear"></div>
-        <div class="block">
-          <el-pagination
-            @size-change="handleSizeChange"
-            @current-change="handleCurrentChange"
-            :current-page.sync="currentPage3"
-            :page-size="100"
-            layout="prev, pager, next, jumper"
-            :total="1000"
-          >
-          </el-pagination>
-        </div>
       </div>
     </div>
   </div>

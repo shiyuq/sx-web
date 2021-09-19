@@ -32,7 +32,7 @@
         padding-top: 10px;
         li {
           padding-bottom: 15px;
-          a {
+          span {
             height: 50px;
             line-height: 50px;
             padding-left: 25px;
@@ -43,7 +43,13 @@
             text-decoration: none;
             background: #ececed;
           }
-          a:hover {
+          span:hover {
+            background-color: #e81723;
+            color: #fff;
+          }
+        }
+        .cur {
+          span {
             background-color: #e81723;
             color: #fff;
           }
@@ -194,12 +200,12 @@
         }
       }
       .content {
-        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
         padding-top: 20px;
         li {
-          float: left;
           width: 220px;
-          margin-right: 19px;
           a {
             text-decoration: none;
             color: #666;
@@ -229,28 +235,12 @@
             }
           }
         }
-        li:nth-child(3n) {
-          margin-right: 0;
-        }
       }
       .clear {
         clear: both;
         height: 0;
         line-height: 0;
         font-size: 0;
-      }
-      .block {
-        padding: 15px 10px;
-        border: 1px solid #ccc;
-        .el-pagination {
-          display: flex;
-          justify-content: flex-end;
-          .el-pager {
-            .active {
-              color: #e81723 !important;
-            }
-          }
-        }
       }
     }
   }

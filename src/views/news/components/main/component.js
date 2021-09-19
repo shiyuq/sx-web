@@ -1,12 +1,9 @@
+import newsService from '../../../../api/news-service'
 export default {
   name: 'Main',
   data () {
     return {
       isCur:null,
-      currentPage1: 5,
-      currentPage2: 5,
-      currentPage3: 5,
-      currentPage4: 4,
       titleList: [
         {
           type: '1',
@@ -31,15 +28,16 @@ export default {
   created () {
   },
   methods: {
-    handleSizeChange () {
-      // console.log(`每页 ${val} 条`);
-    },
-    handleCurrentChange () {
-      // console.log(`当前页: ${val}`);
-    },
     click (index) {
       this.isCur = index
       this.$store.dispatch('app/setNews', {type: this.titleList[index].type})
+    },
+    async getNewsList ({ limit = 10, offset = 0 }) {
+      const { data } = await newsService.getNewsList({ limit, offset })
+      this.news = data
+    },
+    async changePage (currentPage) {
+      await this.getNewsList({ limit: 10, offset: (currentPage - 1) * 10 })
     }
   }
 }

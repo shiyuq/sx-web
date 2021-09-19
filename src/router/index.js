@@ -23,8 +23,22 @@ const routes = [
       {
         path: '/peixunxianlu',
         name: 'Peixunxianlu',
-        component: () => import('../views/route'),
-        meta: { title: '培训线路', keepAlive: false }
+        redirect:'/',
+        component: () => import('../views/trainsEnter'),
+        children: [
+          {
+            path: '/',
+            name: 'TrainsList',
+            component: () => import('../views/route'),
+            meta: {title:'培训线路',keepAlive:false}
+          },
+          {
+            path: '/peixunxianlu/:id',
+            name: 'TrainsDetail',
+            component: () => import('../views/trainsEnter'),
+            meta: {title:'培训线路详情',keepAlive:false}
+          }
+        ]
       },
       {
         path: '/peixunlueying',

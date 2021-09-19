@@ -42,6 +42,13 @@
             </dl>
           </div>
         </div>
+        <el-pagination
+          background
+          :page-size="10"
+          layout="prev, pager, next"
+          :total="news && news.count"
+          @current-change="changePage"
+        />
       </div>
       <div class="clear"></div>
     </div>
