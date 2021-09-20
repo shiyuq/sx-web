@@ -63,8 +63,8 @@
             <el-breadcrumb-item>培训线路</el-breadcrumb-item>
           </el-breadcrumb>
         </div>
-        <ul class="content" v-if="trains">
-          <li v-for="(item, index) in trains" :key="index">
+        <ul class="content" v-if="filterTrains">
+          <li v-for="(item, index) in filterTrains" :key="index">
             <span v-for="(subItem, subIndex) in item" :key="subIndex">
               <router-link
                 :to="'/peixunxianlu/' + subItem.id"

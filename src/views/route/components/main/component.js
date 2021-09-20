@@ -1,5 +1,4 @@
 import addressService from '../../../../api/address-service'
-import trainService from '../../../../api/train-service'
 export default {
   name: 'Main',
   data () {
@@ -17,7 +16,8 @@ export default {
           title: '延安、照金、西安六晚七天培训方案',
           src:require('./img/02.jpg')
         }
-      ]
+      ],
+      filterTrains: []
     }
   },
   computed: {
@@ -25,24 +25,27 @@ export default {
       return this.$store.state.app.trains
     }
   },
-  async created () {
-    await Promise.all([
-      this.getAddressList(),
-      this.getTrainList()
-    ])
+  watch: {
+    trains: {
+      handler () {
+        this.setTrains()
+      }
+    }
+  },
+  created () {
+    this.getData()
   },
   methods: {
-    click (id,index) {
+    click (id) {
       this.isCur = id
-      this.$store.dispatch('app/setTrains', {addressId: this.addresses[index].id})
+      this.filterTrains = {id: this.trains[id]}
     },
-    async getAddressList () {
-      const { data } = await addressService.getAddressList()
+    setTrains () {
+      this.filterTrains = this.trains
+    },
+    async getData () {
+      const {data} = await addressService.getAddressList()
       this.addresses = data
-    },
-    async getTrainList () {
-      const { data } = await trainService.getTrainList()
-      this.trains = data
     }
   }
 }
