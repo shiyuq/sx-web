@@ -52,10 +52,10 @@
           </div>
         </div>
       </div>
-      <div class="right">
+      <div class="right" v-if="train">
         <div class="header">
           <h5>
-            <span>延安</span>
+            <span>{{ train.address }}</span>
           </h5>
           <el-breadcrumb separator-class="el-icon-arrow-right">
             <el-breadcrumb-item>您的位置</el-breadcrumb-item>
@@ -65,7 +65,7 @@
             <el-breadcrumb-item :to="{ path: '/peixunxianlu' }">
               培训线路
             </el-breadcrumb-item>
-            <el-breadcrumb-item>延安</el-breadcrumb-item>
+            <el-breadcrumb-item>{{ train.address }}</el-breadcrumb-item>
           </el-breadcrumb>
         </div>
         <div class="introduction">
@@ -73,7 +73,7 @@
             <div class="mainContent">
               <div class="proviewBox">
                 <div class="top">
-                  <img src="trainsDetail.trainPhotoUrl" />
+                  <img :src="train.trainPhotoUrl" />
                 </div>
                 <div class="bottom">
                   <ul>
@@ -92,7 +92,7 @@
                 </div>
               </div>
               <div class="show">
-                <h2>延安、西安五晚六天培训方案</h2>
+                <h2>{{ train.title }}</h2>
                 <span>不忘初心，牢记使命！</span>
                 <ul>
                   <li>
@@ -135,24 +135,12 @@
         </div>
         <div class="routeContent">
           <div class="text">
-            <div v-for="(item, index) in tList" :key="index">
-              <div v-for="(cItem, cIndex) in tList[index].list" :key="cIndex">
-                <p
-                  v-for="(pItem, pIndex) in tList[index].list[cIndex]
-                    .contentList"
-                  :key="pIndex"
-                  :class="{ active: isActive === pIndex }"
-                >
-                  {{ pItem.content }}
-                </p>
-                &nbsp;
-              </div>
-            </div>
+            <div v-html="train.content"></div>
           </div>
         </div>
         <div class="information">
           <p>
-            咨询：延安、西安五晚六天培训方案
+            咨询：{{ train.title }}
             <br />
             <font>*&nbsp;为必填项</font>
           </p>
