@@ -2,7 +2,7 @@ import Banner from './components/banner'
 import Main from './components/main'
 
 export default {
-  name: 'Yanan',
+  name: 'TrainsDetail',
   components: {
     Banner,
     Main

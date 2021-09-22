@@ -1,4 +1,5 @@
 import addressService from '../../../../api/address-service'
+import trainService from '../../../../api/train-service'
 export default {
   name: 'Main',
   data () {
@@ -42,6 +43,10 @@ export default {
     },
     setTrains () {
       this.filterTrains = this.trains
+    },
+    async getTrainList ({ limit = 10, offset = 0 }) {
+      const { data } = await trainService.getTrainList({ limit, offset })
+      this.trains = data
     },
     async getData () {
       const {data} = await addressService.getAddressList()

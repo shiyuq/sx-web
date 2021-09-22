@@ -3,16 +3,18 @@
     <div class="container">
       <div class="left">
         <h4 class="title">
-          <router-link to="http://sxhscc.cn/a/chanpinzhongxin/">
+          <router-link to="/peixunxianlu/">
             培训线路
           </router-link>
           PRODUCT
         </h4>
         <ul>
-          <li v-for="(item, index) in list" :key="index">
-            <router-link :to="item.url" :class="{ cur: iscur === index }">{{
-              item.title
-            }}</router-link>
+          <li
+            v-for="(item, index) in addresses"
+            :key="index"
+            :class="{ cur: iscur === index }"
+          >
+            <span>{{ item.address }}</span>
           </li>
         </ul>
         <div class="subcontent">
@@ -71,7 +73,7 @@
             <div class="mainContent">
               <div class="proviewBox">
                 <div class="top">
-                  <img src="./img/01.jpg" />
+                  <img src="trainsDetail.trainPhotoUrl" />
                 </div>
                 <div class="bottom">
                   <ul>
@@ -95,7 +97,7 @@
                 <ul>
                   <li>
                     咨询热线：
-                    <span>13991985022</span>
+                    <span>15083931223</span>
                   </li>
                   <li>
                     <a href="" target="_blank">

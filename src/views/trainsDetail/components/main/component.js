@@ -1,79 +1,15 @@
+import addressService from '../../../../api/address-service'
 export default {
   name: 'Main',
   data () {
     return {
       iscur: 0,
-      isActive:0,
+      isActive: 0,
+      addresses:[],
       currentPage1: 5,
       currentPage2: 5,
       currentPage3: 5,
       currentPage4: 4,
-      list: [
-        {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/js/',
-          title:'延安'
-        },
-        {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/jb/',
-          title:'井冈山'
-        },
-        {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/ym/',
-          title:'遵义'
-        },
-        {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/fq/',
-          title:'西柏坡'
-        },
-        {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/bw/',
-          title:'兰考'
-        },
-        {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/sj/',
-          title:'沂蒙老区'
-        },
-        {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/gutian/',
-          title:'古田'
-        },
-        {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/linyi/',
-          title:'临沂'
-        },
-        {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/ruijin/',
-          title:'瑞金'
-        },
-        {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/shaoshan/',
-          title:'韶山'
-        },
-        {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/fujian/',
-          title:'福建'
-        },
-        {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/hongyan/',
-          title:'红岩'
-        },
-        {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/hongqiqu/',
-          title:'红旗渠'
-        },
-        {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/wuhan/',
-          title:'武汉'
-        },
-        {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/xinxian/',
-          title:'新县'
-        },
-        {
-          url: 'http://sxhscc.cn/a/chanpinzhongxin/chengxiang/',
-          title:'成都'
-        }
-      ],
       dList: [
         {
           url: '/yanan',
@@ -417,7 +353,34 @@ export default {
           title: '电子邮件',
           value:'请填写电子邮件'
         }
-      ]
+      ],
+      trainsDetail:[]
+    }
+  },
+  created () {
+    this.getTrainsDetail()
+    this.getData()
+  },
+  computed: {
+    trains () {
+      return this.$store.state.app.trains
+    }
+  },
+  methods: {
+    getTrainsDetail () {
+      if (this.trains) {
+        this.trainsDetail = this.trains.map(val => {
+          val.map(v => {
+            v.find(ele => {
+              return ele.id === this.$route.params.id
+            })
+          })
+        })
+      }
+    },
+    async getData () {
+      const {data} = await addressService.getAddressList()
+      this.addresses = data
     }
   }
 }

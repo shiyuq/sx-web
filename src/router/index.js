@@ -35,7 +35,7 @@ const routes = [
           {
             path: '/peixunxianlu/:id',
             name: 'TrainsDetail',
-            component: () => import('../views/trainsEnter'),
+            component: () => import('../views/trainsDetail'),
             meta: {title:'培训线路详情',keepAlive:false}
           }
         ]
@@ -89,12 +89,6 @@ const routes = [
         name: 'Mingshifengcai',
         component: () => import('../views/teacher'),
         meta: { title: '名师风采', keepAlive: false }
-      },
-      {
-        path: '/yanan',
-        name: 'Yanan',
-        component: () => import('../views/route/yanan'),
-        meta: { title: '延安', keepAlive: false }
       },
       {
         path: '/peixunlueying1',
