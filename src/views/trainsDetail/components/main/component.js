@@ -5,8 +5,8 @@ export default {
   name: 'Main',
   data () {
     return {
-      iscur: 0,
-      isActive: 0,
+      iscur: null,
+      train: null,
       addresses: [],
       dList: [
         {
@@ -58,8 +58,7 @@ export default {
           title: '电子邮件',
           value: '请填写电子邮件'
         }
-      ],
-      train: null
+      ]
     }
   },
   created () {
@@ -73,6 +72,9 @@ export default {
       ])
       this.addresses = addresses
       this.train = train
+    },
+    click (item) {
+      this.$router.push({path: '/peixunxianlu', query: { id: item.id }})
     }
   }
 }

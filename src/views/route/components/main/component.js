@@ -4,7 +4,8 @@ export default {
   name: 'Main',
   data () {
     return {
-      isCur:null,
+      isCur: null,
+      isActive:null,
       addresses: [],
       dList: [
         {
@@ -18,7 +19,9 @@ export default {
           src:require('./img/02.jpg')
         }
       ],
-      filterTrains: []
+      filterTrains: [],
+      mapFilterTrains:[],
+      queryId: ''
     }
   },
   computed: {
@@ -33,16 +36,36 @@ export default {
       }
     }
   },
-  created () {
-    this.getData()
+  async created () {
+    this.queryId = this.$route.query.id
+    await this.getData()
+    this.setTrains()
+    this.getActive()
+    this.getMapFilterTrains()
   },
   methods: {
     click (id) {
       this.isCur = id
-      this.filterTrains = {id: this.trains[id]}
+      this.filterTrains = { id: this.trains[id] }
+    },
+    getActive () {
+      if (this.$route.query.id) {
+        this.isActive = this.$route.query.id
+      }
     },
     setTrains () {
-      this.filterTrains = this.trains
+      this.filterTrains = this.queryId ? {[this.queryId]: this.trains[this.queryId]} : this.trains
+    },
+    getMapFilterTrains () {
+      if (this.filterTrains) {
+        Object.values(this.filterTrains).map(val => {
+          if (val) {
+            val.map(ele => {
+              this.mapFilterTrains.push(ele)
+            })
+          }
+        })
+      }
     },
     async getTrainList ({ limit = 10, offset = 0 }) {
       const { data } = await trainService.getTrainList({ limit, offset })

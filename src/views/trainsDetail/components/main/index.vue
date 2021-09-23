@@ -12,7 +12,8 @@
           <li
             v-for="(item, index) in addresses"
             :key="index"
-            :class="{ cur: iscur === index }"
+            :class="{ cur: item.address === train.address }"
+            @click="click(item)"
           >
             <span>{{ item.address }}</span>
           </li>
@@ -78,7 +79,7 @@
                 <div class="bottom">
                   <ul>
                     <li>
-                      <img src="./img/01.jpg" alt="" />
+                      <img :src="train.trainPhotoUrl" alt="" />
                     </li>
                   </ul>
                   <i

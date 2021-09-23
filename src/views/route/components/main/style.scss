@@ -201,11 +201,10 @@
       }
       .content {
         display: flex;
-        justify-content: space-between;
         flex-wrap: wrap;
         padding-top: 20px;
         li {
-          width: 220px;
+          width: calc(33.33%);
           a {
             text-decoration: none;
             color: #666;
