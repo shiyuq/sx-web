@@ -109,10 +109,10 @@ const routes = [
         meta: { title: '企业文化', keepAlive: false }
       },
       {
-        path: '/shengchanjidi',
-        name: 'Shengchanjidi',
+        path: '/peixunjidi',
+        name: 'Peixunjidi',
         component: () => import('../views/aboutUs/productionBase'),
-        meta: { title: '生产基地', keepAlive: false }
+        meta: { title: '培训基地', keepAlive: false }
       },
       {
         path: '/rencaizhaopin',

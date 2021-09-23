@@ -2,7 +2,7 @@
   <div class="company">
     <ul class="menu">
       <li class="cur">
-        <router-link to="guanyuwomen/shengchanjidi/">
+        <router-link to="guanyuwomen/peixunjidi/">
           企业风采
         </router-link>
         <img src="../company/img/pro_s.png" />

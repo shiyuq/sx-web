@@ -38,8 +38,8 @@ export default {
           title:'企业风采'
         },
         {
-          url: '/shengchanjidi/',
-          title:'生产基地'
+          url: '/peixunjidi/',
+          title:'培训基地'
         }
       ]
     }

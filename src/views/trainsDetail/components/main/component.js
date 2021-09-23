@@ -10,36 +10,36 @@ export default {
       addresses: [],
       dList: [
         {
-          url: '/yanan',
-          title: '延安、西安五晚六天培训方案',
-          src: require('./img/01.jpg')
+          url: 'peixunxianlu',
+          title: '丝绸之路五晚六天培训方案',
+          src:require('./img/王母娘娘祭祀1.jpg')
         },
         {
-          url: '/yanan',
-          title: '延安、照金、西安六晚七天培训方案',
-          src: require('./img/02.jpg')
+          url: 'peixunxianlu',
+          title: '丝绸之路四晚五天培训方案',
+          src:require('./img/塔克拉玛干沙漠2.jpg')
         }
       ],
       rList: [
         {
-          url: '',
-          src: require('./img/01.jpg'),
-          title: '延安、西安五晚六天培训方案'
+          url: 'peixunxianlu',
+          src: require('./img/王母娘娘祭祀1.jpg'),
+          title: '丝绸之路五晚六天培训方案'
         },
         {
-          url: '',
-          src: require('./img/02.jpg'),
-          title: '延安、照金、西安六晚七天培训方案'
+          url: 'peixunxianlu',
+          src: require('./img/塔克拉玛干沙漠2.jpg'),
+          title: '丝绸之路四晚五天培训方案'
         },
         {
-          url: '',
-          src: require('./img/03.jpg'),
-          title: '延安、照金五晚六天培训方案'
+          url: 'peixunxianlu',
+          src: require('./img/2.jpg'),
+          title: '千鸟湖五晚六天培训方案'
         },
         {
-          url: '',
-          src: require('./img/04.jpg'),
-          title: '延安四晚五天培训方案'
+          url: 'peixunxianlu',
+          src: require('./img/3.jpg'),
+          title: '千鸟湖四晚五天培训方案'
         }
       ],
       putList: [

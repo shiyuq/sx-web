@@ -23,49 +23,49 @@ export default {
       ],
       des: [
         {
-          url: 'http://sxhscc.cn/a/guanyuwomen/qiyejianjie/',
+          url: '/qiyejianjie/',
           title:'企业简介'
         },
         {
-          url: 'http://sxhscc.cn/a/guanyuwomen/qiyewenhua/',
+          url: '/qiyewenhua/',
           title:'企业文化'
         },
         {
-          url: 'http://sxhscc.cn/a/guanyuwomen/qiyeshipin/',
+          url: '/qiyeshipin/',
           title:'企业视频'
         },
         {
-          url: 'http://sxhscc.cn/a/guanyuwomen/fengcai/',
+          url: '/fengcai/',
           title:'企业风采'
         },
         {
-          url: 'http://sxhscc.cn/a/guanyuwomen/shengchanjidi/',
-          title:'生产基地'
+          url: '/peixunjidi/',
+          title:'培训基地'
         }
       ],
       cList: [
         {
           id: '01',
           src: '/yanan',
-          title: '延安、西安五晚六天培训方案',
+          title: '培训基地',
           imgUrl:require('./img/bg.jpg')
         },
         {
           id: '02',
           src: '/yanan',
-          title: '延安、照金、西安六晚七天培训方案',
+          title: '培训基地',
           imgUrl:require('./img/bg.jpg')
         },
         {
           id: '03',
           src: '/chanpinzhongxin/js/20181124/87.html',
-          title: '延安、照金五晚六天培训方案',
+          title: '培训基地',
           imgUrl:require('./img/bg.jpg')
         },
         {
           id: '04',
           src: '/chanpinzhongxin/js/20181124/88.html',
-          title: '延安四晚五天培训方案',
+          title: '培训基地',
           imgUrl:require('./img/bg.jpg')
         }
       ]
