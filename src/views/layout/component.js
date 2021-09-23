@@ -1,8 +1,12 @@
 import Header from '@/components/header'
+import Footer from '@/components/footer'
+import Affix from '@/components/affix'
 
 export default {
-  name: 'Home',
+  name: 'Layout',
   components: {
-    Header
+    Header,
+    Footer,
+    Affix
   }
 }

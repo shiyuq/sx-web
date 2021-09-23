@@ -1,0 +1,33 @@
+.link {
+  overflow: hidden;
+  width: 1000px;
+  height: 68px;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  h3 {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+  ul {
+    overflow: hidden;
+    float: right;
+    width: 900px;
+    padding: 15px 0 35px 35px;
+    border: 1px solid #c4c4c4;
+    li {
+      float: left;
+      white-space: nowrap;
+      margin-right: 30px;
+      font-size: 13px;
+      a {
+        color: #333;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

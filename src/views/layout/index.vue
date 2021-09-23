@@ -1,8 +1,9 @@
 <template>
   <div>
     <Header />
+    <Affix />
     <router-view></router-view>
-    <footer>1111</footer>
+    <Footer />
   </div>
 </template>
 
