@@ -5,7 +5,6 @@ export default {
   data () {
     return {
       isCur: null,
-      isActive:null,
       addresses: [],
       dList: [
         {
@@ -20,7 +19,6 @@ export default {
         }
       ],
       filterTrains: [],
-      mapFilterTrains:[],
       queryId: ''
     }
   },
@@ -40,31 +38,20 @@ export default {
     this.queryId = this.$route.query.id
     await this.getData()
     this.setTrains()
-    this.getActive()
-    this.getMapFilterTrains()
   },
   methods: {
-    click (id) {
-      this.isCur = id
-      this.filterTrains = { id: this.trains[id] }
+    flatten (arr) {
+      return arr.reduce((a, b) => a.concat(Array.isArray(b) ? this.flatten(b) : b), [])
     },
-    getActive () {
-      if (this.$route.query.id) {
-        this.isActive = this.$route.query.id
-      }
+    click (id) {
+      this.queryId = id
+      this.filterTrains = this.trains[id]
     },
     setTrains () {
-      this.filterTrains = this.queryId ? {[this.queryId]: this.trains[this.queryId]} : this.trains
-    },
-    getMapFilterTrains () {
-      if (this.filterTrains) {
-        Object.values(this.filterTrains).map(val => {
-          if (val) {
-            val.map(ele => {
-              this.mapFilterTrains.push(ele)
-            })
-          }
-        })
+      if (!this.queryId) {
+        this.filterTrains = this.flatten(Object.values(this.trains))
+      } else {
+        this.filterTrains = this.trains[this.queryId]
       }
     },
     async getTrainList ({ limit = 10, offset = 0 }) {

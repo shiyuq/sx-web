@@ -13,7 +13,7 @@
             v-for="(item, index) in addresses"
             :key="index"
             @click="click(item.id)"
-            :class="{ cur: isCur === item.id || isActive === item.id }"
+            :class="{ cur: item.id === queryId }"
           >
             <span>{{ item.address }}</span>
           </li>
@@ -64,7 +64,7 @@
           </el-breadcrumb>
         </div>
         <ul class="content" v-if="filterTrains">
-          <li v-for="(item, index) in mapFilterTrains" :key="index">
+          <li v-for="(item, index) in filterTrains" :key="index">
             <router-link :to="'/peixunxianlu/' + item.id" :title="item.title">
               <img :src="item.trainPhotoUrl" />
               <h4>
