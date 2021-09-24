@@ -4,9 +4,4 @@ export default {
     return {
     }
   }
-  // props: {
-  //   address: {
-  //     type: Object
-  //   }
-  // }
 };
