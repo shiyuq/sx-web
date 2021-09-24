@@ -93,31 +93,31 @@ const routes = [
       {
         path: '/peixunlueying1',
         name: 'Peixunlueying1',
-        component: () => import('../views/photo/subPhoto1'),
+        component: () => import('../views/photoDetail'),
         meta: { title: '培训掠影1', keepAlive: false }
       },
       {
         path: '/qiyejianjie',
         name: 'Qiyejieshao',
-        component: () => import('../views/aboutUs/companyProfile'),
+        component: () => import('../views/companyProfile'),
         meta: { title: '企业简介', keepAlive: false }
       },
       {
         path: '/qiyewenhua',
         name: 'Qiyewenhua',
-        component: () => import('../views/aboutUs/companyCulture'),
+        component: () => import('../views/companyCulture'),
         meta: { title: '企业文化', keepAlive: false }
       },
       {
         path: '/peixunjidi',
         name: 'Peixunjidi',
-        component: () => import('../views/aboutUs/productionBase'),
+        component: () => import('../views/productionBase'),
         meta: { title: '培训基地', keepAlive: false }
       },
       {
         path: '/rencaizhaopin',
         name: 'Rencaizhaopin',
-        component: () => import('../views/contactUs/talents'),
+        component: () => import('../views/talents'),
         meta: { title: '人才招聘', keepAlive: false }
       }
     ]

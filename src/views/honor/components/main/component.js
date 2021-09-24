@@ -9,103 +9,103 @@ export default {
       currentPage4: 4,
       list: [
         {
-          url: 'http://sxhscc.cn/a/gongsixinwen/changjianwentijieda/20181124/134.html',
+          url: 'xinwendongtai',
           title:' 会提供哪些教学服务？ '
         },
         {
-          url: 'http://sxhscc.cn/a/gongsixinwen/changjianwentijieda/20181124/133.html',
+          url: 'xinwendongtai',
           title:' 有哪些教学模式？ '
         },
         {
-          url: 'http://sxhscc.cn/a/gongsixinwen/xingyedongtai/20181126/158.html',
+          url: 'xinwendongtai',
           title:' 习近平在深入推动长江经济带发展座谈会上的讲 '
         },
         {
-          url: 'http://sxhscc.cn/a/gongsixinwen/xingyedongtai/20181124/131.html',
+          url: 'xinwendongtai',
           title:' 习近平在中阿合作论坛第八届部长级会议开幕式'
         }
       ],
       cList: [
         {
           id: '01',
-          src: 'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/85.html',
-          title: '延安、西安五晚六天培训方案',
-          imgUrl:require('./img/01.jpg')
+          src: '/peixunlueying1',
+          title: '沙漠之门五晚六天培训方案',
+          imgUrl:require('../../../../assets/沙漠之门1.jpg')
         },
         {
           id: '02',
-          src: 'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/86.html',
-          title: '延安、照金、西安六晚七天培训方案',
-          imgUrl:require('./img/02.jpg')
+          src: 'peixunlueying1',
+          title: '沙漠之门四晚五天培训方案',
+          imgUrl:require('../../../../assets/沙漠之门2.jpg')
         },
         {
           id: '03',
-          src: 'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/87.html',
-          title: '延安、照金五晚六天培训方案',
-          imgUrl:require('./img/03.jpg')
+          src: 'peixunlueying1',
+          title: '文化馆五晚六天培训方案',
+          imgUrl:require('../../../../assets/文化馆1.jpg')
         },
         {
           id: '04',
-          src: 'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/88.html',
-          title: '延安四晚五天培训方案',
-          imgUrl:require('./img/04.jpg')
+          src: 'peixunlueying1',
+          title: '文化馆四晚五天培训方案',
+          imgUrl:require('../../../../assets/文化馆2.jpg')
         },
         {
           id: '05',
-          src: 'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/89.html',
-          title: '井冈山六天培训专题',
-          imgUrl:require('./img/05.jpg')
+          src: 'peixunlueying1',
+          title: '托木尔峰六天培训专题',
+          imgUrl:require('../../../../assets/托木尔峰1.jpg')
         },
         {
           id: '06',
-          src: 'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/90.html',
-          title: '井冈山五天培训专题',
-          imgUrl:require('./img/06.jpg')
+          src: 'peixunlueying1',
+          title: '托木尔峰五天培训专题',
+          imgUrl:require('../../../../assets/托木尔峰2.jpg')
         },
         {
           id: '07',
-          src: 'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/91.html',
-          title: '井冈山四天培训专题',
-          imgUrl:require('./img/07.jpg')
+          src: 'peixunlueying1',
+          title: '塔里木河四晚五天培训专题',
+          imgUrl:require('../../../../assets/塔里木河1.jpg')
         },
         {
           id: '08',
-          src: 'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/92.html',
-          title: '井冈山三天培训专题',
-          imgUrl:require('./img/08.jpg')
+          src: 'peixunlueying1',
+          title: '塔里木河五天培训专题',
+          imgUrl:require('../../../../assets/塔里木河2.jpg')
         },
         {
           id: '09',
-          src: 'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/93.html',
-          title: '井冈山七天培训专题',
-          imgUrl:require('./img/09.jpg')
+          src: 'peixunlueying1',
+          title: '千鸟湖五天培训专题',
+          imgUrl:require('../../../../assets/千鸟湖1.jpg')
         },
         {
           id: '10',
-          src: 'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/94.html',
-          title: '井冈山八天培训专题',
-          imgUrl:require('./img/10.jpg')
+          src: 'peixunlueying1',
+          title: '千鸟湖五晚六天培训专题',
+          imgUrl:require('../../../../assets/千鸟湖2.jpg')
         },
         {
           id: '11',
-          src: 'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/95.html',
-          title: '扶贫开发脱贫攻坚五天培训',
-          imgUrl:require('./img/11.jpg')
+          src: 'peixunlueying1',
+          title: '丝绸之路五天培训专题',
+          imgUrl:require('../../../../assets/丝绸之路1.jpg')
         },
         {
           id: '12',
-          src: 'http://sxhscc.cn/a/chanpinzhongxin/js/20181124/96.html',
-          title: '新型职业农民培育五天培训',
-          imgUrl:require('./img/12.jpg')
+          src: 'peixunlueying1',
+          title: '丝绸之路四天培训专题',
+          imgUrl:require('../../../../assets/丝绸之路2.jpg')
         }
       ],
       tList: [
         {
-          src: '/rongyuzizhi/rongyuzizhi/',
+          src: '/rongyuzizhi',
           title:'荣誉资质'
         },
         {
-          src: '/rongyuzizhi/tuandui/',
+          src: 'mingshifengcai',
           title:'专业团队'
         }
       ]

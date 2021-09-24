@@ -23,7 +23,7 @@
             </span>
           </div>
           <div class="editor-content" v-html="news.rows[idIndex].content"></div>
-          <div class="turnPage">
+          <!-- <div class="turnPage">
             <span v-if="idIndex > 0">
               <router-link
                 :to="'/xinwendongtai/' + news.rows[idIndex - 1].id"
@@ -46,7 +46,7 @@
             <span v-else>
               下一篇：
             </span>
-          </div>
+          </div> -->
         </div>
       </div>
       <div class="introduction">
@@ -75,7 +75,7 @@
             v-for="(uItem, uIndex) in contentRightList[index].uList"
             :key="uIndex"
           >
-            <router-link :to="uItem.url" target="_blank">
+            <router-link :to="uItem.url">
               {{ uItem.title }}
             </router-link>
           </li>

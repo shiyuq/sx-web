@@ -56,12 +56,12 @@
         </p>
       </div>
       <div class="menu last">
-        <p>地址：阿拉尔市</p>
-        <p>咨询热线： 15083931223 &nbsp; &nbsp; &nbsp; &nbsp;029-83429399</p>
+        <p>地址：新疆阿拉尔市秋收大道1001号</p>
+        <p>咨询热线： 15083931223 &nbsp; &nbsp; &nbsp; &nbsp;0991—8888888</p>
         <p>邮箱：xxx@163.com</p>
         <p>
           备案号：
-          <a href="https://beian.miit.gov.cn/" target="_blank">
+          <a href="https://beian.miit.gov.cn/">
             xxx备xxxxxxx号-x
           </a>
         </p>

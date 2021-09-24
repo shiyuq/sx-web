@@ -23,12 +23,12 @@
           <div class="recommend">
             <dl v-for="(item, index) in dList" :key="index">
               <dt>
-                <router-link :to="item.url" target="_blank" :title="item.title">
+                <router-link :to="item.url" :title="item.title">
                   <img :src="item.src" :alt="item.title" />
                 </router-link>
               </dt>
               <dd>
-                <router-link :to="item.url" target="_blank" :title="item.title">
+                <router-link :to="item.url" :title="item.title">
                   {{ item.title }}
                 </router-link>
               </dd>
@@ -37,13 +37,13 @@
           <div class="contact">
             <div class="contactUs">
               <h5>
-                <router-link to="/lianxiwomen" target="_blank">
+                <router-link to="/lianxiwomen">
                   联系我们
                 </router-link>
               </h5>
             </div>
             <div class="sub">
-              <img src="./img/map.png" alt="" />
+              <img src="../../../../assets/map.png" alt="" />
               <p>
                 <span>咨询热线：</span>
               </p>
