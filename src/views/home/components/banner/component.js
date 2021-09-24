@@ -9,11 +9,11 @@ export default {
         },
         {
           id: '002',
-          imgUrl:require('./img/bg3.jpg')
+          imgUrl:require('./img/bg2.jpg')
         },
         {
           id: '003',
-          imgUrl:require('./img/bg1.jpg')
+          imgUrl:require('./img/bg3.jpg')
         }
       ]
     }

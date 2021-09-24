@@ -16,7 +16,7 @@
       <div class="header-logo-left">
         <h1>
           <a href="/">
-            <img src="@/assets/logo1.png" alt="红色传承" />
+            <img src="@/assets/logo.png" alt="红色传承" />
           </a>
         </h1>
         <div>

@@ -38,18 +38,18 @@
             </h5>
           </div>
           <div class="subcontent">
-            <img src="./img/map.jpg" />
+            <img src="./img/map.png" />
             <p>
               <span class="subspan">咨询热线：</span>
             </p>
-            <p class="subtel">13991985022</p>
+            <p class="subtel">15083931223</p>
           </div>
         </div>
       </div>
       <div class="right">
         <div class="header">
           <h5>
-            <span>生产基地</span>
+            <span>培训基地</span>
           </h5>
           <el-breadcrumb separator-class="el-icon-arrow-right">
             <el-breadcrumb-item>您的位置</el-breadcrumb-item>
@@ -57,7 +57,7 @@
             <el-breadcrumb-item :to="{ path: '/guanyuwomen' }">
               关于我们
             </el-breadcrumb-item>
-            <el-breadcrumb-item>生产基地</el-breadcrumb-item>
+            <el-breadcrumb-item>培训基地</el-breadcrumb-item>
           </el-breadcrumb>
         </div>
         <ul class="content">

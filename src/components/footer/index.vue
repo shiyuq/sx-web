@@ -57,24 +57,27 @@
       </div>
       <div class="menu last">
         <p>地址：阿拉尔市</p>
-        <p>咨询热线：13991985022 &nbsp; &nbsp; &nbsp; &nbsp;029-83429399</p>
-        <p>邮箱：wlf920@163.com</p>
+        <p>咨询热线： 15083931223 &nbsp; &nbsp; &nbsp; &nbsp;029-83429399</p>
+        <p>邮箱：xxx@163.com</p>
         <p>
           备案号：
           <a href="https://beian.miit.gov.cn/" target="_blank">
-            陕ICP备18019828号-1
+            xxx备xxxxxxx号-x
           </a>
         </p>
       </div>
       <div class="ewm">
-        <img src="../footer/img/二维码.jpg" width="111" height="109" />
+        <img src="@/assets/qrcode.png" width="111" height="109" />
         <p>进入微信公众号</p>
       </div>
     </div>
     <div class="clear"></div>
     <div class="f_btm">
       <div class="container">
-        <p>Copyright © 2018-2019红色传承 版权所有</p>
+        <p>
+          Copyright © 2019-2023三五九旅干部培训&nbsp; &nbsp;&nbsp;
+          &nbsp;版权所有
+        </p>
       </div>
     </div>
   </div>

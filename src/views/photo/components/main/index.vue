@@ -3,7 +3,7 @@
     <div class="container">
       <div class="left">
         <h4 class="title">
-          <router-link to="http://sxhscc.cn/a/chenggonganli/">
+          <router-link to="peixunlueying">
             培训掠影
           </router-link>
           PRODUCT
@@ -30,11 +30,11 @@
             </h5>
           </div>
           <div class="subcontent">
-            <img src="./img/map.jpg" />
+            <img src="./img/map.png" />
             <p>
               <span class="subspan">咨询热线：</span>
             </p>
-            <p class="subtel">13991985022</p>
+            <p class="subtel">15083931223</p>
           </div>
         </div>
       </div>
@@ -51,7 +51,7 @@
         </div>
         <ul class="content">
           <li v-for="item in cList" :key="item.id">
-            <router-link :to="item.src" :title="item.title" target="_blank">
+            <router-link :to="item.src" :title="item.title">
               <img :src="item.imgUrl" />
             </router-link>
             <h4>

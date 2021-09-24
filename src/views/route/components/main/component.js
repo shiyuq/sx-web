@@ -8,14 +8,14 @@ export default {
       addresses: [],
       dList: [
         {
-          url: '/yanan',
-          title: '延安、西安五晚六天培训方案',
-          src:require('./img/01.jpg')
+          url: 'peixunxianlu',
+          title: '丝绸之路五晚六天培训方案',
+          src:require('./img/王母娘娘祭祀1.jpg')
         },
         {
-          url: '/yanan',
-          title: '延安、照金、西安六晚七天培训方案',
-          src:require('./img/02.jpg')
+          url: 'peixunxianlu',
+          title: '丝绸之路四晚五天培训方案',
+          src:require('./img/塔克拉玛干沙漠2.jpg')
         }
       ],
       filterTrains: [],

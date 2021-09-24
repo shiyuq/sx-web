@@ -44,11 +44,11 @@
               </h5>
             </div>
             <div class="sub">
-              <img src="./img/map.jpg" alt="" />
+              <img src="./img/map.png" alt="" />
               <p>
                 <span>咨询热线：</span>
               </p>
-              <p class="tel">13991985022</p>
+              <p class="tel">15083931223</p>
             </div>
           </div>
         </div>
@@ -147,21 +147,35 @@
           </p>
           <ul>
             <li class="area">
-              <font>*</font>
+              <font> * </font>
               <textarea
                 name="content"
                 placeholder="请填写您要咨询的信息"
+                v-model="consultInfo"
               ></textarea>
             </li>
-            <li v-for="(item, index) in putList" :key="index">
+            <li>
               <label>
-                <font>{{ item.required }}</font>
-                {{ item.title }}
+                <font> * </font>
+                联系人
               </label>
-              <input type="text" :placeholder="item.value" />
+              <input type="text" placeholder="请填写联系人" v-model="name" />
+            </li>
+            <li>
+              <label>
+                <font> * </font>
+                手机号码
+              </label>
+              <input type="text" placeholder="请填写手机号码" v-model="phone" />
+            </li>
+            <li>
+              <label>
+                电子邮件
+              </label>
+              <input type="text" placeholder="请填写电子邮件" v-model="email" />
             </li>
             <li class="submit">
-              <input type="submit" value="提交您的咨询信息" />
+              <input type="submit" value="提交您的咨询信息" @click="submit" />
             </li>
           </ul>
         </div>

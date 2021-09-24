@@ -33,11 +33,11 @@
             </h5>
           </div>
           <div class="subcontent">
-            <img src="./img/map.jpg" />
+            <img src="./img/map.png" />
             <p>
               <span class="subspan">咨询热线：</span>
             </p>
-            <p class="subtel">13991985022</p>
+            <p class="subtel">15083931223</p>
           </div>
         </div>
       </div>

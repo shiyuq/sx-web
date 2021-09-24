@@ -1,9 +1,15 @@
+
 export default {
   name: 'Product',
   data () {
     return {
-      iscur:0,
+      iscur: 0,
       list: [
+        {
+          url: 'peixunxianlu',
+          title: '三五九',
+          imgUrl:require('./img/pro_s.png')
+        },
         {
           url: 'peixunxianlu',
           title: '塔里木河',
@@ -11,12 +17,7 @@ export default {
         },
         {
           url: 'peixunxianlu',
-          title: '塔克拉玛干',
-          imgUrl:require('./img/pro_s.png')
-        },
-        {
-          url: 'peixunxianlu',
-          title: '胡杨林',
+          title: '睡胡杨',
           imgUrl:require('./img/pro_s.png')
         },
         {
@@ -26,155 +27,155 @@ export default {
         },
         {
           url: 'peixunxianlu',
-          title: '屯垦纪念馆',
+          title: '文化馆',
           imgUrl:require('./img/pro_s.png')
         }
       ],
       pList: [
         {
           url: 'peixunxianlu',
+          title: '三五九',
+          imgUrl:require('./img/三五九旅.jpg')
+        },
+        {
+          url: 'peixunxianlu',
           title: '塔里木河',
-          imgUrl:require('./img/bg.png')
+          imgUrl:require('./img/塔里木河.png')
         },
         {
           url: 'peixunxianlu',
-          title: '井冈山',
-          imgUrl:require('./img/jinggangshan.jpg')
+          title: '睡胡杨',
+          imgUrl:require('./img/睡胡杨.jpg')
         },
         {
           url: 'peixunxianlu',
-          title: '遵义',
-          imgUrl:require('./img/zunyi.jpg')
+          title: '托木尔峰',
+          imgUrl:require('./img/托木尔峰.jpg')
         },
         {
           url: 'peixunxianlu',
-          title: '西柏坡',
-          imgUrl:require('./img/xibaipo.jpg')
-        },
-        {
-          url: 'peixunxianlu',
-          title: '延安',
-          imgUrl:require('./img/yanan.jpg')
+          title: '文化馆',
+          imgUrl:require('./img/文化馆.jpg')
         }
       ],
       uList: [
         {
           list: [
             {
-              imgUrl: require('./img/bg1.png'),
-              title: '塔里木河五晚六天培训方案',
-              url:'/yanan'
+              imgUrl: require('./img/三五九旅1.jpg'),
+              title: '三五九旅五晚六天培训专题',
+              url: 'peixunxianlu'
             },
             {
-              imgUrl: require('./img/bg2.png'),
-              title: '塔里木河五晚六天培训方案',
-              url:'/yanan'
+              imgUrl: require('./img/三五九旅2.jpg'),
+              title: '三五九旅四晚五天培训专题',
+              url: 'peixunxianlu'
             },
             {
-              imgUrl: require('./img/bg3.png'),
-              title: '塔里木河五晚六天培训方案',
-              url:'/yanan'
+              imgUrl: require('./img/三五九旅3.jpg'),
+              title: '三五九旅五天培训专题',
+              url: 'peixunxianlu'
             },
             {
-              imgUrl: require('./img/bg4.png'),
-              title: '塔里木河五晚六天培训方案',
-              url:'/yanan'
+              imgUrl: require('./img/三五九旅4.jpg'),
+              title: '三五九旅四晚五天培训专题',
+              url: 'peixunxianlu'
             }
           ]
         },
         {
           list: [
             {
-              imgUrl: require('./img/jinggangshan-01.jpg'),
-              title: '塔克拉玛干六天培训专题',
-              url:'/yanan'
+              imgUrl: require('./img/塔里木河1.png'),
+              title: '塔里木河五晚六天培训方案',
+              url: 'peixunxianlu'
             },
             {
-              imgUrl: require('./img/jinggangshan-02.jpg'),
-              title: '塔克拉玛干六天培训专题',
-              url:'/yanan'
+              imgUrl: require('./img/塔里木河2.png'),
+              title: '塔里木河四晚五天培训方案',
+              url: 'peixunxianlu'
             },
             {
-              imgUrl: require('./img/jinggangshan-03.jpg'),
-              title: '塔克拉玛干六天培训专题',
-              url:'/yanan'
+              imgUrl: require('./img/塔里木河3.png'),
+              title: '塔里木河五天培训方案',
+              url: 'peixunxianlu'
             },
             {
-              imgUrl: require('./img/jinggangshan-04.jpg'),
-              title: '塔克拉玛干六天培训专题',
-              url:'/yanan'
+              imgUrl: require('./img/塔里木河4.png'),
+              title: '塔里木河六天培训方案',
+              url: 'peixunxianlu'
             }
           ]
         },
         {
           list: [
             {
-              imgUrl: require('./img/zunyi-01.jpg'),
-              title: '胡杨林四天培训专题',
-              url:'/yanan'
+              imgUrl: require('./img/睡胡杨1.jpg'),
+              title: '睡胡杨四晚五天培训专题',
+              url: 'peixunxianlu'
             },
             {
-              imgUrl: require('./img/zunyi-02.jpg'),
-              title: '胡杨林四天培训专题',
-              url:'/yanan'
+              imgUrl: require('./img/睡胡杨2.jpg'),
+              title: '睡胡杨五晚六天培训专题',
+              url: 'peixunxianlu'
             },
             {
-              imgUrl: require('./img/zunyi-03.jpg'),
-              title: '胡杨林四天培训专题',
-              url:'/yanan'
+              imgUrl: require('./img/睡胡杨3.jpg'),
+              title: '睡胡杨四晚五天培训专题',
+              url: 'peixunxianlu'
             },
             {
-              imgUrl: require('./img/zunyi-04.jpg'),
-              title: '胡杨林四天培训专题',
-              url:'/yanan'
+              imgUrl: require('./img/睡胡杨4.jpg'),
+              title: '睡胡杨五天培训专题',
+              url: 'peixunxianlu'
             }
           ]
         },
         {
           list: [
             {
-              imgUrl: require('./img/xibaipo-01.jpg'),
-              title: '托木尔峰四天培训专题',
-              url:'/yanan'
+              imgUrl: require('./img/托木尔峰1.jpg'),
+              title: '托木尔峰四晚五天培训专题',
+              url: 'peixunxianlu'
             },
             {
-              imgUrl: require('./img/xibaipo-02.jpg'),
-              title: '托木尔峰四天培训专题',
-              url:'/yanan'
+              imgUrl: require('./img/托木尔峰2.jpg'),
+              title: '托木尔峰五天培训专题',
+              url: 'peixunxianlu'
             },
             {
-              imgUrl: require('./img/xibaipo-03.jpg'),
-              title: '托木尔峰四天培训专题',
-              url:'/yanan'
+              imgUrl: require('./img/托木尔峰3.jpg'),
+              title: '托木尔峰五晚六天培训专题',
+              url: 'peixunxianlu'
             },
             {
-              imgUrl: require('./img/xibaipo-04.jpg'),
-              title: '托木尔峰四天培训专题',
-              url:'/yanan'
+              imgUrl: require('./img/托木尔峰4.jpg'),
+              title: '托木尔峰四晚五天培训专题',
+              url: 'peixunxianlu'
             }
           ]
         },
         {
           list: [
             {
-              imgUrl: require('./img/yanan-01.jpg'),
-              title: '屯垦纪念馆五晚六天培训方案',
-              url:'/yanan'
+              imgUrl: require('./img/文化馆1.jpg'),
+              title: '文化馆五晚六天培训方案',
+              url: 'peixunxianlu'
             },
             {
-              imgUrl: require('./img/yanan-02.jpg'),
-              title: '屯垦纪念馆五晚六天培训方案',
-              url:'/yanan'
+              imgUrl: require('./img/文化馆2.jpg'),
+              title: '文化馆五天培训方案',
+              url: 'peixunxianlu'
             },
             {
-              imgUrl: require('./img/yanan-03.jpg'),
-              title: '屯垦纪念馆五晚六天培训方案',
-              url:'/yanan'
+              imgUrl: require('./img/文化馆3.jpg'),
+              title: '文化馆四晚五天培训方案',
+              url: 'peixunxianlu'
             },
             {
-              imgUrl: require('./img/yanan-04.jpg'),
-              title: '屯垦纪念馆五晚六天培训方案',
-              url:'/yanan'
+              imgUrl: require('./img/文化馆4.jpg'),
+              title: '文化馆五天培训方案',
+              url: 'peixunxianlu'
             }
           ]
         }

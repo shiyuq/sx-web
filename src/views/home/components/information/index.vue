@@ -5,27 +5,28 @@
       <b>15083931223</b>
     </p>
     <ul>
-      <li v-for="(item, index) in list" :key="index">
+      <li>
         <span>
-          <img :src="item.imgUrl" alt="" width="40" height="34" />
+          <img src="./img/liuyan01.png" alt="" width="40" height="34" />
         </span>
-        <input
-          type="text"
-          :name="item.name"
-          :id="item.id"
-          :class="item.class"
-          :placeholder="item.value"
-        />
+        <input type="text" v-model="name" placeholder="姓名" />
+      </li>
+      <li>
+        <span>
+          <img src="./img/liuyan02.png" alt="" width="40" height="34" />
+        </span>
+        <input type="text" v-model="phone" placeholder="电话" />
       </li>
       <li>
         <span>
           <img src="./img/liuyan03.png" alt="" width="40" height="34" />
         </span>
-        <textarea name="content" id="txtMessage" placeholder="留言"> </textarea>
+        <textarea name="content" v-model="consultInfo" placeholder="留言">
+        </textarea>
       </li>
       <li class="last">
         <em>
-          <button type="submit">立即提交</button>
+          <button @click="submit">立即提交</button>
         </em>
         <!-- 链接跳转 -->
         <em class="right">

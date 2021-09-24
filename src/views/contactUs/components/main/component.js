@@ -28,13 +28,13 @@ export default {
       ],
       cList: [
         {
-          content:'地址是：陕西省铜川市印台区馨安佳苑15楼9号'
+          content:'地址：阿拉尔市'
         },
         {
-          content:'电话：029-83429399 13991985022'
+          content:'电话：029-83429399 15083931223'
         },
         {
-          content:'邮箱：wlf920@163.com'
+          content:'邮箱：xxx@163.com'
         }
       ]
     }
