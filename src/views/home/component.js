@@ -9,7 +9,6 @@ import Information from './components/information'
 import News from './components/news'
 import Link from './components/link'
 
-import addressService from '../../api/address-service'
 export default {
   name: 'Home',
   components: {
@@ -26,13 +25,8 @@ export default {
   },
   data() {
     return {
-      addresses: []
     }
   },
-  async created () {
-    const [ addresses ] = await Promise.all([
-      addressService.getAddressList()
-    ])
-    this.addresses = addresses.data
+  created () {
   }
 }

@@ -7,7 +7,7 @@
           <div class="text">微信</div>
         </a>
         <div class="tip">
-          <img src="./img/二维码.jpg" alt="" />
+          <img src="@/assets/qrcode.png" alt="" />
           <p>微信公众号</p>
         </div>
       </div>

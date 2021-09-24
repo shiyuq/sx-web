@@ -67,7 +67,7 @@
         </p>
       </div>
       <div class="ewm">
-        <img src="../footer/img/二维码.jpg" width="111" height="109" />
+        <img src="@/assets/qrcode.png" width="111" height="109" />
         <p>进入微信公众号</p>
       </div>
     </div>
