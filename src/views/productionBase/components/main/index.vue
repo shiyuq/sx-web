@@ -74,7 +74,7 @@
         </ul>
         <div class="clear"></div>
         <div class="block">
-          <el-pagination
+          <!-- <el-pagination
             @size-change="handleSizeChange"
             @current-change="handleCurrentChange"
             :current-page.sync="currentPage3"
@@ -82,7 +82,7 @@
             layout="prev, pager, next, jumper"
             :total="1000"
           >
-          </el-pagination>
+          </el-pagination> -->
         </div>
       </div>
     </div>

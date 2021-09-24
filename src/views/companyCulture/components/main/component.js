@@ -30,14 +30,14 @@ export default {
           url: '/qiyewenhua/',
           title:'企业文化'
         },
-        {
-          url: '/qiyeshipin/',
-          title:'企业视频'
-        },
-        {
-          url: '/fengcai/',
-          title:'企业风采'
-        },
+        // {
+        //   url: '/qiyeshipin/',
+        //   title:'企业视频'
+        // },
+        // {
+        //   url: '/fengcai/',
+        //   title:'企业风采'
+        // },
         {
           url: '/peixunjidi/',
           title:'培训基地'

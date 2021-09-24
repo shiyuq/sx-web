@@ -139,7 +139,7 @@
             <div v-html="train.content"></div>
           </div>
         </div>
-        <div class="information">
+        <div class="informations">
           <p>
             咨询：{{ train.title }}
             <br />
