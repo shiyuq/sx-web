@@ -13,33 +13,33 @@ export default {
         {
           url: 'peixunxianlu',
           title: '丝绸之路五晚六天培训方案',
-          src:require('./img/王母娘娘祭祀1.jpg')
+          src:require('../../../../assets/丝绸之路1.jpg')
         },
         {
           url: 'peixunxianlu',
           title: '丝绸之路四晚五天培训方案',
-          src:require('./img/塔克拉玛干沙漠2.jpg')
+          src:require('../../../../assets/丝绸之路2.jpg')
         }
       ],
       rList: [
         {
           url: 'peixunxianlu',
-          src: require('./img/王母娘娘祭祀1.jpg'),
+          src: require('../../../../assets/丝绸之路3.jpg'),
           title: '丝绸之路五晚六天培训方案'
         },
         {
           url: 'peixunxianlu',
-          src: require('./img/塔克拉玛干沙漠2.jpg'),
+          src: require('../../../../assets/丝绸之路4.jpg'),
           title: '丝绸之路四晚五天培训方案'
         },
         {
           url: 'peixunxianlu',
-          src: require('./img/2.jpg'),
+          src: require('../../../../assets/千鸟湖1.jpg'),
           title: '千鸟湖五晚六天培训方案'
         },
         {
           url: 'peixunxianlu',
-          src: require('./img/3.jpg'),
+          src: require('../../../../assets/千鸟湖2.jpg'),
           title: '千鸟湖四晚五天培训方案'
         }
       ],

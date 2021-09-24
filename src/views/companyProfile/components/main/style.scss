@@ -30,20 +30,24 @@
       ul {
         background: #fff;
         padding: 10px 0px;
+        .cur {
+          a {
+            color: #e81723;
+          }
+        }
         a {
+          overflow: hidden;
           display: block;
-          padding-left: 66px;
           height: 40px;
           line-height: 40px;
+          padding-left: 66px;
           font-size: 16px;
-          color: #666;
-          background: url("../../../../assets/leftmuli.png") no-repeat center;
           text-decoration: none;
+          background: url("../../../../assets/leftmuli.png") no-repeat center;
           border-top: 2px solid #fff;
           border-bottom: 2px solid #fff;
-          overflow: hidden;
+          color: #666;
         }
-        .cur a,
         a:hover {
           color: #e81723;
         }
@@ -184,43 +188,12 @@
         }
       }
       .content {
-        overflow: hidden;
-        padding-top: 20px;
-        li {
-          float: left;
-          width: 220px;
-          margin-right: 19px;
-          a {
-            text-decoration: none;
-            color: #666;
-            img {
-              display: block;
-              border: 1px solid #d7d7d7;
-              width: 220px;
-              height: 175px;
-            }
-            img:hover {
-              border-color: #e81723;
-            }
-          }
-          h4 {
-            overflow: hidden;
-            margin-top: 20px;
-            font-weight: normal;
-            height: 37px;
-            text-align: center;
-            font-size: 14px;
-            a {
-              font-size: 14px;
-              color: #666;
-            }
-            a:hover {
-              text-decoration: underline;
-            }
-          }
-        }
-        li:nth-child(3n) {
-          margin-right: 0;
+        width: 700px;
+        padding-top: 10px;
+        line-height: 24px;
+        .text {
+          font-size: 16px;
+          color: #666;
         }
       }
       .clear {
@@ -228,19 +201,6 @@
         height: 0;
         line-height: 0;
         font-size: 0;
-      }
-      .block {
-        padding: 15px 10px;
-        border: 1px solid #ccc;
-        .el-pagination {
-          display: flex;
-          justify-content: flex-end;
-          .el-pager {
-            .active {
-              color: #e81723 !important;
-            }
-          }
-        }
       }
     }
   }

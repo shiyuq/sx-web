@@ -3,11 +3,20 @@
     <div class="container">
       <div class="left">
         <h4 class="title">
-          <router-link to="mingshifengcai">
-            名师风采
+          <router-link to="guanyuwomen">
+            关于我们
           </router-link>
+          ABOUT US
         </h4>
-        <ul></ul>
+        <ul>
+          <li
+            v-for="(item, index) in des"
+            :key="index"
+            :class="{ cur: isCur === index }"
+          >
+            <router-link :to="item.url">{{ item.title }}</router-link>
+          </li>
+        </ul>
         <h4 class="consult">
           相关资讯
         </h4>
@@ -40,25 +49,27 @@
       <div class="right">
         <div class="header">
           <h5>
-            <span>名师风采</span>
+            <span>培训基地</span>
           </h5>
           <el-breadcrumb separator-class="el-icon-arrow-right">
             <el-breadcrumb-item>您的位置</el-breadcrumb-item>
             <el-breadcrumb-item :to="{ path: '/' }">主页</el-breadcrumb-item>
-            <el-breadcrumb-item>名师风采</el-breadcrumb-item>
+            <el-breadcrumb-item :to="{ path: '/guanyuwomen' }">
+              关于我们
+            </el-breadcrumb-item>
+            <el-breadcrumb-item>培训基地</el-breadcrumb-item>
           </el-breadcrumb>
         </div>
         <ul class="content">
-          <li v-for="(item, index) in cList" :key="index">
-            <router-link :to="item.src">
+          <li v-for="item in cList" :key="item.id">
+            <router-link :to="item.src" :title="item.title">
               <img :src="item.imgUrl" />
             </router-link>
-            <div class="des">
-              <router-link :to="item.src">
-                <h4>{{ item.title }}</h4>
-                <p>{{ item.content }}</p>
+            <h4>
+              <router-link :to="item.src" :title="item.title">
+                <b>{{ item.title }}</b>
               </router-link>
-            </div>
+            </h4>
           </li>
         </ul>
         <div class="clear"></div>

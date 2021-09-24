@@ -2,6 +2,7 @@ export default {
   name: 'Main',
   data () {
     return {
+      isCur:1,
       list: [
         {
           url: 'xinwendongtai',
@@ -40,6 +41,20 @@ export default {
         {
           url: '/peixunjidi/',
           title:'培训基地'
+        }
+      ],
+      contentList: [
+        {
+          content:'不忘初心'
+        },
+        {
+          content:'牢记使命'
+        },
+        {
+          content:'传承红色基因'
+        },
+        {
+          content:'弘扬三五九旅精神'
         }
       ]
     }

@@ -3,7 +3,7 @@
     <div class="container">
       <div class="left">
         <h4 class="title">
-          <router-link to="http://sxhscc.cn/a/guanyuwomen/">
+          <router-link to="guanyuwomen">
             联系我们
           </router-link>
         </h4>
@@ -18,7 +18,7 @@
         <div class="content">
           <ul>
             <li v-for="(item, index) in list" :key="index">
-              <router-link :to="item.url" target="_blank" :title="item.title">{{
+              <router-link :to="item.url" :title="item.title">{{
                 item.title
               }}</router-link>
             </li>
@@ -27,13 +27,13 @@
         <div class="contact">
           <div class="contactUs">
             <h5 class="subcontact">
-              <router-link to="http://sxhscc.cn/a/lianxiwomen/" target="_blank">
+              <router-link to="lianxiwomen">
                 联系我们
               </router-link>
             </h5>
           </div>
           <div class="subcontent">
-            <img src="./img/map.png" />
+            <img src="../../../../assets/map.png" />
             <p>
               <span class="subspan">咨询热线：</span>
             </p>
@@ -58,7 +58,7 @@
           </span>
           <div class="navigation">
             <a
-              href="https://map.baidu.com/search/%E9%98%BF%E6%8B%89%E5%B0%94%E5%B8%82/@9048965,4918628.5,13z?querytype=s&da_src=shareurl&wd=%E9%98%BF%E6%8B%89%E5%B0%94%E5%B8%82&c=232&src=0&pn=0&sug=0&l=19&b=(12145315.965,4155304.13;12145955.965,4155632.63)&from=webmap&biz_forward=%7B%22scaler%22:2,%22styles%22:%22pl%22%7D&seckey=348b3ea8be0aad420af3f6fd20b5fe5d742b033169aaff9e55468f20442b2a4079fc11a7bd963ba9f8cb6be3ba7407e73b6fce9ae6fd7d808f0466c44c5b81ea28bac217121ee5ebacc5da0a014b7519cd654b2c3f46618044ffe49b97a9f9193f85b2a2b999072b8539eec7f2cf9555ee73b13ee93bb6fc2bc62ef9dc6bbb14e106b86c1d9d275476ca54d5ec322888863e22d7532ceccdeb384d9b91c91fbbe1bcaaac6a219bfc69ba9dacbfbe833f92fa7209f2fa51e6421e8a08088c1c9affea563455db060fa46c69514e6e1a37584bb1ce9b44e6f53c6dbaca7f2b7129015b7e339d265700a15e1c512100ba33&device_ratio=2"
+              href="https://map.baidu.com/search/%E4%B8%89%E4%BA%94%E4%B9%9D%E6%97%85%E5%B9%B2%E9%83%A8%E5%AD%A6%E9%99%A2/@9050440.189735325,4921273.692685001,21z?querytype=s&da_src=shareurl&wd=%E4%B8%89%E4%BA%94%E4%B9%9D%E6%97%85%E5%B9%B2%E9%83%A8%E5%AD%A6%E9%99%A2&c=731&src=0&wd2=%E9%98%BF%E6%8B%89%E5%B0%94%E5%B8%82&pn=0&sug=1&l=13&b=(9028485,4908116.5;9069445,4929140.5)&from=webmap&biz_forward=%7B%22scaler%22:2,%22styles%22:%22pl%22%7D&sug_forward=4fcb8691252b79c12b11d142&seckey=348b3ea8be0aad420af3f6fd20b5fe5d742b033169aaff9e55468f20442b2a4079fc11a7bd963ba9f8cb6be3ba7407e73b6fce9ae6fd7d808f0466c44c5b81ea28bac217121ee5ebacc5da0a014b7519cd654b2c3f46618044ffe49b97a9f9193f85b2a2b999072b8539eec7f2cf9555ee73b13ee93bb6fc2bc62ef9dc6bbb141336729964e8b3cae46ea5b5ab3e357b3757604053bd206779069efc8fc36fcfc27533b31304db2b6bdd93d4124b560cbfdc871a76b4a790e0c5212d3b7c41b2d6bd8ec20d33864c5a6f1da39a972f65448554119c0f69c3fdb9dd34f399b7adfadf7221a746c5c7d18a06c919f72e92&device_ratio=2"
             >
               <img src="./img/navigation.png" />
               <br />

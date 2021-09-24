@@ -10,12 +10,12 @@ export default {
         {
           url: 'peixunxianlu',
           title: '丝绸之路五晚六天培训方案',
-          src:require('./img/王母娘娘祭祀1.jpg')
+          src:require('../../../../assets/丝绸之路1.jpg')
         },
         {
           url: 'peixunxianlu',
           title: '丝绸之路四晚五天培训方案',
-          src:require('./img/塔克拉玛干沙漠2.jpg')
+          src:require('../../../../assets/丝绸之路2.jpg')
         }
       ],
       filterTrains: [],

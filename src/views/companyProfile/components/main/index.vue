@@ -9,7 +9,11 @@
           ABOUT US
         </h4>
         <ul>
-          <li v-for="(item, index) in des" :key="index">
+          <li
+            v-for="(item, index) in des"
+            :key="index"
+            :class="{ cur: isCur === index }"
+          >
             <router-link :to="item.url">{{ item.title }}</router-link>
           </li>
         </ul>
@@ -45,18 +49,18 @@
       <div class="right">
         <div class="header">
           <h5>
-            <span>关于我们</span>
+            <span>企业简介</span>
           </h5>
           <el-breadcrumb separator-class="el-icon-arrow-right">
             <el-breadcrumb-item>您的位置</el-breadcrumb-item>
             <el-breadcrumb-item :to="{ path: '/' }">主页</el-breadcrumb-item>
-            <el-breadcrumb-item>关于我们</el-breadcrumb-item>
+            <el-breadcrumb-item :to="{ path: '/guanyuwomen' }">
+              关于我们
+            </el-breadcrumb-item>
+            <el-breadcrumb-item>企业简介</el-breadcrumb-item>
           </el-breadcrumb>
         </div>
         <div class="content">
-          <div class="picture">
-            <img src="./img/bg.jpg" />
-          </div>
           <div>
             <span class="text">
               &nbsp; &nbsp; &nbsp; &nbsp;

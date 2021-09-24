@@ -7,7 +7,7 @@
     </h3>
     <ul>
       <li v-for="(item, index) in list" :key="index">
-        <a :href="item.src" target="_blank">{{ item.title }}</a>
+        <a :href="item.src">{{ item.title }}</a>
       </li>
     </ul>
   </div>

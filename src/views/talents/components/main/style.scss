@@ -31,21 +31,17 @@
         background: #fff;
         padding: 10px 0px;
         a {
+          overflow: hidden;
           display: block;
-          padding-left: 66px;
           height: 40px;
           line-height: 40px;
+          padding-left: 66px;
           font-size: 16px;
-          color: #666;
-          background: url("../../../../assets/leftmuli.png") no-repeat center;
+          color: #e81723;
           text-decoration: none;
+          background: url("../../../../assets/leftmuli.png") no-repeat center;
           border-top: 2px solid #fff;
           border-bottom: 2px solid #fff;
-          overflow: hidden;
-        }
-        .cur a,
-        a:hover {
-          color: #e81723;
         }
       }
       .consult {
@@ -184,43 +180,29 @@
         }
       }
       .content {
-        overflow: hidden;
-        padding-top: 20px;
-        li {
-          float: left;
-          width: 220px;
-          margin-right: 19px;
-          a {
-            text-decoration: none;
-            color: #666;
-            img {
-              display: block;
-              border: 1px solid #d7d7d7;
-              width: 220px;
-              height: 175px;
-            }
-            img:hover {
-              border-color: #e81723;
-            }
-          }
-          h4 {
-            overflow: hidden;
-            margin-top: 20px;
-            font-weight: normal;
-            height: 37px;
+        width: 700px;
+        padding-top: 10px;
+        line-height: 24px;
+        .mainContent {
+          font-size: 14px;
+          .pic {
             text-align: center;
-            font-size: 14px;
-            a {
-              font-size: 14px;
-              color: #666;
-            }
-            a:hover {
-              text-decoration: underline;
+            img {
+              width: 100%;
             }
           }
-        }
-        li:nth-child(3n) {
-          margin-right: 0;
+          .inf {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #666;
+            h4 {
+              margin-top: 20px;
+              font-size: 16px;
+              color: #696969;
+              p {
+                font-weight: normal;
+              }
+            }
+          }
         }
       }
       .clear {
@@ -228,19 +210,6 @@
         height: 0;
         line-height: 0;
         font-size: 0;
-      }
-      .block {
-        padding: 15px 10px;
-        border: 1px solid #ccc;
-        .el-pagination {
-          display: flex;
-          justify-content: flex-end;
-          .el-pager {
-            .active {
-              color: #e81723 !important;
-            }
-          }
-        }
       }
     }
   }

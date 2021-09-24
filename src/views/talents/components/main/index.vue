@@ -3,11 +3,15 @@
     <div class="container">
       <div class="left">
         <h4 class="title">
-          <router-link to="mingshifengcai">
-            名师风采
+          <router-link to="guanyuwomen">
+            联系我们
           </router-link>
         </h4>
-        <ul></ul>
+        <ul>
+          <li v-for="(item, index) in des" :key="index">
+            <router-link :to="item.url">{{ item.title }}</router-link>
+          </li>
+        </ul>
         <h4 class="consult">
           相关资讯
         </h4>
@@ -40,39 +44,35 @@
       <div class="right">
         <div class="header">
           <h5>
-            <span>名师风采</span>
+            <span>人才招聘</span>
           </h5>
           <el-breadcrumb separator-class="el-icon-arrow-right">
             <el-breadcrumb-item>您的位置</el-breadcrumb-item>
             <el-breadcrumb-item :to="{ path: '/' }">主页</el-breadcrumb-item>
-            <el-breadcrumb-item>名师风采</el-breadcrumb-item>
+            <el-breadcrumb-item :to="{ path: '/lianxiwomen' }">
+              联系我们
+            </el-breadcrumb-item>
           </el-breadcrumb>
         </div>
-        <ul class="content">
-          <li v-for="(item, index) in cList" :key="index">
-            <router-link :to="item.src">
-              <img :src="item.imgUrl" />
-            </router-link>
-            <div class="des">
-              <router-link :to="item.src">
-                <h4>{{ item.title }}</h4>
-                <p>{{ item.content }}</p>
-              </router-link>
+        <div class="content">
+          <div class="mainContent">
+            <div class="pic">
+              <img src="../../../../assets/企业文化.jpg" />
             </div>
-          </li>
-        </ul>
-        <div class="clear"></div>
-        <div class="block">
-          <el-pagination
-            @size-change="handleSizeChange"
-            @current-change="handleCurrentChange"
-            :current-page.sync="currentPage3"
-            :page-size="100"
-            layout="prev, pager, next, jumper"
-            :total="1000"
-          >
-          </el-pagination>
+            <div class="inf" v-for="(item, index) in infList" :key="index">
+              <h4 v-for="(hItem, hIndex) in infList[index].sList" :key="hIndex">
+                {{ hItem.title }}
+                <p
+                  v-for="(pItem, pIndex) in infList[index].sList[hIndex].list"
+                  :key="pIndex"
+                >
+                  {{ pItem.content }}
+                </p>
+              </h4>
+            </div>
+          </div>
         </div>
+        <div class="clear"></div>
       </div>
     </div>
   </div>

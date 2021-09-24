@@ -2,6 +2,7 @@ export default {
   name: 'Main',
   data () {
     return {
+      isCur:0,
       list: [
         {
           url: 'xinwendongtai',

@@ -3,7 +3,7 @@
     <div class="container">
       <div class="left">
         <h4 class="title">
-          <router-link to="http://sxhscc.cn/a/chenggonganli/">
+          <router-link to="rongyuzizhi">
             荣誉资质
           </router-link>
         </h4>
@@ -23,7 +23,7 @@
         <div class="content">
           <ul>
             <li v-for="(item, index) in list" :key="index">
-              <router-link :to="item.url" target="_blank" :title="item.title">{{
+              <router-link :to="item.url" :title="item.title">{{
                 item.title
               }}</router-link>
             </li>
@@ -32,13 +32,13 @@
         <div class="contact">
           <div class="contactUs">
             <h5 class="subcontact">
-              <router-link to="/lianxiwomen" target="_blank">
+              <router-link to="lianxiwomen">
                 联系我们
               </router-link>
             </h5>
           </div>
           <div class="subcontent">
-            <img src="./img/map.png" />
+            <img src="../../../../assets/map.png" />
             <p>
               <span class="subspan">咨询热线：</span>
             </p>
@@ -59,11 +59,11 @@
         </div>
         <ul class="content">
           <li v-for="item in cList" :key="item.id">
-            <router-link :to="item.src" :title="item.title" target="_blank">
+            <router-link :to="item.src" :title="item.title">
               <img :src="item.imgUrl" />
             </router-link>
             <h4>
-              <router-link :to="item.src" :title="item.title" target="_blank">
+              <router-link :to="item.src" :title="item.title">
                 {{ item.title }}
               </router-link>
             </h4>
