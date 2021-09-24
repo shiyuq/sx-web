@@ -7,17 +7,17 @@ export default {
       list: [
         {
           url: 'peixunxianlu',
-          title: '三五九旅',
-          imgUrl:require('./img/pro_s.png')
-        },
-        {
-          url: 'peixunxianlu',
           title: '塔里木河',
           imgUrl:require('./img/pro_s.png')
         },
         {
           url: 'peixunxianlu',
-          title: '睡胡杨',
+          title: '睡胡杨谷',
+          imgUrl:require('./img/pro_s.png')
+        },
+        {
+          url: 'peixunxianlu',
+          title: '三五九旅干部培训中心',
           imgUrl:require('./img/pro_s.png')
         },
         {
@@ -34,18 +34,18 @@ export default {
       pList: [
         {
           url: 'peixunxianlu',
-          title: '三五九旅',
-          imgUrl:require('./img/三五九旅.jpg')
-        },
-        {
-          url: 'peixunxianlu',
           title: '塔里木河',
           imgUrl:require('./img/塔里木河.png')
         },
         {
           url: 'peixunxianlu',
-          title: '睡胡杨',
+          title: '睡胡杨谷',
           imgUrl:require('./img/睡胡杨.jpg')
+        },
+        {
+          url: 'peixunxianlu',
+          title: '三五九旅干部培训中心',
+          imgUrl:require('./img/三五九旅.jpg')
         },
         {
           url: 'peixunxianlu',
@@ -59,30 +59,6 @@ export default {
         }
       ],
       uList: [
-        {
-          list: [
-            {
-              imgUrl: require('./img/三五九旅1.jpg'),
-              title: '三五九旅五晚六天培训专题',
-              url: 'peixunxianlu'
-            },
-            {
-              imgUrl: require('./img/三五九旅2.jpg'),
-              title: '三五九旅四晚五天培训专题',
-              url: 'peixunxianlu'
-            },
-            {
-              imgUrl: require('./img/三五九旅3.jpg'),
-              title: '三五九旅五天培训专题',
-              url: 'peixunxianlu'
-            },
-            {
-              imgUrl: require('./img/三五九旅4.jpg'),
-              title: '三五九旅四晚五天培训专题',
-              url: 'peixunxianlu'
-            }
-          ]
-        },
         {
           list: [
             {
@@ -127,6 +103,30 @@ export default {
             {
               imgUrl: require('./img/睡胡杨4.jpg'),
               title: '睡胡杨五天培训专题',
+              url: 'peixunxianlu'
+            }
+          ]
+        },
+        {
+          list: [
+            {
+              imgUrl: require('./img/三五九旅1.jpg'),
+              title: '三五九旅五晚六天培训专题',
+              url: 'peixunxianlu'
+            },
+            {
+              imgUrl: require('./img/三五九旅2.jpg'),
+              title: '三五九旅四晚五天培训专题',
+              url: 'peixunxianlu'
+            },
+            {
+              imgUrl: require('./img/三五九旅3.jpg'),
+              title: '三五九旅五天培训专题',
+              url: 'peixunxianlu'
+            },
+            {
+              imgUrl: require('./img/三五九旅4.jpg'),
+              title: '三五九旅四晚五天培训专题',
               url: 'peixunxianlu'
             }
           ]

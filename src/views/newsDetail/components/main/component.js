@@ -5,68 +5,68 @@ export default {
       idIndex: null,
       introContentList: [
         {
-          url: '',
-          imgUrl: require('./img/bg1.jpg'),
-          content: '延安、西安五晚六天培训方案'
+          url: '/peixunxianlu/6847098381030916096',
+          imgUrl: require('../../../../assets/丝绸之路1.jpg'),
+          content:'丝绸之路五晚六天培训方案'
         },
         {
-          url: '',
-          imgUrl: require('./img/bg1.jpg'),
-          content: '延安、西安五晚六天培训方案'
+          url: '/peixunxianlu/6847098774590849024',
+          imgUrl: require('../../../../assets/千鸟湖1.jpg'),
+          content:'千鸟湖五天培训方案'
         },
         {
-          url: '',
-          imgUrl: require('./img/bg1.jpg'),
-          content: '延安、西安五晚六天培训方案'
+          url: '/peixunxianlu/6845305655260086272',
+          imgUrl: require('../../../../assets/文化馆1.jpg'),
+          content:'文化馆五晚六天培训方案'
         },
         {
-          url: '',
-          imgUrl: require('./img/bg1.jpg'),
-          content: '延安、西安五晚六天培训方案'
+          url: '/peixunxianlu/6845305870595653632',
+          imgUrl: require('../../../../assets/沙漠之门1.jpg'),
+          content:'沙漠之门四晚五天培训方案'
         }
       ],
       contentRightList: [
         {
           url: '',
-          title: '同类文章排行',
+          title:'同类文章排行',
           uList: [
             {
-              url: '',
-              title: '有哪些教学模式？'
+              url: '/xinwendongtai/6843938169323257856',
+              title:'有哪些教学模式？'
             },
             {
-              url: '',
-              title: '有哪些教学模式？'
+              url: '/xinwendongtai/6843542491682045952',
+              title:'会提供哪些教学服务？'
             },
             {
-              url: '',
-              title: '有哪些教学模式？'
+              url: '/xinwendongtai/6843937637581979648',
+              title:'习近平在深入推动长江经济带发展座谈会上的讲'
             },
             {
-              url: '',
-              title: '有哪些教学模式？'
+              url: '/xinwendongtai/6847157567609634816',
+              title:'习近平在中阿合作论坛第八届部长级会议开幕式'
             }
           ]
         },
         {
           url: '',
-          title: '最新资讯文章',
+          title:'最新资讯文章',
           uList: [
             {
-              url: '',
-              title: '有哪些教学模式？'
+              url: '/xinwendongtai/6843938169323257856',
+              title:'有哪些教学模式？'
             },
             {
-              url: '',
-              title: '有哪些教学模式？'
+              url: '/xinwendongtai/6843542491682045952',
+              title:'会提供哪些教学服务？'
             },
             {
-              url: '',
-              title: '有哪些教学模式？'
+              url: '/xinwendongtai/6843937637581979648',
+              title:'习近平在深入推动长江经济带发展座谈会上的讲'
             },
             {
-              url: '',
-              title: '有哪些教学模式？'
+              url: '/xinwendongtai/6847157567609634816',
+              title:'习近平在中阿合作论坛第八届部长级会议开幕式'
             }
           ]
         }
