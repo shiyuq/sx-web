@@ -1,23 +1,46 @@
+import consultService from '@/api/consult-service'
+
 export default {
   name: 'Information',
   data () {
     return {
-      list: [
-        {
-          imgUrl: require('./img/liuyan01.png'),
-          name: 'name',
-          value: '姓名',
-          id: 'txtName',
-          class:'name'
-        },
-        {
-          imgUrl: require('./img/liuyan02.png'),
-          name: 'tel',
-          value: '电话',
-          id: 'txtMobile',
-          class:'mobile'
-        }
-      ]
+      name: '',
+      phone: '',
+      consultInfo: ''
+    }
+  },
+  methods: {
+    async submit () {
+      if (!this.name) {
+        this.$notify.warning({
+          title: '提交错误',
+          message: '请输入姓名'
+        })
+        return
+      }
+      if (!this.phone) {
+        this.$notify.warning({
+          title: '提交错误',
+          message: '请输入手机号'
+        })
+        return
+      }
+      if (!this.consultInfo) {
+        this.$notify.warning({
+          title: '提交错误',
+          message: '请输入留言内容'
+        })
+        return
+      }
+      await consultService.addConsult({
+        name: this.name,
+        phone: this.phone,
+        consultInfo: this.consultInfo
+      })
+      this.$notify.success({
+        title: '提交成功',
+        message: '客服将会在一个工作日内联系您，请注意电话畅通！'
+      })
     }
   }
 }

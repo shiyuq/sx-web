@@ -1,5 +1,6 @@
 import addressService from '../../../../api/address-service'
 import trainService from '../../../../api/train-service'
+import consultService from '@/api/consult-service'
 
 export default {
   name: 'Main',
@@ -42,26 +43,15 @@ export default {
           title: '千鸟湖四晚五天培训方案'
         }
       ],
-      putList: [
-        {
-          required: '*',
-          title: '联系人',
-          value: '请填写联系人'
-        },
-        {
-          required: '*',
-          title: '手机号码',
-          value: '请填写手机号码'
-        },
-        {
-          required: '',
-          title: '电子邮件',
-          value: '请填写电子邮件'
-        }
-      ]
+      trainId: '',
+      name: '',
+      phone: '',
+      email: '',
+      consultInfo: ''
     }
   },
   created () {
+    this.trainId = this.$route.params.id
     this.getData()
   },
   methods: {
@@ -75,6 +65,40 @@ export default {
     },
     click (item) {
       this.$router.push({path: '/peixunxianlu', query: { id: item.id }})
+    },
+    async submit () {
+      if (!this.name) {
+        this.$notify.warning({
+          title: '提交错误',
+          message: '请输入姓名'
+        })
+        return
+      }
+      if (!this.phone) {
+        this.$notify.warning({
+          title: '提交错误',
+          message: '请输入手机号'
+        })
+        return
+      }
+      if (!this.consultInfo) {
+        this.$notify.warning({
+          title: '提交错误',
+          message: '请输入留言内容'
+        })
+        return
+      }
+      await consultService.addConsult({
+        trainId: this.trainId,
+        name: this.name,
+        phone: this.phone,
+        email: this.email,
+        consultInfo: this.consultInfo
+      })
+      this.$notify.success({
+        title: '提交成功',
+        message: '客服将会在一个工作日内联系您，请注意电话畅通！'
+      })
     }
   }
 }
