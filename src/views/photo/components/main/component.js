@@ -28,74 +28,74 @@ export default {
         {
           id: '01',
           src: '/peixunlueying1',
-          title: '延安、西安五晚六天培训方案',
-          imgUrl:require('./img/01.jpg')
+          title: '沙漠之门五晚六天培训方案',
+          imgUrl:require('./img/沙漠之门1.jpg')
         },
         {
           id: '02',
           src: 'peixunlueying1',
-          title: '延安、照金、西安六晚七天培训方案',
-          imgUrl:require('./img/02.jpg')
+          title: '沙漠之门四晚五天培训方案',
+          imgUrl:require('./img/沙漠之门2.jpg')
         },
         {
           id: '03',
           src: 'peixunlueying1',
-          title: '延安、照金五晚六天培训方案',
-          imgUrl:require('./img/03.jpg')
+          title: '文化馆五晚六天培训方案',
+          imgUrl:require('./img/文化馆1.jpg')
         },
         {
           id: '04',
           src: 'peixunlueying1',
-          title: '延安四晚五天培训方案',
-          imgUrl:require('./img/04.jpg')
+          title: '文化馆四晚五天培训方案',
+          imgUrl:require('./img/文化馆2.jpg')
         },
         {
           id: '05',
           src: 'peixunlueying1',
-          title: '井冈山六天培训专题',
-          imgUrl:require('./img/05.jpg')
+          title: '托木尔峰六天培训专题',
+          imgUrl:require('./img/托木尔峰1.jpg')
         },
         {
           id: '06',
           src: 'peixunlueying1',
-          title: '井冈山五天培训专题',
-          imgUrl:require('./img/06.jpg')
+          title: '托木尔峰五天培训专题',
+          imgUrl:require('./img/托木尔峰2.jpg')
         },
         {
           id: '07',
           src: 'peixunlueying1',
-          title: '井冈山四天培训专题',
-          imgUrl:require('./img/07.jpg')
+          title: '塔里木河四晚五天培训专题',
+          imgUrl:require('./img/塔里木河1.jpg')
         },
         {
           id: '08',
           src: 'peixunlueying1',
-          title: '井冈山三天培训专题',
-          imgUrl:require('./img/08.jpg')
+          title: '塔里木河五天培训专题',
+          imgUrl:require('./img/塔里木河2.jpg')
         },
         {
           id: '09',
           src: 'peixunlueying1',
-          title: '井冈山七天培训专题',
-          imgUrl:require('./img/09.jpg')
+          title: '千鸟湖五天培训专题',
+          imgUrl:require('./img/千鸟湖1.jpg')
         },
         {
           id: '10',
           src: 'peixunlueying1',
-          title: '井冈山八天培训专题',
-          imgUrl:require('./img/10.jpg')
+          title: '千鸟湖五晚六天培训专题',
+          imgUrl:require('./img/千鸟湖2.jpg')
         },
         {
           id: '11',
           src: 'peixunlueying1',
-          title: '扶贫开发脱贫攻坚五天培训',
-          imgUrl:require('./img/11.jpg')
+          title: '丝绸之路五天培训专题',
+          imgUrl:require('./img/丝绸之路1.jpg')
         },
         {
           id: '12',
           src: 'peixunlueying1',
-          title: '新型职业农民培育五天培训',
-          imgUrl:require('./img/12.jpg')
+          title: '丝绸之路四天培训专题',
+          imgUrl:require('./img/丝绸之路2.jpg')
         }
       ]
     }

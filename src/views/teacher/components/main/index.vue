@@ -29,7 +29,7 @@
             </h5>
           </div>
           <div class="subcontent">
-            <img src="./img/map.jpg" />
+            <img src="./img/map.png" />
             <p>
               <span class="subspan">咨询热线：</span>
             </p>
@@ -50,16 +50,14 @@
         </div>
         <ul class="content">
           <li v-for="(item, index) in cList" :key="index">
-            <router-link :to="item.src" target="_blank">
+            <router-link :to="item.src">
               <img :src="item.imgUrl" />
             </router-link>
             <div class="des">
-              <h4>
-                <router-link :to="item.src" target="_blank">
-                  {{ item.title }}
-                </router-link>
-              </h4>
-              <p>{{ item.content }}</p>
+              <router-link :to="item.src">
+                <h4>{{ item.title }}</h4>
+                <p>{{ item.content }}</p>
+              </router-link>
             </div>
           </li>
         </ul>

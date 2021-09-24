@@ -33,7 +33,7 @@
             </h5>
           </div>
           <div class="subcontent">
-            <img src="./img/map.jpg" />
+            <img src="./img/map.png" />
             <p>
               <span class="subspan">咨询热线：</span>
             </p>

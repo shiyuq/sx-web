@@ -7,7 +7,7 @@ export default {
       list: [
         {
           url: 'peixunxianlu',
-          title: '三五九旅',
+          title: '三五九',
           imgUrl:require('./img/pro_s.png')
         },
         {
@@ -34,7 +34,7 @@ export default {
       pList: [
         {
           url: 'peixunxianlu',
-          title: '三五九旅',
+          title: '三五九',
           imgUrl:require('./img/三五九旅.jpg')
         },
         {

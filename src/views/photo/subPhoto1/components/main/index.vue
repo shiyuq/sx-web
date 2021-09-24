@@ -19,7 +19,7 @@
             <span>发表时间：2018-11-26</span>
           </div>
           <div class="pic">
-            <img src="./img/bg1.jpg" alt="" />
+            <img src="./img/文化馆2.jpg" alt="" />
           </div>
           <div class="turnPage">
             <span v-for="(item, index) in pList" :key="index">

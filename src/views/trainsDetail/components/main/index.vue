@@ -44,7 +44,7 @@
               </h5>
             </div>
             <div class="sub">
-              <img src="./img/map.jpg" alt="" />
+              <img src="./img/map.png" alt="" />
               <p>
                 <span>咨询热线：</span>
               </p>
