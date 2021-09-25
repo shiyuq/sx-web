@@ -69,7 +69,7 @@
     <div class="f_btm">
       <div class="container">
         <p>
-          Copyright © 2019-2023三五九旅干部培训&nbsp; &nbsp;&nbsp;
+          Copyright © 2019-2023三五九旅干部培训中心&nbsp; &nbsp;&nbsp;
           &nbsp;版权所有
         </p>
       </div>
