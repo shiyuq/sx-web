@@ -62,7 +62,7 @@
           </li>
         </ul>
         <div class="clear"></div>
-        <div class="block">
+        <!-- <div class="block">
           <el-pagination
             @size-change="handleSizeChange"
             @current-change="handleCurrentChange"
@@ -72,7 +72,7 @@
             :total="1000"
           >
           </el-pagination>
-        </div>
+        </div> -->
       </div>
     </div>
   </div>

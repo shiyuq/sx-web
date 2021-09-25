@@ -58,7 +58,7 @@
       <div class="menu last">
         <p>地址：新疆阿拉尔市秋收大道1001号</p>
         <p>咨询热线： 15083931223 &nbsp; &nbsp; &nbsp; &nbsp;0991—6378522</p>
-        <p>邮箱：xxx@163.com</p>
+        <p>邮箱：364361414@qq.com</p>
         <p>
           备案号：
           <a href="https://beian.miit.gov.cn/">
