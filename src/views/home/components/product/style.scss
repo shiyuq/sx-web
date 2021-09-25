@@ -72,6 +72,9 @@
         display: block;
       }
     }
+    li:nth-child(3) {
+      width: 200px;
+    }
   }
   .picBox {
     overflow: hidden;

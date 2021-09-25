@@ -7,6 +7,7 @@
         <el-breadcrumb-item :to="{ path: '/peixunlueying' }">
           培训掠影
         </el-breadcrumb-item>
+        <el-breadcrumb-item>详情</el-breadcrumb-item>
       </el-breadcrumb>
     </div>
     <div class="contentLeft">

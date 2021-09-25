@@ -11,34 +11,34 @@ export default {
       addresses: [],
       dList: [
         {
-          url: 'peixunxianlu',
+          url: '/peixunxianlu/6847098381030916096',
           title: '丝绸之路五晚六天培训方案',
           src:require('../../../../assets/丝绸之路1.jpg')
         },
         {
-          url: 'peixunxianlu',
+          url: '/peixunxianlu/6847098381030916096',
           title: '丝绸之路四晚五天培训方案',
           src:require('../../../../assets/丝绸之路2.jpg')
         }
       ],
       rList: [
         {
-          url: 'peixunxianlu',
+          url: '/peixunxianlu/6847098381030916096',
           src: require('../../../../assets/丝绸之路3.jpg'),
           title: '丝绸之路五晚六天培训方案'
         },
         {
-          url: 'peixunxianlu',
+          url: '/peixunxianlu/6847098381030916096',
           src: require('../../../../assets/丝绸之路4.jpg'),
           title: '丝绸之路四晚五天培训方案'
         },
         {
-          url: 'peixunxianlu',
+          url: '/peixunxianlu/6847098774590849024',
           src: require('../../../../assets/千鸟湖1.jpg'),
           title: '千鸟湖五晚六天培训方案'
         },
         {
-          url: 'peixunxianlu',
+          url: '/peixunxianlu/6847098774590849024',
           src: require('../../../../assets/千鸟湖2.jpg'),
           title: '千鸟湖四晚五天培训方案'
         }
