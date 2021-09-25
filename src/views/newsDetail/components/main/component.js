@@ -83,7 +83,8 @@ export default {
       handler () {
         this.getIdIndex()
       }
-    }
+    },
+    '$route': 'getIdIndex'
   },
   created () {
     this.getIdIndex()
