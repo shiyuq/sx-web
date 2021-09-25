@@ -4,11 +4,11 @@ export default {
     return {
       list: [
         {
-          src: 'http://wxxcx1688.cn/',
+          src: '',
           title:'小程序建设'
         },
         {
-          src: 'http://www.maiyueke.com/',
+          src: '',
           title:'会员通'
         }
       ]

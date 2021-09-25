@@ -32,11 +32,7 @@
         </li>
       </ul>
       <b>
-        <router-link
-          to="http://wpa.qq.com/msgrd?v=3&site=%E9%99%95%E8%A5%BF%E7%BA%A2%E8%89%B2%E4%BC%A0%E6%89%BF%E6%96%87%E5%8C%96%E5%9F%B9%E8%AE%AD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8%E5%AE%98%E6%96%B9%E7%BD%91%E7%AB%99%20%E5%85%9A%E6%80%A7%E6%95%99%E8%82%B2%E5%9F%B9%E8%AE%AD%20%E7%BA%A2%E8%89%B2%E6%96%87%E5%8C%96%E4%BC%A0%E6%89%BF%20%E7%BA%A2%E8%89%B2%E5%9F%B9%E8%AE%AD%E6%95%99%E8%82%B2%20%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D%E7%BA%A2%E8%89%B2%E6%95%99%E8%82%B2%20%E4%BA%8B%E4%B8%9A%E5%8D%95%E4%BD%8D%E7%BA%A2%E8%89%B2%E5%9F%B9%E8%AE%AD&menu=yes&uin=3281847193"
-          title="点击咨询"
-        >
-        </router-link>
+        <router-link to="/lianxiwomen" title="点击咨询"> </router-link>
       </b>
     </div>
   </div>

@@ -24,7 +24,7 @@
             三五九旅干部培训中心
           </h3>
           <h3 style="color: #0C0C0C; font-weight: bold; font-size: 20px;">
-            专注党性教育培训 红色文化传承
+            专注党性教育培训 坚定红色文化传承
           </h3>
         </div>
       </div>
