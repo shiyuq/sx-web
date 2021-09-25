@@ -28,9 +28,9 @@ export default {
       cList: [
         {
           id: '01',
-          src: '/peixunlueying1',
+          src: '/rongyuzizhixiangqing',
           title: '荣誉证书一',
-          imgUrl:require('./img/证书.jpg')
+          imgUrl:require('../../../../assets/证书.jpg')
         }
       ],
       tList: [

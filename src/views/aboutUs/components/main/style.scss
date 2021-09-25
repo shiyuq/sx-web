@@ -38,7 +38,7 @@
           padding-left: 66px;
           font-size: 16px;
           text-decoration: none;
-          background: url("./img/leftmuli.png") no-repeat center;
+          background: url("../../../../assets/leftmuli.png") no-repeat center;
           border-top: 2px solid #fff;
           border-bottom: 2px solid #fff;
           color: #666;
@@ -66,7 +66,7 @@
           background: #fff;
           padding: 10px 0;
           li {
-            background: url("./img/ico.gif") left 8px no-repeat;
+            background: url("../../../../assets/ico.gif") left 8px no-repeat;
             line-height: 25px;
             height: 25px;
             overflow: hidden;
@@ -115,6 +115,10 @@
           overflow: hidden;
           padding: 5px 9px;
           width: 209px;
+          img {
+            width: 207px;
+            height: 200px;
+          }
           p {
             line-height: 25px;
             overflow: hidden;

@@ -21,13 +21,13 @@
           我公司立足革命老区延安和铜 ...
         </p>
         <div class="btn">
-          <router-link to="guanyuwomen/">
+          <router-link to="/guanyuwomen/">
             查看详情+
           </router-link>
-          <router-link to="rongyuzizhi/">
+          <router-link to="/rongyuzizhi/">
             荣誉资质
           </router-link>
-          <router-link to="rongyuzizhi/tuandui/">
+          <router-link to="/mingshifengcai">
             专业团队
           </router-link>
         </div>

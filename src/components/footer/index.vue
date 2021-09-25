@@ -3,56 +3,50 @@
     <div class="container">
       <div class="menu">
         <h4>
-          <a href="">培训线路</a>
+          <a href="/peixunxianlu">培训线路</a>
         </h4>
         <p>
-          <a href="">塔里木河</a>
+          <a href="/peixunxianlu/6847464865846525952">塔里木河</a>
         </p>
         <p>
-          <a href="">塔克拉玛干</a>
+          <a href="/peixunxianlu/6847465401740165120">睡胡杨谷</a>
         </p>
         <p>
-          <a href="">胡杨林</a>
+          <a href="/peixunxianlu/6847464451256352768">三五九旅干部培训中心</a>
         </p>
         <p>
-          <a href="">托木尔峰</a>
+          <a href="/peixunxianlu/6847465047204036608">托木尔峰</a>
         </p>
         <p>
-          <a href="">屯垦纪念馆</a>
+          <a href="/peixunxianlu/6847465163252039680">文化馆</a>
         </p>
       </div>
       <div class="menu">
         <h4>
-          <a href="">新闻动态</a>
+          <a href="/xinwendongtai">新闻动态</a>
         </h4>
         <p>
-          <a href="">公司新闻</a>
+          <a href="/xinwendongtai">公司新闻</a>
         </p>
         <p>
-          <a href="">行业动态</a>
+          <a href="/xinwendongtai">行业动态</a>
         </p>
         <p>
-          <a href="">常见问题解答</a>
+          <a href="/xinwendongtai">常见问题</a>
         </p>
       </div>
       <div class="menu">
         <h4>
-          <a href="">关于我们</a>
+          <a href="/guanyuwomen">关于我们</a>
         </h4>
         <p>
-          <a href="">企业简介</a>
+          <a href="/qiyejieshao">企业简介</a>
         </p>
         <p>
-          <a href="">企业文化</a>
+          <a href="/qiyewenhua">企业文化</a>
         </p>
         <p>
-          <a href="">企业视频</a>
-        </p>
-        <p>
-          <a href="">企业风采</a>
-        </p>
-        <p>
-          <a href="">企业风采</a>
+          <a href="/peixunjidi">培训基地</a>
         </p>
       </div>
       <div class="menu last">

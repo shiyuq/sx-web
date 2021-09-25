@@ -43,7 +43,7 @@
               </h5>
             </div>
             <div class="sub">
-              <img src="../../../../assets/map.png" alt="" />
+              <img src="../../../../assets/map.jpg" alt="" />
               <p>
                 <span>咨询热线：</span>
               </p>

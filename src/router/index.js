@@ -65,6 +65,12 @@ const routes = [
         meta: { title: '荣誉资质', keepAlive: false }
       },
       {
+        path: '/rongyuzizhixiangqing',
+        name: 'Rongyuzizhixiangqing',
+        component: () => import('../views/honorDetail'),
+        meta: { title: '荣誉资质详情', keepAlive: false }
+      },
+      {
         path: '/xinwendongtai',
         name: 'Xinwendongtai',
         redirect: '/',

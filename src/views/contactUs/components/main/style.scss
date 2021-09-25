@@ -115,6 +115,10 @@
           overflow: hidden;
           padding: 5px 9px;
           width: 209px;
+          img {
+            width: 207px;
+            height: 200px;
+          }
           p {
             line-height: 25px;
             overflow: hidden;
@@ -204,8 +208,8 @@
             text-decoration: none;
             img {
               border: 0;
-              width: 600px;
-              height: 400px;
+              width: 400px;
+              height: 425px;
             }
           }
           a:hover {
