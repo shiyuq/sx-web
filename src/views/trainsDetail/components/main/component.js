@@ -50,11 +50,17 @@ export default {
       consultInfo: ''
     }
   },
+  watch: {
+    '$route': 'init'
+  },
   created () {
-    this.trainId = this.$route.params.id
-    this.getData()
+    this.init()
   },
   methods: {
+    async init () {
+      this.trainId = this.$route.params.id
+      this.getData()
+    },
     async getData () {
       const [{ data: addresses }, { data: train }] = await Promise.all([
         addressService.getAddressList(),
