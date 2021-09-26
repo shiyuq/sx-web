@@ -1,0 +1,43 @@
+.relatedInfo {
+  .consult {
+    padding: 0 10px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    background: #e81723;
+    margin-top: 10px;
+  }
+  .content {
+    border: 1px solid #fff;
+    border-top: 0;
+    padding: 2px 10px;
+    margin-bottom: 10px;
+    zoom: 1;
+    background: #fff;
+    ul {
+      background: #fff;
+      padding: 10px 0;
+      li {
+        background: url("../../assets/ico.gif") left 8px no-repeat;
+        line-height: 25px;
+        height: 25px;
+        overflow: hidden;
+        background-size: 10px;
+        padding-left: 20px;
+        width: 175px;
+        a {
+          padding-left: 0;
+          line-height: 25px;
+          height: 25px;
+          background: none;
+          color: #666;
+          text-decoration: none;
+          font-size: 12px;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

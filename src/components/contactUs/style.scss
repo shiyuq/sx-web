@@ -1,0 +1,49 @@
+.contactUs {
+  margin-bottom: 10px;
+  .contact {
+    padding: 0 10px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    background: #e81723;
+    margin-top: 10px;
+    .subcontact {
+      text-align: left;
+      font-size: 16px;
+      a {
+        text-decoration: none;
+        color: #fff;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .subcontent {
+    background: none repeat scroll 0 0 #fff;
+    border: 1px solid #fff;
+    overflow: hidden;
+    padding: 5px 9px;
+    width: 209px;
+    img {
+      width: 207px;
+      height: 200px;
+    }
+    p {
+      line-height: 25px;
+      overflow: hidden;
+      font-size: 16px;
+      word-spacing: -1.5px;
+      .subspan {
+        color: #333;
+      }
+    }
+    .subtel {
+      color: #e81723;
+      line-height: 25px;
+      overflow: hidden;
+      font-size: 16px;
+      word-spacing: -1.5px;
+    }
+  }
+}

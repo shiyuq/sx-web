@@ -30,39 +30,9 @@
           </div>
         </div>
       </div>
-      <div class="introduction">
-        <h4>推荐线路</h4>
-        <div class="introContent">
-          <dl v-for="(item, index) in introContentList" :key="index">
-            <dt>
-              <router-link :to="item.url">
-                <img :src="item.imgUrl" :alt="item.content" />
-              </router-link>
-            </dt>
-            <dd>
-              <router-link :to="item.url">{{ item.content }}</router-link>
-            </dd>
-          </dl>
-        </div>
-      </div>
+      <RecommendRoute />
     </div>
-    <div class="contentRight">
-      <div v-for="(item, index) in contentRightList" :key="index">
-        <h4>
-          <router-link :to="item.url">{{ item.title }}</router-link>
-        </h4>
-        <ul>
-          <li
-            v-for="(uItem, uIndex) in contentRightList[index].uList"
-            :key="uIndex"
-          >
-            <router-link :to="uItem.url">
-              {{ uItem.title }}
-            </router-link>
-          </li>
-        </ul>
-      </div>
-    </div>
+    <News />
   </div>
 </template>
 <style lang="scss" src="./style.scss" scoped></style>

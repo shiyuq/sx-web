@@ -1,0 +1,54 @@
+.recommendTrains {
+  h4 {
+    padding: 0 10px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 40px;
+    background: #e81723;
+    margin-top: 10px;
+  }
+  img {
+    width: 207px;
+  }
+  .recommend {
+    border: 1px solid #fff;
+    border-top: 0;
+    padding: 8px 1px;
+    margin-bottom: 10px;
+    zoom: 1;
+    overflow: hidden;
+    background: #fff;
+    dl {
+      margin-bottom: 10px;
+      width: 180px;
+      padding: 20px 5px 5px 20px;
+      dt {
+        width: 180px;
+        a {
+          color: #666;
+          text-decoration: none;
+          img {
+            width: 180px;
+            padding: 1px;
+            border: 1px solid #d7d7d7;
+          }
+          img:hover {
+            border-color: #e81723;
+          }
+        }
+      }
+      dd {
+        margin-top: 12px;
+        text-align: center;
+        font-size: 14px;
+        a {
+          text-decoration: none;
+          color: #666;
+        }
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
