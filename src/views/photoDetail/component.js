@@ -5,5 +5,8 @@ export default {
   components: {
     Banner,
     Main
+  },
+  created () {
+    this.$store.commit('app/setCurrentActiveTabIndex', 2)
   }
 }
