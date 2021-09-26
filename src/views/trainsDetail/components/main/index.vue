@@ -35,22 +35,7 @@
             </dl>
             <div class="clear"></div>
           </div>
-          <div class="contact">
-            <div class="contactUs">
-              <h5>
-                <router-link to="lianxiwomen">
-                  联系我们
-                </router-link>
-              </h5>
-            </div>
-            <div class="sub">
-              <img src="../../../../assets/map.jpg" alt="" />
-              <p>
-                <span>咨询热线：</span>
-              </p>
-              <p class="tel">15083931223</p>
-            </div>
-          </div>
+          <ContactUs />
         </div>
       </div>
       <div class="right" v-if="train">

@@ -1,9 +1,13 @@
 import addressService from '../../../../api/address-service'
 import trainService from '../../../../api/train-service'
 import consultService from '@/api/consult-service'
+import ContactUs from '../../../../components/contactUs'
 
 export default {
   name: 'Main',
+  components: {
+    ContactUs
+  },
   data () {
     return {
       iscur: null,

@@ -4,10 +4,10 @@
       <div class="container">
         <ul>
           <li class="consult">
-            <a href="">在线咨询</a>
+            <a href="/lianxiwomen">在线咨询</a>
           </li>
           <li>
-            <a href="">联系我们</a>
+            <a href="/lianxiwomen">联系我们</a>
           </li>
         </ul>
       </div>

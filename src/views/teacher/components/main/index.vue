@@ -8,34 +8,8 @@
           </router-link>
         </h4>
         <ul></ul>
-        <h4 class="consult">
-          相关资讯
-        </h4>
-        <div class="content">
-          <ul>
-            <li v-for="(item, index) in list" :key="index">
-              <router-link :to="item.url" :title="item.title">{{
-                item.title
-              }}</router-link>
-            </li>
-          </ul>
-        </div>
-        <div class="contact">
-          <div class="contactUs">
-            <h5 class="subcontact">
-              <router-link to="lianxiwomen">
-                联系我们
-              </router-link>
-            </h5>
-          </div>
-          <div class="subcontent">
-            <img src="../../../../assets/map.jpg" />
-            <p>
-              <span class="subspan">咨询热线：</span>
-            </p>
-            <p class="subtel">15083931223</p>
-          </div>
-        </div>
+        <RelatedInfo />
+        <ContactUs />
       </div>
       <div class="right">
         <div class="header">
