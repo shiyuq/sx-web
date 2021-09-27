@@ -12,12 +12,12 @@ export default {
     }
   },
   computed: {
-    certificates () {
-      return this.$store.state.app.certificates
+    teachers () {
+      return this.$store.state.app.teachers
     }
   },
   watch: {
-    certificates: {
+    teachers: {
       handler () {
         this.getIdIndex()
       }
@@ -29,8 +29,8 @@ export default {
   },
   methods: {
     getIdIndex () {
-      if (this.certificates) {
-        this.idIndex = this.certificates.findIndex((val) => {
+      if (this.teachers) {
+        this.idIndex = this.teachers.findIndex((val) => {
           return val.id === this.$route.params.id;
         })
       }

@@ -99,19 +99,15 @@
             img:hover {
               border-color: #e81723;
             }
-          }
-          h4 {
-            overflow: hidden;
-            margin-top: 20px;
-            font-weight: normal;
-            height: 37px;
-            text-align: center;
-            font-size: 14px;
-            a {
+            h4 {
+              overflow: hidden;
+              margin-top: 20px;
+              font-weight: normal;
+              height: 37px;
+              text-align: center;
               font-size: 14px;
-              color: #666;
             }
-            a:hover {
+            h4:hover {
               color: #e81723;
             }
           }

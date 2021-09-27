@@ -1,7 +1,7 @@
 import Banner from './components/banner'
 import Main from './components/main'
 export default {
-  name: 'Teacher',
+  name: 'TeacherDetail',
   components: {
     Banner,
     Main

@@ -24,15 +24,13 @@
           </el-breadcrumb>
         </div>
         <ul class="content">
-          <li v-for="item in cList" :key="item.id">
-            <router-link :to="item.src" :title="item.title">
-              <img :src="item.imgUrl" />
+          <li v-for="item in cameras" :key="item.id">
+            <router-link :to="'/peixunlueying/' + item.id">
+              <img :src="item.cameraPhotoUrl" />
+              <h4>
+                培训掠影
+              </h4>
             </router-link>
-            <h4>
-              <router-link :to="item.src" :title="item.title">
-                <b>{{ item.title }}</b>
-              </router-link>
-            </h4>
           </li>
         </ul>
         <div class="clear"></div>

@@ -32,15 +32,13 @@
           </el-breadcrumb>
         </div>
         <ul class="content">
-          <li v-for="item in cList" :key="item.id">
-            <router-link :to="item.src" :title="item.title">
-              <img :src="item.imgUrl" />
+          <li v-for="item in certificates" :key="item.id">
+            <router-link :to="'/rongyuzizhi/' + item.id">
+              <img :src="item.certificatePhotoUrl" />
+              <h4>
+                荣誉证书
+              </h4>
             </router-link>
-            <h4>
-              <router-link :to="item.src" :title="item.title">
-                {{ item.title }}
-              </router-link>
-            </h4>
           </li>
         </ul>
         <div class="clear"></div>

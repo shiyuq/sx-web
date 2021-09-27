@@ -4,7 +4,6 @@ export default {
     return {
       contentRightList: [
         {
-          url: '',
           title:'同类文章排行',
           uList: [
             {
@@ -26,7 +25,6 @@ export default {
           ]
         },
         {
-          url: '',
           title:'最新资讯文章',
           uList: [
             {

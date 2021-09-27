@@ -1,46 +1,46 @@
 <template>
-  <div class="main" v-if="certificates">
+  <div class="main" v-if="teachers">
     <div class="header">
       <el-breadcrumb separator-class="el-icon-arrow-right">
         <el-breadcrumb-item>当前位置</el-breadcrumb-item>
         <el-breadcrumb-item :to="{ path: '/' }">主页</el-breadcrumb-item>
-        <el-breadcrumb-item :to="{ path: '/rongyuzizhi' }">
-          荣誉资质
+        <el-breadcrumb-item :to="{ path: '/mingshifengcai' }">
+          名师风采
         </el-breadcrumb-item>
         <el-breadcrumb-item>详情</el-breadcrumb-item>
       </el-breadcrumb>
     </div>
     <div class="contentLeft">
       <div class="box">
-        <h1>荣誉资质</h1>
+        <h1>{{ teachers[idIndex].name }}</h1>
         <div class="title">
           <div class="titleContent">
             <span>文章出处：未知</span>
             <span>
-              发表时间：{{ certificates[idIndex].createdTime.split(" ")[0] }}
+              发表时间：{{ teachers[idIndex].createdTime.split(" ")[0] }}
             </span>
           </div>
           <div class="pic">
-            <img :src="certificates[idIndex].certificatePhotoUrl" alt="" />
+            <img :src="teachers[idIndex].teacherPhotoUrl" />
           </div>
           <!-- <div class="turnPage">
             <span v-if="idIndex > 0">
               <router-link
-                :to="'/rongyuzizhi/' + certificates[idIndex - 1].id"
+                :to="'/mingshifengcai/' + teachers[idIndex - 1].id"
                 @click="reduceIdIndex(idIndex)"
               >
-                上一篇：荣誉资质
+                上一篇：{{teachers[idIndex-1].name}}
               </router-link>
             </span>
             <span v-else>
               上一篇：
             </span>
-            <span v-if="idIndex < certificates.length - 1">
+            <span v-if="idIndex < teachers.length - 1">
               <router-link
-                :to="'/rongyuzizhi/' + certificates[idIndex + 1].id"
+                :to="'/mingshifengcai/' + teachers[idIndex + 1].id"
                 @click="addIdIndex(idIndex)"
               >
-                下一篇：荣誉资质
+                下一篇：{{teachers[idIndex+1].name}}
               </router-link>
             </span>
             <span v-else>

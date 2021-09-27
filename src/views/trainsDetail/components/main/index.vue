@@ -18,25 +18,8 @@
             <span>{{ item.address }}</span>
           </li>
         </ul>
-        <div class="subcontent">
-          <h4>推荐路线</h4>
-          <div class="recommend">
-            <dl v-for="(item, index) in dList" :key="index">
-              <dt>
-                <router-link :to="item.url" :title="item.title">
-                  <img :src="item.src" :alt="item.title" />
-                </router-link>
-              </dt>
-              <dd>
-                <router-link :to="item.url" :title="item.title">
-                  {{ item.title }}
-                </router-link>
-              </dd>
-            </dl>
-            <div class="clear"></div>
-          </div>
-          <ContactUs />
-        </div>
+        <RecommendTrains />
+        <ContactUs />
       </div>
       <div class="right" v-if="train">
         <div class="header">
