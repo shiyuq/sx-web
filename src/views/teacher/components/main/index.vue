@@ -30,7 +30,7 @@
             <div class="des">
               <router-link :to="'/mingshifengcai/' + item.id">
                 <h4>{{ item.name }}</h4>
-                <p>{{ item.content }}</p>
+                <p v-html="item.content"></p>
               </router-link>
             </div>
           </li>
