@@ -45,6 +45,7 @@
         <el-pagination
           background
           :page-size="10"
+          :pager-count="pagerCount"
           layout="prev, pager, next"
           :total="news && news.count"
           @current-change="changePage"

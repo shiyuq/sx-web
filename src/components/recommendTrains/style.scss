@@ -21,6 +21,9 @@
       padding: 20px 5px 5px 20px;
       dt {
         width: 180px;
+        margin-top: 12px;
+        text-align: center;
+        font-size: 14px;
         a {
           color: #666;
           text-decoration: none;
@@ -32,18 +35,6 @@
           img:hover {
             border-color: #e81723;
           }
-        }
-      }
-      dd {
-        margin-top: 12px;
-        text-align: center;
-        font-size: 14px;
-        a {
-          text-decoration: none;
-          color: #666;
-        }
-        a:hover {
-          text-decoration: underline;
         }
       }
     }
