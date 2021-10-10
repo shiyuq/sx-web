@@ -23,14 +23,14 @@
           </el-breadcrumb>
         </div>
         <ul class="content">
-          <li v-for="(item, index) in cList" :key="index">
-            <router-link :to="item.src">
-              <img :src="item.imgUrl" />
+          <li v-for="(item, index) in teachers" :key="index">
+            <router-link :to="'/mingshifengcai/' + item.id">
+              <img :src="item.teacherPhotoUrl" />
             </router-link>
             <div class="des">
-              <router-link :to="item.src">
-                <h4>{{ item.title }}</h4>
-                <p>{{ item.content }}</p>
+              <router-link :to="'/mingshifengcai/' + item.id">
+                <h4>{{ item.name }}</h4>
+                <p v-html="item.content"></p>
               </router-link>
             </div>
           </li>

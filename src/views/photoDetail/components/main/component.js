@@ -8,18 +8,32 @@ export default {
   },
   data () {
     return {
-      pList: [
-        // {
-        //   title: '上一篇',
-        //   src: '',
-        //   content:'培训掠影'
-        // },
-        // {
-        //   title: '下一篇',
-        //   src: '',
-        //   content:'培训掠影'
-        // }
-      ]
+      idIndex:null
+    }
+  },
+  computed: {
+    cameras () {
+      return this.$store.state.app.cameras
+    }
+  },
+  watch: {
+    cameras: {
+      handler () {
+        this.getIdIndex()
+      }
+    },
+    '$route': 'getIdIndex'
+  },
+  created () {
+    this.getIdIndex()
+  },
+  methods: {
+    getIdIndex () {
+      if (this.cameras) {
+        this.idIndex = this.cameras.findIndex((val) => {
+          return val.id === this.$route.params.id;
+        })
+      }
     }
   }
 }

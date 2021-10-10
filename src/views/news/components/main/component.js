@@ -3,7 +3,8 @@ export default {
   name: 'Main',
   data () {
     return {
-      isCur:null,
+      isCur: null,
+      pagerCount:5,
       titleList: [
         {
           type: '1',

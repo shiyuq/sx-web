@@ -7,6 +7,5 @@ export default {
     Main
   },
   created () {
-    this.$store.commit('app/setCurrentActiveTabIndex', 3)
   }
 }

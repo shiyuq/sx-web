@@ -8,6 +8,11 @@ const getTrainList = async () => {
   return data
 }
 
+const getRecmdTrain = async () => {
+  const { data } = await createInstance(baseUrl).post('/train/get-recmd-train')
+  return data
+}
+
 const getTrainDetail = async (params) => {
   const { data } = await createInstance(baseUrl).post('/train/get', params)
   return data
@@ -15,5 +20,6 @@ const getTrainDetail = async (params) => {
 
 export default {
   getTrainList,
+  getRecmdTrain,
   getTrainDetail
 }

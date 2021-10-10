@@ -6,13 +6,9 @@
         <dt>
           <router-link :to="item.url" :title="item.title">
             <img :src="item.src" :alt="item.title" />
-          </router-link>
-        </dt>
-        <dd>
-          <router-link :to="item.url" :title="item.title">
             {{ item.title }}
           </router-link>
-        </dd>
+        </dt>
       </dl>
     </div>
   </div>

@@ -43,8 +43,22 @@ const routes = [
       {
         path: '/peixunlueying',
         name: 'Peixunlueying',
-        component: () => import('../views/photo'),
-        meta: { title: '培训掠影', keepAlive: false }
+        redirect:'/',
+        component: () => import('../views/photoEnter'),
+        children: [
+          {
+            path: '/',
+            name: 'CameraList',
+            component: () => import('../views/photo'),
+            meta: {title:'培训掠影',keepAlive:false}
+          },
+          {
+            path: '/peixunlueying/:id',
+            name: 'CameraDetail',
+            component: () => import('../views/photoDetail'),
+            meta: {title:'培训掠影详情',keepAlive:false}
+          }
+        ]
       },
       {
         path: '/guanyuwomen',
@@ -61,14 +75,22 @@ const routes = [
       {
         path: '/rongyuzizhi',
         name: 'Rongyuzizhi',
-        component: () => import('../views/honor'),
-        meta: { title: '荣誉资质', keepAlive: false }
-      },
-      {
-        path: '/rongyuzizhixiangqing',
-        name: 'Rongyuzizhixiangqing',
-        component: () => import('../views/honorDetail'),
-        meta: { title: '荣誉资质详情', keepAlive: false }
+        redirect:'/',
+        component: () => import('../views/honorEnter'),
+        children: [
+          {
+            path: '/',
+            name: 'CertificateList',
+            component: () => import('../views/honor'),
+            meta: {title:'荣誉资质',keepAlive:false}
+          },
+          {
+            path: '/rongyuzizhi/:id',
+            name: 'CertificateDetail',
+            component: () => import('../views/honorDetail'),
+            meta: {title:'荣誉资质详情',keepAlive:false}
+          }
+        ]
       },
       {
         path: '/xinwendongtai',
@@ -93,14 +115,22 @@ const routes = [
       {
         path: '/mingshifengcai',
         name: 'Mingshifengcai',
-        component: () => import('../views/teacher'),
-        meta: { title: '名师风采', keepAlive: false }
-      },
-      {
-        path: '/peixunlueying1',
-        name: 'Peixunlueying1',
-        component: () => import('../views/photoDetail'),
-        meta: { title: '培训掠影1', keepAlive: false }
+        redirect: '/',
+        component: () => import('../views/teacherEnter'),
+        children: [
+          {
+            path: '/',
+            name: 'TeacherList',
+            component: () => import('../views/teacher'),
+            meta: { title: '名师风采', keepAlive: false }
+          },
+          {
+            path: '/mingshifengcai/:id',
+            name: 'TeacherDetail',
+            component: () => import('../views/teacherDetail'),
+            meta: { title: '名师风采详情', keepAlive: false }
+          }
+        ]
       },
       {
         path: '/qiyejianjie',

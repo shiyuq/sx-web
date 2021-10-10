@@ -2,29 +2,19 @@ import addressService from '../../../../api/address-service'
 import trainService from '../../../../api/train-service'
 import consultService from '@/api/consult-service'
 import ContactUs from '../../../../components/contactUs'
+import RecommendTrains from '../../../../components/recommendTrains'
 
 export default {
   name: 'Main',
   components: {
-    ContactUs
+    ContactUs,
+    RecommendTrains
   },
   data () {
     return {
       iscur: null,
       train: null,
       addresses: [],
-      dList: [
-        {
-          url: '/peixunxianlu/6847464567841226752',
-          title: '丝绸之路五晚六天培训方案',
-          src:require('../../../../assets/丝绸之路1.jpg')
-        },
-        {
-          url: '/peixunxianlu/6847464567841226752',
-          title: '丝绸之路四晚五天培训方案',
-          src:require('../../../../assets/丝绸之路2.jpg')
-        }
-      ],
       rList: [
         {
           url: '/peixunxianlu/6847464567841226752',
