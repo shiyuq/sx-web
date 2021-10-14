@@ -5,7 +5,7 @@ export default {
       imgList: [
         {
           id: '01',
-          url:'peixunlueying1',
+          url:'qiyefengcai',
           imgUrl: require('./img/01.jpg'),
           alt: '公司旅游',
           title: '公司旅游',
@@ -13,7 +13,7 @@ export default {
         },
         {
           id: '02',
-          url:'peixunlueying1',
+          url:'qiyefengcai',
           imgUrl: require('./img/02.jpg'),
           alt:'团建活动',
           title: '团建活动',
@@ -21,7 +21,7 @@ export default {
         },
         {
           id: '03',
-          url:'peixunlueying1',
+          url:'qiyefengcai',
           imgUrl: require('./img/03.jpg'),
           alt:'办公环境',
           title: '办公环境',
@@ -29,7 +29,7 @@ export default {
         },
         {
           id: '04',
-          url:'peixunlueying1',
+          url:'qiyefengcai',
           imgUrl: require('./img/04.jpg'),
           alt:'员工生日会',
           title: '员工生日会',

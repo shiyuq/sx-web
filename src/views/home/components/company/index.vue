@@ -2,10 +2,9 @@
   <div class="company">
     <ul class="menu">
       <li class="cur">
-        <router-link to="guanyuwomen/peixunjidi/">
+        <router-link to="/lianxiwomen/">
           企业风采
         </router-link>
-        <img src="../company/img/pro_s.png" />
       </li>
     </ul>
     <div class="content">
