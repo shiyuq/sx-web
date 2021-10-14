@@ -49,7 +49,7 @@
       position: relative;
       float: left;
       margin-right: 12px;
-      a {
+      span {
         display: block;
         text-decoration: none;
         color: #000;
@@ -65,7 +65,7 @@
     li:hover {
       background-color: #df131e;
       border-color: #df131e;
-      a {
+      span {
         color: #fff;
       }
       img {

@@ -14,9 +14,10 @@
         :key="index"
         :class="{ cur: iscur === index }"
         @mouseover="setCurrentIndex(index)"
+        @click="click(item)"
       >
         <span>
-          <router-link :to="item.url">{{ item.title }}</router-link>
+          <span>{{ item.title }}</span>
           <img :src="item.imgUrl" width="18" height="9" />
         </span>
       </li>
@@ -28,20 +29,22 @@
         :key="index"
         v-show="index === iscur"
       >
-        <router-link :to="item.url" :title="item.title">
-          <img
-            :src="item.imgUrl"
-            :alt="item.title"
-            width="504"
-            height="580"
-            class="left"
-          />
-        </router-link>
+        <img
+          :src="item.imgUrl"
+          :alt="item.title"
+          width="504"
+          height="580"
+          class="left"
+          @click="click(item)"
+        />
         <ul>
-          <li v-for="(ele, cindex) in uList[index].list" :key="cindex">
-            <img :src="ele.imgUrl" :alt="ele.title" />
-            <span>{{ ele.title }}</span>
-            <router-link :to="ele.url">点击查看详情</router-link>
+          <li
+            v-for="(item, cindex) in uList[index].list"
+            :key="cindex"
+            @click="click(item)"
+          >
+            <img :src="item.imgUrl" :alt="item.title" />
+            <span>{{ item.title }}</span>
           </li>
         </ul>
       </div>
