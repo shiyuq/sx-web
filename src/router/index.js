@@ -155,6 +155,12 @@ const routes = [
         name: 'Rencaizhaopin',
         component: () => import('../views/talents'),
         meta: { title: '人才招聘', keepAlive: false }
+      },
+      {
+        path: '/qiyefengcai',
+        name: 'Qiyefengcai',
+        component: () => import('../views/companyDetail'),
+        meta: { title: '企业风采', keepAlive: false }
       }
     ]
   }
