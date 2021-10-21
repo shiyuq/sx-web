@@ -1,7 +1,7 @@
 <template>
   <div class="product">
     <div class="title">
-      <p>PRODUCT</p>
+      <p>XIANLU</p>
       <h3>
         <router-link to="peixunxianlu/">
           培训路线

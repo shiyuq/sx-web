@@ -1,7 +1,7 @@
 <template>
   <div class="innovation">
     <div class="title">
-      <p>INNOVATIVE FEATURES</p>
+      <p>MOSHI</p>
       <h3>独创“五位一体”红色文化培训模式体系</h3>
     </div>
     <ul class="menu">

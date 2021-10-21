@@ -6,7 +6,6 @@
           <router-link to="guanyuwomen">
             关于我们
           </router-link>
-          ABOUT US
         </h4>
         <ul>
           <li v-for="(item, index) in des" :key="index">

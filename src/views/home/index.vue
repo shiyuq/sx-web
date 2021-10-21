@@ -8,7 +8,7 @@
     <About />
     <Qiyefengcai />
     <Dianhuazixun />
-    <Gongsixinwen />
+    <Gongsixinwen :news="news" :trends="trends" :questions="questions" />
     <Link />
   </div>
 </template>

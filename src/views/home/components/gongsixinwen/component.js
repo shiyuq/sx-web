@@ -1,4 +1,18 @@
 export default {
+  props: {
+    news: {
+      type: Array,
+      require: true
+    },
+    trends: {
+      type: Array,
+      require: true
+    },
+    questions: {
+      type: Array,
+      require: true
+    }
+  },
   data () {
     return {
       iscur: 0,

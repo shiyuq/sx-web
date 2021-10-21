@@ -46,126 +46,124 @@
         }
       }
     }
-    .content {
-      overflow: hidden;
+  }
+  .content {
+    width: 100%;
+    position: relative;
+    .des {
       width: 100%;
-      height: 340px;
-      position: relative;
-      .nlist {
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      dl {
         overflow: hidden;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        dl {
-          overflow: hidden;
-          width: 100%;
-          height: 164px;
-          margin-bottom: 20px;
-          dt {
-            overflow: hidden;
-            float: left;
-            a {
-              text-decoration: none;
-              color: #666;
-              img {
-                border: 0;
-              }
-            }
+        margin-bottom: 10px;
+        width: 60%;
+        background: #fff;
+        dt {
+          float: left;
+          width: 142px;
+          font-size: 60px;
+          color: #999;
+          font-family: Arial;
+          text-align: center;
+          padding: 10px 0;
+          border-right: 1px dotted #b2b2b2;
+          span {
+            display: block;
+            width: 72px;
+            height: 23px;
+            line-height: 23px;
+            text-align: center;
+            font-size: 16px;
+            color: #fff;
+            text-transform: uppercase;
+            margin: 0 auto;
+            background: #999;
           }
-          dd {
-            overflow: hidden;
-            float: right;
-            width: 380px;
-            height: 164px;
-            h3 {
+        }
+        dd {
+          margin-left: 180px;
+          font-size: 16px;
+          a {
+            text-decoration: none;
+            color: #666;
+            h5 {
+              line-height: 16px;
+              margin-top: 8px;
+              margin-bottom: 15px;
+              font-weight: normal;
               font-size: 16px;
-              white-space: nowrap;
-              text-overflow: ellipsis;
-              overflow: hidden;
-              margin-top: 10px;
-              margin-bottom: 20px;
-              a {
-                text-decoration: none;
-                color: #000;
-              }
-              a:hover {
-                text-decoration: underline;
-              }
             }
-            p {
-              font-size: 13px;
-              color: #333;
+            .editor-content {
+              font-size: 14px;
+              color: #666;
               line-height: 24px;
-              height: 96px;
-              overflow: hidden;
-              text-align: justify;
               word-spacing: -1.5px;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              display: -webkit-box;
+              -webkit-line-clamp: 2;
+              /*! autoprefixer: off */
+              -webkit-box-orient: vertical;
             }
           }
         }
-        ul {
-          overflow: hidden;
-          width: 650px;
-          li {
-            overflow: hidden;
-            float: left;
-            width: 295px;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            padding-left: 15px;
-            background: url("./img/news_s.png") no-repeat left center;
-            font-size: 13px;
-            line-height: 38px;
-            margin-right: 15px;
-            border-bottom: 1px solid #eee;
-            a {
-              color: #333;
-            }
+      }
+      dl:nth-child(1) {
+        margin-top: 70px;
+      }
+      dl:hover {
+        background: #e81723;
+        dt {
+          border-right-color: #fff;
+          color: #fff;
+          span {
+            background: #fff;
+            color: #e81723;
+          }
+        }
+        dd {
+          h5 {
+            color: #fff;
+          }
+          .editor-content {
+            color: #fff;
           }
         }
       }
     }
   }
   .question {
-    overflow: hidden;
-    width: 344px;
-    height: 100%;
+    width: 343px;
     float: right;
     h3 {
       background-color: #df131e;
       font-size: 20px;
       font-weight: normal;
       line-height: 59px;
-      a {
-        margin-left: 25px;
-        color: #fff;
-        text-decoration: none;
-      }
-      a:hover {
-        text-decoration: underline;
-      }
+      padding-left: 25px;
+      color: #fff;
     }
     .box {
-      overflow: hidden;
       width: 342px;
       margin: 0 auto;
-      border: 1px solid #df131e;
       border-top: none;
-      height: 380px;
+      height: auto;
       background-color: #fff;
       position: relative;
       ul {
-        width: 320px;
-        height: 250px;
+        width: 319px;
         overflow: hidden;
+        border: 1px solid #df131e;
         padding: 0 11px;
         position: absolute;
         li {
           overflow: hidden;
           width: 100%;
           margin-top: 25px;
+          margin-bottom: 5px;
           border-bottom: 1px dashed #acacac;
           height: 99px;
           h5 {

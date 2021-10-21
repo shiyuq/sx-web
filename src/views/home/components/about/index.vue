@@ -1,7 +1,7 @@
 <template>
   <div class="aboutUs">
     <div class="title">
-      <p>ABOUT US</p>
+      <p>WOMEN</p>
       <h3>
         <router-link to="guanyuwomen/">关于我们</router-link>
       </h3>

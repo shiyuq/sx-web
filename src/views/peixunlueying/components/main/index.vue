@@ -6,7 +6,6 @@
           <router-link to="peixunlueying">
             培训掠影
           </router-link>
-          PRODUCT
         </h4>
         <ul></ul>
         <RelatedInfo />

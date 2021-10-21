@@ -25,7 +25,8 @@ export default {
   data() {
     return {
       news: [],
-      trends: []
+      trends: [],
+      questions: []
     }
   },
   created () {
@@ -33,12 +34,14 @@ export default {
   },
   methods: {
     async initData() {
-      const [ news, trends ] = await Promise.all([
-        newsService.getNewsList({ type: 1, limit: 5, offset: 0 }),
-        newsService.getNewsList({ type: 2, limit: 5, offset: 0 })
+      const [ news, trends, questions ] = await Promise.all([
+        newsService.getNewsList({ type: 1, limit: 3, offset: 0 }),
+        newsService.getNewsList({ type: 2, limit: 3, offset: 0 }),
+        newsService.getNewsList({ type: 3, limit: 3, offset: 0 })
       ])
       this.news = news && news.data && news.data.rows || []
       this.trends = trends && trends.data && trends.data.rows || []
+      this.questions = questions && questions.data && questions.data.rows || []
     }
   }
 }

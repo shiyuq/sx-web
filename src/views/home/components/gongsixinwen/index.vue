@@ -12,60 +12,55 @@
           <img src="./img/pro_s.png" alt="" />
         </li>
       </ul>
-      <div class="content">
-        <div
-          v-for="(item, index) in cList"
-          :key="index"
-          class="nlist"
-          v-show="iscur === index"
-        >
-          <dl>
-            <dt>
-              <router-link :to="item.src" :title="item.title">
-                <img
-                  :src="item.imgUrl"
-                  :alt="item.title"
-                  width="228"
-                  height="164"
-                />
-              </router-link>
-            </dt>
-            <dd>
-              <h3>
-                <router-link :to="item.src">
-                  {{ item.title }}
-                </router-link>
-              </h3>
-              <p>
-                {{ item.content }}
-              </p>
-            </dd>
-          </dl>
-          <ul>
-            <li>
-              <router-link :to="item.subSrc" :title="item.subTitle">
-                {{ item.subTitle }}
-              </router-link>
-            </li>
-          </ul>
-        </div>
+    </div>
+    <div class="content">
+      <div class="des" v-if="news" v-show="iscur == 0">
+        <dl v-for="(item, index) in news" :key="index">
+          <dt>
+            {{ new Date(item.lastUpdateTime).getMonth() + 1 }}
+            <span>{{ new Date(item.lastUpdateTime).getDate() }}</span>
+          </dt>
+          <dd>
+            <router-link :to="'/xinwendongtai/' + item.id">
+              <h5>
+                {{ item.title }}
+              </h5>
+              <div class="editor-content" v-html="item.content"></div>
+            </router-link>
+          </dd>
+        </dl>
+      </div>
+      <div class="des" v-if="trends" v-show="iscur == 1">
+        <dl v-for="(item, index) in trends" :key="index">
+          <dt>
+            {{ new Date(item.lastUpdateTime).getMonth() + 1 }}
+            <span>{{ new Date(item.lastUpdateTime).getDate() }}</span>
+          </dt>
+          <dd>
+            <router-link :to="'/xinwendongtai/' + item.id">
+              <h5>
+                {{ item.title }}
+              </h5>
+              <div class="editor-content" v-html="item.content"></div>
+            </router-link>
+          </dd>
+        </dl>
       </div>
     </div>
+
     <div class="question">
-      <h3>
-        <router-link to="/gongsixinwen/changjianwentijieda/">
-          常见问题解答
-        </router-link>
+      <h3 v-if="questions">
+        {{ questions[0].typeName }}
       </h3>
       <div class="box">
         <ul>
-          <li v-for="(item, index) in list" :key="index">
+          <li v-for="(item, index) in questions" :key="index">
             <h5>
-              <router-link :to="item.src" :title="item.title">{{
-                item.title
-              }}</router-link>
+              <router-link :to="/xinwendongtai/ + item.id" :title="item.title">
+                {{ item.title }}
+              </router-link>
             </h5>
-            <p>{{ item.content }}</p>
+            <div v-html="item.content"></div>
           </li>
         </ul>
       </div>
