@@ -1,0 +1,21 @@
+export default {
+  name: 'Swipe',
+  data () {
+    return {
+      imgList: [
+        {
+          id: '001',
+          imgUrl:require('./img/bg2.jpg')
+        },
+        {
+          id: '002',
+          imgUrl:require('./img/bg1.jpg')
+        },
+        {
+          id: '003',
+          imgUrl:require('./img/bg3.jpg')
+        }
+      ]
+    }
+  }
+};

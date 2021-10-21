@@ -34,27 +34,23 @@ export default {
       cList: [
         {
           id: '01',
-          src: 'peixunxianlu',
           title: '培训基地',
-          imgUrl:require('../../../../assets/企业文化.jpg')
+          imgUrl:require('../../../../assets/文化馆1.jpg')
         },
         {
           id: '02',
-          src: 'peixunxianlu',
           title: '培训基地',
-          imgUrl:require('../../../../assets/企业文化.jpg')
+          imgUrl:require('../../../../assets/文化馆2.jpg')
         },
         {
           id: '03',
-          src: 'peixunxianlu',
           title: '培训基地',
-          imgUrl:require('../../../../assets/企业文化.jpg')
+          imgUrl:require('../../../../assets/丝绸之路2.jpg')
         },
         {
           id: '04',
-          src: 'peixunxianlu',
           title: '培训基地',
-          imgUrl:require('../../../../assets/企业文化.jpg')
+          imgUrl:require('../../../../assets/沙漠之门2.jpg')
         }
       ]
     }

@@ -36,13 +36,9 @@
         </div>
         <ul class="content">
           <li v-for="item in cList" :key="item.id">
-            <router-link :to="item.src" :title="item.title">
-              <img :src="item.imgUrl" />
-            </router-link>
+            <img :src="item.imgUrl" />
             <h4>
-              <router-link :to="item.src" :title="item.title">
-                <b>{{ item.title }}</b>
-              </router-link>
+              {{ item.title }}
             </h4>
           </li>
         </ul>

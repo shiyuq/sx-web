@@ -1,32 +1,44 @@
-import Banner from './components/banner'
+import newsService from '../../api/news-service'
+import Swipe from './components/swipe'
 import Search from './components/search'
-import Difference from './components/difference'
-import Innovation from './components/innovation'
+import Sidabaozhang from './components/sidabaozhang'
+import Peixunmoshi from './components/peixunmoshi'
 import About from './components/about'
-import Company from './components/company'
-import Product from './components/product'
-import Information from './components/information'
-import News from './components/news'
-import Link from './components/link'
+import Qiyefengcai from './components/qiyefengcai'
+import Peixunxianlu from './components/peixunxianlu'
+import Dianhuazixun from './components/dianhuazixun'
+import Gongsixinwen from './components/gongsixinwen'
 
 export default {
   name: 'Home',
   components: {
-    Banner,
+    Swipe,
     Search,
-    Difference,
-    Innovation,
+    Sidabaozhang,
+    Peixunmoshi,
     About,
-    Company,
-    Product,
-    Information,
-    News,
-    Link
+    Qiyefengcai,
+    Peixunxianlu,
+    Dianhuazixun,
+    Gongsixinwen
   },
   data() {
     return {
+      news: [],
+      trends: []
     }
   },
   created () {
+    this.initData()
+  },
+  methods: {
+    async initData() {
+      const [ news, trends ] = await Promise.all([
+        newsService.getNewsList({ type: 1, limit: 5, offset: 0 }),
+        newsService.getNewsList({ type: 2, limit: 5, offset: 0 })
+      ])
+      this.news = news && news.data && news.data.rows || []
+      this.trends = trends && trends.data && trends.data.rows || []
+    }
   }
 }
