@@ -56,7 +56,7 @@
         <p>
           备案号：
           <a href="https://beian.miit.gov.cn/">
-            xxx备xxxxxxx号-x
+            新ICP备2021001074号-1
           </a>
         </p>
       </div>

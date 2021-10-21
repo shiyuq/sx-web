@@ -1,6 +1,6 @@
 <template>
   <div class="search">
-    <div class="container">
+    <!-- <div class="container">
       <p>
         大家都在搜：
         <em class="keyWords">
@@ -50,8 +50,8 @@
             <button></button>
           </span>
         </form>
-      </div>
-    </div>
+      </div> -->
+    <!-- </div> -->
   </div>
 </template>
 

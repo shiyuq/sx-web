@@ -24,18 +24,18 @@ const routes = [
         path: '/peixunxianlu',
         name: 'Peixunxianlu',
         redirect:'/',
-        component: () => import('../views/trainsEnter'),
+        component: () => import('../views/peixunxianlurukou'),
         children: [
           {
             path: '/',
             name: 'TrainsList',
-            component: () => import('../views/route'),
+            component: () => import('../views/peixunxianlu'),
             meta: {title:'培训线路',keepAlive:false}
           },
           {
             path: '/peixunxianlu/:id',
             name: 'TrainsDetail',
-            component: () => import('../views/trainsDetail'),
+            component: () => import('../views/peixunxianluxiangqing'),
             meta: {title:'培训线路详情',keepAlive:false}
           }
         ]
@@ -44,18 +44,18 @@ const routes = [
         path: '/peixunlueying',
         name: 'Peixunlueying',
         redirect:'/',
-        component: () => import('../views/photoEnter'),
+        component: () => import('../views/peixunlueyingrukou'),
         children: [
           {
             path: '/',
             name: 'CameraList',
-            component: () => import('../views/photo'),
+            component: () => import('../views/peixunlueying'),
             meta: {title:'培训掠影',keepAlive:false}
           },
           {
             path: '/peixunlueying/:id',
             name: 'CameraDetail',
-            component: () => import('../views/photoDetail'),
+            component: () => import('../views/peixunlueyingxiangqing'),
             meta: {title:'培训掠影详情',keepAlive:false}
           }
         ]
@@ -63,13 +63,13 @@ const routes = [
       {
         path: '/guanyuwomen',
         name: 'Guanyuwomen',
-        component: () => import('../views/aboutUs'),
+        component: () => import('../views/guanyuwomen'),
         meta: { title: '关于我们', keepAlive: false }
       },
       {
         path: '/lianxiwomen',
         name: 'Lianxiwomen',
-        component: () => import('../views/contactUs'),
+        component: () => import('../views/lianxiwomen'),
         meta: { title: '联系我们', keepAlive: false }
       },
       {

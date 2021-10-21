@@ -1,14 +1,14 @@
 <template>
   <div class="home">
-    <Banner />
+    <Swipe />
     <Search />
-    <Product />
-    <Difference />
-    <Innovation />
+    <Peixunxianlu />
+    <Sidabaozhang />
+    <Peixunmoshi />
     <About />
-    <Company />
-    <Information />
-    <News />
+    <Qiyefengcai />
+    <Dianhuazixun />
+    <Gongsixinwen :news="news" :trends="trends" :questions="questions" />
     <Link />
   </div>
 </template>
