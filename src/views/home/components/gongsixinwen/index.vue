@@ -66,6 +66,6 @@
   </div>
 </template>
 
-<style lang="scss" src="./style.scss"></style>
+<style lang="scss" src="./style.scss" scoped></style>
 
 <script src="./component.js"></script>
