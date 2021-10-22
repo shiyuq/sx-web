@@ -49,9 +49,7 @@
     </div>
 
     <div class="question">
-      <h3 v-if="questions">
-        {{ questions[0].typeName }}
-      </h3>
+      <h3>常见问题</h3>
       <div class="box">
         <ul>
           <li v-for="(item, index) in questions" :key="index">
