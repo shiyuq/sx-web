@@ -58,7 +58,7 @@
                 {{ item.title }}
               </router-link>
             </h5>
-            <div v-html="item.content"></div>
+            <div class="editor-content" v-html="item.content"></div>
           </li>
         </ul>
       </div>
