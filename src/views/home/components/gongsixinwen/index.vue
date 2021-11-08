@@ -49,9 +49,7 @@
     </div>
 
     <div class="question">
-      <h3 v-if="questions">
-        {{ questions[0].typeName }}
-      </h3>
+      <h3>常见问题</h3>
       <div class="box">
         <ul>
           <li v-for="(item, index) in questions" :key="index">
@@ -60,7 +58,7 @@
                 {{ item.title }}
               </router-link>
             </h5>
-            <div v-html="item.content"></div>
+            <div class="editor-content" v-html="item.content"></div>
           </li>
         </ul>
       </div>
@@ -68,6 +66,6 @@
   </div>
 </template>
 
-<style lang="scss" src="./style.scss"></style>
+<style lang="scss" src="./style.scss" scoped></style>
 
 <script src="./component.js"></script>
