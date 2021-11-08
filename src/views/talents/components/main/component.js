@@ -93,7 +93,7 @@ export default {
               title: '应聘方式：',
               list: [
                 {
-                  content:'电话： 0991-6378522'
+                  content:'电话： 0997-6378522'
                 },
                 {
                   content:'邮件：364361414@qq.com'
@@ -168,7 +168,7 @@ export default {
               title: '应聘方式：',
               list: [
                 {
-                  content:'电话： 0991-6378522'
+                  content:'电话： 0997-6378522'
                 },
                 {
                   content:'邮件：364361414@qq.com'
@@ -264,7 +264,7 @@ export default {
               title: '应聘方式：',
               list: [
                 {
-                  content:'电话： 0991-6378522'
+                  content:'电话： 0997-6378522'
                 },
                 {
                   content:'邮件：364361414@qq.com'
