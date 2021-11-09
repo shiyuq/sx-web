@@ -9,7 +9,8 @@ export default {
         },
         {
           id: '002',
-          imgUrl: 'https://shiyuq.oss-cn-shanghai.aliyuncs.com/sx-node/c12b808d-a6ac-4830-8b6b-d82ac4a93912.png'
+          // imgUrl: 'https://shiyuq.oss-cn-shanghai.aliyuncs.com/sx-node/c12b808d-a6ac-4830-8b6b-d82ac4a93912.png',
+          imgUrl: 'https://shiyuq.oss-cn-shanghai.aliyuncs.com/sx-node/530c3277-32f6-4548-9d66-0f449ede9a73.png'
         },
         {
           id: '003',
