@@ -9,7 +9,7 @@
     <dl>
       <dt>
         <img
-          src="./img/changzhengjingshen.jpg"
+          src="./img/公司大楼.jpg"
           frameborder="0"
           width="483"
           height="251"
