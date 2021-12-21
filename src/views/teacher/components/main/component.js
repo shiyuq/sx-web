@@ -9,27 +9,23 @@ export default {
   },
   data () {
     return {
-      currentPage1: 5,
-      currentPage2: 5,
-      currentPage3: 5,
-      currentPage4: 4
+      teachers: [],
+      currentPage: 1,
+      pagerCount: 10,
+      total: 0
     }
   },
-  computed: {
-    teachers () {
-      return this.$store.state.app.teachers
-    }
+  created () {
+    this.getTeacherList({limit: 10, offset: 0})
   },
   methods: {
     async getTeacherList ({limit=10,offset=0}) {
       const { data } = await teacherService.getTeacherList({ limit, offset })
-      this.teachers = data
+      this.total = data && data.totalCount
+      this.teachers = (data && data.items) || []
     },
-    handleSizeChange() {
-      // console.log(`每页 ${val} 条`);
-    },
-    handleCurrentChange() {
-      // console.log(`当前页: ${val}`);
+    async changePage (currentPage) {
+      await this.getTeacherList({ limit: 10, offset: (currentPage - 1) * 10 })
     }
   }
 }
