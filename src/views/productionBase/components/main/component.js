@@ -18,14 +18,6 @@ export default {
           url: '/qiyewenhua/',
           title:'企业文化'
         },
-        // {
-        //   url: '/qiyeshipin/',
-        //   title:'企业视频'
-        // },
-        // {
-        //   url: '/fengcai/',
-        //   title:'企业风采'
-        // },
         {
           url: '/peixunjidi/',
           title:'培训基地'
@@ -35,22 +27,37 @@ export default {
         {
           id: '01',
           title: '培训基地',
-          imgUrl:require('../../../../assets/文化馆1.jpg')
+          imgUrl:require('./img/一号报告厅.jpg')
         },
         {
           id: '02',
           title: '培训基地',
-          imgUrl:require('../../../../assets/文化馆2.jpg')
+          imgUrl:require('./img/主题教室.jpg')
         },
         {
           id: '03',
           title: '培训基地',
-          imgUrl:require('../../../../assets/丝绸之路2.jpg')
+          imgUrl:require('./img/二号报告厅.jpg')
         },
         {
           id: '04',
           title: '培训基地',
-          imgUrl:require('../../../../assets/沙漠之门2.jpg')
+          imgUrl:require('./img/会议室.jpg')
+        },
+        {
+          id: '05',
+          title: '培训基地',
+          imgUrl:require('./img/培训基地.jpg')
+        },
+        {
+          id: '06',
+          title: '培训基地',
+          imgUrl:require('./img/学员宿舍.jpg')
+        },
+        {
+          id: '07',
+          title: '培训基地',
+          imgUrl:require('./img/餐厅.jpg')
         }
       ]
     }

@@ -36,17 +36,14 @@
           </li>
         </ul>
         <div class="clear"></div>
-        <!-- <div class="block">
-          <el-pagination
-            @size-change="handleSizeChange"
-            @current-change="handleCurrentChange"
-            :current-page.sync="currentPage3"
-            :page-size="100"
-            layout="prev, pager, next, jumper"
-            :total="1000"
-          >
-          </el-pagination>
-        </div> -->
+        <el-pagination
+          background
+          :page-size="10"
+          :page-count="pagerCount"
+          layout="prev, pager, next"
+          :total="total"
+          @current-change="changePage"
+        />
       </div>
     </div>
   </div>

@@ -1,5 +1,7 @@
+import teacherService from '../../../../api/teacher-service'
 import News from '../../../../components/news'
 import RecommendRoute from '../../../../components/recommendRoute'
+
 export default {
   name: 'Main',
   components: {
@@ -8,32 +10,21 @@ export default {
   },
   data () {
     return {
-      idIndex:null
+      teachers: null
     }
-  },
-  computed: {
-    teachers () {
-      return this.$store.state.app.teachers
-    }
-  },
-  watch: {
-    teachers: {
-      handler () {
-        this.getIdIndex()
-      }
-    },
-    '$route': 'getIdIndex'
   },
   created () {
-    this.getIdIndex()
+    const id = this.$route.params.id
+    if (id) {
+      this.getTeacherDetail(id)
+    } else {
+      this.$message.warning('id获取失败')
+    }
   },
   methods: {
-    getIdIndex () {
-      if (this.teachers) {
-        this.idIndex = this.teachers.findIndex((val) => {
-          return val.id === this.$route.params.id;
-        })
-      }
+    async getTeacherDetail (id) {
+      const {data} = await teacherService.getTeacherDetail({id})
+      this.teachers = data
     }
   }
 }

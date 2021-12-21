@@ -12,16 +12,14 @@
     </div>
     <div class="contentLeft">
       <div class="box">
-        <h1>{{ teachers[idIndex].name }}</h1>
+        <h1>{{ teachers.name }}</h1>
         <div class="title">
           <div class="titleContent">
             <span>文章出处：未知</span>
-            <span>
-              发表时间：{{ teachers[idIndex].createdTime.split(" ")[0] }}
-            </span>
+            <span> 发表时间：{{ teachers.createdTime.split(" ")[0] }} </span>
           </div>
           <div class="pic">
-            <img :src="teachers[idIndex].teacherPhotoUrl" />
+            <img :src="teachers.trainPhotoUrl" />
           </div>
           <!-- <div class="turnPage">
             <span v-if="idIndex > 0">

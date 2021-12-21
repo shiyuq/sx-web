@@ -33,16 +33,16 @@ export default {
       ],
       contentList: [
         {
-          content:'不忘初心'
+          content:'践行三五九旅精神'
         },
         {
-          content:'牢记使命'
+          content:'胡杨精神和兵团精神'
         },
         {
           content:'传承红色基因'
         },
         {
-          content:'弘扬三五九旅精神'
+          content:'赓续红色血脉'
         }
       ]
     }
