@@ -4,6 +4,10 @@ export default {
     return {
       imgList: [
         {
+          id: '000',
+          imgUrl: 'https://shiyuq.oss-cn-shanghai.aliyuncs.com/sx-node/8de0d3a9-e2b1-43c2-becd-07deb348faa7.png'
+        },
+        {
           id: '001',
           imgUrl: 'https://shiyuq.oss-cn-shanghai.aliyuncs.com/sx-node/21f912f9-2d12-4c42-960b-55998664e237.png'
         },

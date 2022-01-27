@@ -8,8 +8,8 @@ const getTrainList = async () => {
   return data
 }
 
-const getRecmdTrain = async () => {
-  const { data } = await createInstance(baseUrl).post('/train/get-recmd-train')
+const getRecmdTrain = async (params) => {
+  const { data } = await createInstance(baseUrl).post('/train/get-recmd-train', params)
   return data
 }
 

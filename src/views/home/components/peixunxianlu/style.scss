@@ -1,11 +1,8 @@
 .product {
-  overflow: hidden;
-  width: 100%;
   background: url("./img/pro_bg.jpg") no-repeat center top;
   padding-top: 70px;
   margin-bottom: 60px;
   .title {
-    overflow: hidden;
     width: 100%;
     margin-bottom: 35px;
     p {
@@ -32,118 +29,36 @@
       text-decoration: underline;
     }
   }
-  .menu {
-    overflow: hidden;
-    padding-bottom: 8px;
-    margin-bottom: 30px;
-    width: 1000px;
-    margin: 0 auto;
+}
+
+.picBox {
+  margin: 0 auto;
+  width: 1000px;
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
     li {
-      margin: 0 6px;
-      width: 152px;
-      height: 45px;
-      border: 1px solid #000;
-      text-align: center;
-      line-height: 45px;
-      font-size: 16px;
-      position: relative;
-      float: left;
-      margin-right: 12px;
-      span {
-        display: block;
-        text-decoration: none;
-        color: #000;
-      }
-      img {
-        display: none;
-        position: absolute;
-        bottom: -8px;
-        left: 67px;
-      }
-    }
-    .cur,
-    li:hover {
-      background-color: #df131e;
-      border-color: #df131e;
-      span {
-        color: #fff;
-      }
-      img {
-        display: block;
-      }
-    }
-    li:nth-child(3) {
-      width: 200px;
-    }
-  }
-  .picBox {
-    overflow: hidden;
-    width: 1000px;
-    margin: 0 auto;
-    height: 580px;
-    position: relative;
-    .plist {
+      display: flex;
+      flex-direction: column;
       overflow: hidden;
-      width: 1000px;
-      height: 580px;
-      position: absolute;
-      left: 0;
-      top: 0;
-      img {
-        display: block;
-        float: left;
+      width: 33.3333%;
+      padding-bottom: 10px;
+      span {
+        text-align: center;
+        padding: 10px 0;
       }
-      ul {
-        overflow: hidden;
-        float: right;
-        width: 494px;
-        height: 578px;
-        border: 1px solid #ddd;
-        li {
-          border-bottom: 1px solid #ddd;
-          border-right: 1px solid #ddd;
-          width: 246px;
-          float: left;
-          height: 289px;
-          position: relative;
-          img {
-            width: 247px;
-            height: 246px;
-            display: block;
-            margin-bottom: 20px;
-          }
-          span {
-            position: absolute;
-            left: 50%;
-            transform: translateX(-50%);
-            bottom: 11px;
-            display: block;
-            text-align: center;
-            white-space: nowrap;
-            text-overflow: ellipsis;
-            overflow: hidden;
-            font-size: 14px;
-            color: #000;
-          }
-          a {
-            display: none;
-            width: 247px;
-            position: absolute;
-            left: 0;
-            top: 0;
-            background: url("./img/pro_more.png") no-repeat 105px center;
-            background-color: #fd581f;
-            opacity: 0.85;
-            text-align: center;
-            font-size: 16px;
-            color: #fff;
-            padding-top: 190px;
-            height: 100px;
-          }
+      img {
+        width: 100%;
+        height: 100%;
+        transition: all 0.6s;
+        &:hover {
+          transform: scale(1.5);
         }
-        li:hover a {
-          display: block;
-        }
+      }
+      &:hover {
+        cursor: pointer;
+        box-shadow: 5px 5px 10px rgb(0 0 0 / 0.2);
       }
     }
   }
