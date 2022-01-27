@@ -1,0 +1,91 @@
+.innovation {
+  background-color: #f9fbfe;
+  overflow: hidden;
+  width: 100%;
+  height: 350px;
+  padding-top: 70px;
+  .title {
+    overflow: hidden;
+    width: 100%;
+    margin-bottom: 35px;
+    p {
+      color: #e3e3e3;
+      font-size: 47px;
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      word-spacing: -1.5px;
+    }
+    h3 {
+      background: url("./img/title.png") no-repeat center bottom;
+      text-align: center;
+      font-size: 25px;
+      padding: 15px 0;
+      font-weight: normal;
+    }
+  }
+  .menu {
+    overflow: hidden;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+    li {
+      display: inline-block;
+      margin: 0 6px;
+      width: 152px;
+      height: 45px;
+      // border: 1px solid #df131e;
+      background-color: rgba(247, 240, 240, 0.5);
+      text-align: center;
+      line-height: 45px;
+      font-size: 16px;
+      position: relative;
+      color: #df131e;
+      font-weight: 700;
+      cursor: pointer;
+      img {
+        display: none;
+        position: absolute;
+        bottom: -8px;
+        left: 67px;
+      }
+    }
+    .cur {
+      background-color: #df131e;
+      border-color: #df131e;
+      color: #fff;
+      img {
+        display: block;
+      }
+    }
+  }
+  .content {
+    overflow: hidden;
+    width: 1000px;
+    padding: 0 20px;
+    background: url("./img/shadow.png") no-repeat center bottom;
+    margin: 0 auto;
+    height: 100px;
+    position: relative;
+    .el-carousel__item {
+      overflow: hidden;
+      width: 1000px;
+      background-color: #fff;
+      height: 100px;
+      .wen {
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        float: left;
+        p {
+          padding: 10px;
+          font-size: 14px;
+          color: #333;
+          line-height: 31px;
+          word-spacing: 2px;
+        }
+      }
+    }
+  }
+}

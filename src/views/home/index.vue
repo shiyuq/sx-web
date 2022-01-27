@@ -2,10 +2,12 @@
   <div class="home">
     <Swipe />
     <Search />
-    <Peixunxianlu />
+    <Peixunxianlu :trains="trains" />
     <Sidabaozhang />
     <Peixunmoshi />
     <About />
+    <Huihuanglicheng />
+    <WeidaRongyao />
     <Qiyefengcai />
     <Dianhuazixun />
     <Gongsixinwen :news="news" :trends="trends" :questions="questions" />
