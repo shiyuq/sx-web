@@ -8,7 +8,7 @@ export default {
   },
   data () {
     return {
-      isCur:4,
+      isCur:2,
       des: [
         {
           url: '/qiyejianjie/',

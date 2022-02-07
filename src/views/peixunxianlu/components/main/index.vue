@@ -7,7 +7,7 @@
             培训线路
           </router-link>
         </h4>
-        <ul>
+        <ul v-if="addresses">
           <li
             v-for="(item, index) in addresses"
             :key="index"

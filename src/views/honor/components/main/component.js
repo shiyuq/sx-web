@@ -18,10 +18,6 @@ export default {
         {
           src: '/rongyuzizhi',
           title:'荣誉资质'
-        },
-        {
-          src: 'mingshifengcai',
-          title:'专业团队'
         }
       ]
     }

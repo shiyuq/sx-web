@@ -30,6 +30,27 @@
       ul {
         background: #fff;
         padding: 10px 0px;
+        .cur {
+          a {
+            color: #e81723;
+          }
+        }
+        a {
+          overflow: hidden;
+          display: block;
+          height: 40px;
+          line-height: 40px;
+          padding-left: 66px;
+          font-size: 16px;
+          text-decoration: none;
+          background: url("../../../../assets/leftmuli.png") no-repeat center;
+          border-top: 2px solid #fff;
+          border-bottom: 2px solid #fff;
+          color: #666;
+        }
+        a:hover {
+          color: #e81723;
+        }
       }
       .consult {
         padding: 0 10px;
@@ -239,4 +260,16 @@
       }
     }
   }
+}
+
+.el-pagination {
+  text-align: right;
+}
+
+::v-deep .el-pagination .active {
+  background-color: #e81723 !important;
+}
+
+::v-deep .el-pagination .number:hover {
+  color: #e81723 !important;
 }
