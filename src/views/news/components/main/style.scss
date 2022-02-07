@@ -173,3 +173,11 @@
   display: flex;
   justify-content: flex-end;
 }
+
+::v-deep .el-pagination .active {
+  background-color: #e81723 !important;
+}
+
+::v-deep .el-pagination .number:hover {
+  color: #e81723 !important;
+}

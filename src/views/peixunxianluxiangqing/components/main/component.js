@@ -62,6 +62,9 @@ export default {
       ])
       this.addresses = addresses
       this.train = train
+      if (!train) {
+        this.$router.push({ path: '/peixunxianlu' })
+      }
     },
     click (item) {
       this.$router.push({path: '/peixunxianlu', query: { id: item.id }})

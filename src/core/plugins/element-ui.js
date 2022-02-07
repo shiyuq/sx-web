@@ -6,7 +6,9 @@ import {
   Pagination,
   Breadcrumb,
   BreadcrumbItem,
-  Notification
+  Notification,
+  Tabs,
+  TabPane
 } from 'element-ui'
 
 Vue.use(Carousel)
@@ -14,5 +16,7 @@ Vue.use(CarouselItem)
 Vue.use(Pagination)
 Vue.use(Breadcrumb)
 Vue.use(BreadcrumbItem)
+Vue.use(Tabs)
+Vue.use(TabPane)
 Vue.prototype.$notify = Notification
 

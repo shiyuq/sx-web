@@ -3,7 +3,7 @@
     <div class="container">
       <div class="left">
         <h4 class="title">
-          <router-link to="guanyuwomen">
+          <router-link to="/guanyuwomen">
             联系我们
           </router-link>
         </h4>

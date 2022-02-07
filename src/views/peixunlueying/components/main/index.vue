@@ -7,7 +7,15 @@
             培训掠影
           </router-link>
         </h4>
-        <ul></ul>
+        <ul>
+          <li
+            v-for="(item, index) in des"
+            :key="index"
+            :class="{ cur: isCur === index }"
+          >
+            <router-link :to="item.url">{{ item.title }}</router-link>
+          </li>
+        </ul>
         <RelatedInfo />
         <ContactUs />
       </div>

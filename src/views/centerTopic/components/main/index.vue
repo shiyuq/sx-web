@@ -22,36 +22,37 @@
       <div class="right">
         <div class="header">
           <h5>
-            <span>名师风采</span>
+            <span>中心课题</span>
           </h5>
           <el-breadcrumb separator-class="el-icon-arrow-right">
             <el-breadcrumb-item>您的位置</el-breadcrumb-item>
             <el-breadcrumb-item :to="{ path: '/' }">主页</el-breadcrumb-item>
-            <el-breadcrumb-item>名师风采</el-breadcrumb-item>
+            <el-breadcrumb-item>中心课题</el-breadcrumb-item>
           </el-breadcrumb>
         </div>
-        <ul class="content">
-          <li v-for="(item, index) in teachers" :key="index">
-            <router-link :to="'/mingshifengcai/' + item.id">
-              <img :src="item.teacherPhotoUrl" />
-            </router-link>
-            <div class="des">
-              <router-link :to="'/mingshifengcai/' + item.id">
-                <h4>{{ item.name }}</h4>
-                <p v-html="item.content"></p>
-              </router-link>
-            </div>
-          </li>
-        </ul>
-        <div class="clear"></div>
-        <el-pagination
-          background
-          :page-size="5"
-          :page-count="pagerCount"
-          layout="prev, pager, next"
-          :total="total"
-          @current-change="changePage"
-        />
+        <el-tabs v-model="activeName" class="el-tabs" :stretch="true">
+          <el-tab-pane label="专题教学" name="topics">
+            <ul class="content">
+              <li v-for="(item, index) in topics" :key="index">
+                <span>{{ item }}</span>
+              </li>
+            </ul>
+          </el-tab-pane>
+          <el-tab-pane label="专业提升" name="promotes">
+            <ul class="content">
+              <li v-for="(item, index) in promotes" :key="index">
+                <span>{{ item }}</span>
+              </li>
+            </ul>
+          </el-tab-pane>
+          <el-tab-pane label="特色课程" name="specials">
+            <ul class="content">
+              <li v-for="(item, index) in specials" :key="index">
+                <span>{{ item }}</span>
+              </li>
+            </ul>
+          </el-tab-pane>
+        </el-tabs>
       </div>
     </div>
   </div>

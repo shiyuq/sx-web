@@ -12,7 +12,14 @@ export default {
       currentPage1: 5,
       currentPage2: 5,
       currentPage3: 5,
-      currentPage4: 4
+      currentPage4: 4,
+      isCur: 0,
+      des: [
+        {
+          url: '/peixunlueying/',
+          title:'培训掠影'
+        }
+      ]
     }
   },
   computed: {

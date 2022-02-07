@@ -161,6 +161,12 @@ const routes = [
         name: 'Qiyefengcai',
         component: () => import('../views/companyDetail'),
         meta: { title: '企业风采', keepAlive: false }
+      },
+      {
+        path: '/zhongxinketi',
+        name: 'Zhongxinketi',
+        component: () => import('../views/centerTopic'),
+        meta: { title: '中心课题', keepAlive: false }
       }
     ]
   }
