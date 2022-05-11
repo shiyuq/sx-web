@@ -52,7 +52,7 @@
       <div class="menu last">
         <p>地址：新疆阿拉尔市秋收大道1001号</p>
         <p>
-          咨询热线： 13636808088 &nbsp; &nbsp; &nbsp; &nbsp;15083931223&nbsp;
+          咨询热线： 13970768616 &nbsp; &nbsp; &nbsp; &nbsp;15083931223&nbsp;
           &nbsp; &nbsp; &nbsp;0997-6378522
         </p>
         <p>邮箱：364361414@qq.com</p>
